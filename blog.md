@@ -10,7 +10,7 @@ permalink: /blog/
 ## [{{ post.title }}]({{ post.url | relative_url }})
 {{ post.date | date: "%B %-d, %Y" }}
 
-{{ post.excerpt }}
+{{ post.excerpt | markdownify }}
 
 [Read more]({{ post.url | relative_url }})
 
