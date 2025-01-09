@@ -3,7 +3,12 @@ description: Patient Engagement Chatbots and Healthcare Solutions
 baseurl: ""
 url: "https://vcrsoft.github.io"
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title/
 
-# Explicitly disable theme
-theme: null
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
