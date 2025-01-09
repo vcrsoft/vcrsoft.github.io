@@ -3,13 +3,13 @@ layout: default
 title: Home
 ---
 
-# Welcome to VCRSOFT LLC
+# Patient Engagement Reimagined
 
-We provide a patient engagement portal with chatbots. These chatbots provide a friendly conversational interface to enable patients to perform various tasks such as registration, intake, booking an appointment, asking questions pertaining to their medical records, or messaging their doctor.
+A chatbot provides a friendly interface for patients as they seek to interact with your medical practice. Imagine a virtual assistant, available 24/7, that engages in a natural dialog with the patient to understand their needs and provide service.
 
 ## Explore Our Patient Engagement Portal
 
-Our chatbots are designed to make healthcare management easy and accessible. Experience the full capabilities of our portal by visiting our Patient Portal.
+Visit our patient portal to engage with a chatbot to see how basic patient-facing functions such as booking appointments, answering questions about their medical records, or messaging their doctor, can be vastly improved using the latest AI technology.
 
 ## Recent Blog Posts
 
