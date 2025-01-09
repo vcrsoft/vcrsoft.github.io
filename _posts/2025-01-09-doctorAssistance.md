@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Doctor Assistance through AI"
-date: 2025-01-10 12:00:00 +0000
+date: 2025-01-09 15:00:00 +0000
 ---
 
 While our chatbots are patient-facing, they also assist doctors, nurses and other medical staff in performing their duties. Here are a few examples:
