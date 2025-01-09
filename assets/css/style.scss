@@ -1,0 +1,32 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Custom styles to override theme defaults
+.page-header {
+    background-color: #0078d4;
+    background-image: linear-gradient(120deg, #0078d4, #004c8c);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn {
+    background-color: #0078d4;
+    &:hover {
+        background-color: #004c8c;
+    }
+}
+
+.post {
+    margin-bottom: 2rem;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9rem;
+}
