@@ -1,21 +1,9 @@
-# Site settings
 title: VCRSOFT LLC
-description: Patient Engagement Chatbots - A friendly conversational interface enabling patients to register, book appointments, view medical records, or message their doctor
+description: Patient Engagement Chatbots and Healthcare Solutions
 baseurl: ""
 url: "https://vcrsoft.github.io"
-
-# Build settings
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 
-# Exclude files from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+# Explicitly disable theme
+theme: null
