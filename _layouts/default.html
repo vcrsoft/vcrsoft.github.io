@@ -12,18 +12,29 @@ layout: default
 
 
     
-        {{ site.title }}
-        {{ site.description }}
-        Home
-        Blog
-        Patient Portal
-    
+        
+        
+            
+                {{ site.title }}
+            
+            
+                Home
+                Blog
+                Patient Portal
+            
+            
+                &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+            
+        
 
+        
+        
+            
+                {{ page.title }}
+            
+            
+            
+                {{ content }}
+            
+        
     
-        {{ content }}
-    
-
-    
-        &copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.
-    
-
