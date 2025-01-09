@@ -22,6 +22,7 @@ highlighter: rouge
 # Exclude files from Jekyll processing
 exclude:
   - README.md
+  - index.html
 
 # Additional settings
 paginate: 5 # Number of posts per page (if you add a blog later)
