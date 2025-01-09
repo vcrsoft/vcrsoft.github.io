@@ -12,7 +12,7 @@ body {
 }
 
 /* Main Container */
-.container {
+.main-container {
     display: flex;
     min-height: 100vh;
 }
@@ -55,12 +55,12 @@ body {
 
 /* Right Content Area */
 .content {
-    margin-left: 250px; /* Ensure content doesn't overlap with sidebar */
+    margin-left: 250px; /* Offset for sidebar */
     padding: 20px;
-    width: 100%;
+    width: calc(100% - 250px); /* Make the content take up the rest of the space */
 }
 
-h1, p {
+.content h1, .content p {
     margin-bottom: 20px;
 }
 
@@ -79,7 +79,7 @@ a.button:hover {
 
 /* Make it responsive */
 @media (max-width: 768px) {
-    .container {
+    .main-container {
         flex-direction: column;
     }
 
