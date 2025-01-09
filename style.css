@@ -5,14 +5,15 @@
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Main Container */
-.main-container {
+/* Container */
+.container {
     display: flex;
     min-height: 100vh;
 }
@@ -53,14 +54,14 @@ body {
     text-decoration: underline;
 }
 
-/* Right Content Area */
-.content {
-    margin-left: 250px; /* Offset for sidebar */
+/* Main Content */
+.main-content {
+    margin-left: 250px;
     padding: 20px;
-    width: calc(100% - 250px); /* Make the content take up the rest of the space */
+    width: calc(100% - 250px); /* Content takes the rest of the width */
 }
 
-.content h1, .content p {
+.main-content h1, .main-content p {
     margin-bottom: 20px;
 }
 
@@ -77,19 +78,19 @@ a.button:hover {
     background-color: #0056b3;
 }
 
-/* Make it responsive */
+/* Responsiveness */
 @media (max-width: 768px) {
-    .main-container {
+    .container {
         flex-direction: column;
     }
 
     .sidebar {
         width: 100%;
-        position: relative;
         height: auto;
+        position: relative;
     }
 
-    .content {
+    .main-content {
         margin-left: 0;
     }
 }
