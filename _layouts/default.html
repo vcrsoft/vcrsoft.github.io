@@ -22,7 +22,7 @@
             <nav>
             <a href="https://rendermedportal.onrender.com/" class="portal-button">Patient Portal</a>
             <div class="sidebar-footer">
-                <p>&copy; {{ site.footer_company_name }}</p>
+                <p>&copy; {{ site.time | date: '%Y' }} {{ site.footer_company_name }}</p>
             </div>
         </aside>
 
