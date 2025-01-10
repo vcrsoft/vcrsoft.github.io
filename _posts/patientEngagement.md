@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Patient Engagement Reimagined"
-date: 2025-01-09
+excerpt: "Learn how AI-powered chatbots are transforming patient engagement in modern healthcare practices."
 ---
 
 
