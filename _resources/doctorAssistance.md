@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: resource
 title: "Doctor Assistance through AI"
 excerpt: "Learn how AI-powered chatbots assist healthcare providers."
 ---
