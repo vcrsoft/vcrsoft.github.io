@@ -11,8 +11,3 @@ A chatbot provides a friendly interface for patients as they seek to interact wi
 
 Visit our patient portal to engage with a chatbot to see how basic patient-facing functions such as booking appointments, answering questions about their medical records, or messaging their doctor, can be vastly improved using the latest AI technology.
 
-## Recent Blog Posts
-
-{% for post in site.posts limit:5 %}
-* [{{ post.title }}]({{ post.url | relative_url }}) - {{ post.date | date: "%B %-d, %Y" }}
-{% endfor %}
