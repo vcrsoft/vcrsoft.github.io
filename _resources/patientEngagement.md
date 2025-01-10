@@ -17,7 +17,8 @@ Here a few basic steps in the patient engagement workflow:
 
 1. Patient registration: A patient that is new to your practice will fill out a form to obtain login credentials. Once approved, the patient will be able to use the portal.
 2. Patient intake / appointments: A chatbot guides the patient through the process of booking an appointment. Using the patient's medical history as context, the chatbot interacts with the patient to obtain relevant information (such as symptoms) pertaining to their medical issue. This enables the chatbot to book an appointment, for the patient, with the appropriate healthcare provider.
-3. 
+3. Patient questions: A crucial part of patient engagement is the ability to address patient questions and concerns. A chatbot, uses the patient medical history as context to retrieve relevant information from the patient's records. It can also provide general educational content tailored to the patient's needs.
+4. Messaging doctors: Patients can message their doctors securely through the portal. The chatbot helps the patient determine if a message is necessary based on whether the information can be deduced from the patient's records or other sources. The chatbot helps the patient compose the message to the doctor.
 
  
 
