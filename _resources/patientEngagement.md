@@ -9,7 +9,7 @@ As a medical provider, the patient portal is a key way for you to engage with yo
 
 <!--more-->
 
-Patient engagement encompasses a variety of tasks, functions, and processes that pertain to providing service to a patient. A key requirement for any patient engagement software solution is a tight integration with the provider's electronic health record (EHR) system. Examples of popular EHR systems include Epic, AthenaHealth, eClinicalWorks, and Cerner. 
+Patient engagement encompasses a variety of tasks, functions, and processes that pertain to providing service to a patient. A key requirement for any patient engagement software solution is a tight integration with the provider's electronic health record (EHR) system. Examples of popular EHR systems include Epic, AthenaHealth, eClinicalWorks, and Cerner. While many of these EHR systems also provide patient portals, third-party patient portal solutions, such as ours, provide enhanced features that could be customized better to suit your needs. For example, our patient engagement software solution, delivered via our own portal, has the AI chatbot as the primary interface for interacting with the patient.
 
 Here a few basic steps in the patient engagement workflow:
 
