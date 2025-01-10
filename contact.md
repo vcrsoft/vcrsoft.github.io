@@ -6,7 +6,7 @@ permalink: /contact/
 
 # Contact Us
 
-<form action="https://formspree.io/f/vcr@vcrsoft.com" method="POST" class="contact-form">
+<form action="https://formspree.io/f/takesomerisks@live.com" method="POST" class="contact-form">
     <div class="form-group">
         <label for="firstName">First Name *</label>
         <input type="text" id="firstName" name="firstName" required>
