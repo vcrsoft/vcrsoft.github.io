@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: resource
 title: "Patient Engagement Reimagined"
 excerpt: "Learn how AI-powered chatbots are transforming patient engagement in modern healthcare practices."
 ---
