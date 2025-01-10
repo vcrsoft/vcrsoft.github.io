@@ -4,7 +4,12 @@ footer_company_name: Vcrsoft LLC
 baseurl: ""
 url: "https://vcrsoft.com"
 markdown: kramdown
-permalink: /blog/:title/
+permalink: /resources/:title/
+
+collections:
+  posts:
+    output: true
+    permalink: /resources/:title/
 
 sass:
   style: compressed
