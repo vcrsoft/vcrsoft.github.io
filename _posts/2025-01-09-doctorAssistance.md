@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Doctor Assistance through AI"
-date: 2025-01-09
+excerpt: "Learn how AI-powered chatbots are transforming patient engagement in modern healthcare practices."
 ---
 
 While our chatbots are patient-facing, they also assist doctors, nurses and other medical staff in performing their duties. 
