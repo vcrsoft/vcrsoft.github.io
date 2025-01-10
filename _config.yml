@@ -2,7 +2,7 @@ title: vcMedBots
 description: Patient Engagement Chatbots
 footer_company_name: Vcrsoft LLC
 baseurl: ""
-url: "https://vcrsoft.github.io"
+url: "https://vcrsoft.com"
 markdown: kramdown
 permalink: /blog/:title/
 
