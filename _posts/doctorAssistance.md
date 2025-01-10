@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Doctor Assistance through AI"
-excerpt: "Learn how AI-powered chatbots are transforming patient engagement in modern healthcare practices."
+excerpt: "Learn how AI-powered chatbots assist healthcare providers."
 ---
 
 While our chatbots are patient-facing, they also assist doctors, nurses and other medical staff in performing their duties. 
