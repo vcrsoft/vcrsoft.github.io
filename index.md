@@ -13,4 +13,4 @@ title: Home
 
 <p style="font-size: 1.5em;">Visit our patient portal to engage with a chatbot to see how basic patient-facing functions such as booking appointments, answering questions about their medical records, or messaging their doctor, can be vastly improved using the latest AI technology.</p>
 
-<img src="/assets/images/portal.jpg" alt="Patient chatbot" style="width: 80%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<img src="/assets/images/portal.jpg" alt="Patient chatbot" style="width: 100%; max-width: 1000px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
