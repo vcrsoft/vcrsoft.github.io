@@ -7,7 +7,7 @@ markdown: kramdown
 permalink: /resources/:title/
 
 collections:
-  posts:
+  resources:
     output: true
     permalink: /resources/:title/
 
