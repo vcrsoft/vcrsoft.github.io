@@ -7,6 +7,8 @@ permalink: /contact/
 # Contact Us
 
 <form action="https://formspree.io/f/xkggkgyo" method="POST" class="contact-form">
+    <input type="hidden" name="_next" value="https://vcrsoft.github.io">
+    
     <div class="form-group">
         <label for="firstName">First Name *</label>
         <input type="text" id="firstName" name="firstName" required>
