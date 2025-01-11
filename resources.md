@@ -4,9 +4,9 @@ title: Resources
 permalink: /resources/
 ---
 
-# Healthcare Technology Resources
+# AI-Powered Patient Engagement
 
-Welcome to our resource library. Here you'll find informative articles about patient engagement, healthcare technology, and AI-powered medical solutions.
+AI technology, in particular chatbots / assistants / agents, provides a means to enhance the experience and workflow pertaining to all aspects of the patient engagement process. Benefits include better health outcomes for patients and a more efficient process for the provider.
 
 {% for resource in site.resources %}
 ## [{{ resource.title }}]({{ resource.url | relative_url }})
