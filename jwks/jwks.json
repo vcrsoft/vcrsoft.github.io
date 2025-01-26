@@ -4,7 +4,8 @@
       "kty": "RSA",
       "n": "y5dMzvlMpZY9zi6JF3dZLPMPFtxhSqMZ9SzYFTYOi7IaF5Nh_ym89ZvJoiLpOALBRRIF4bYXRETIiOZE2gZCytZddGyW874mzluBW2tA0XsPG6skLzFZRHd0FEcY7y6uRGvATiYd4xsurLlv45S9jeSffew5NlxzEI7He55aWaj1EqVbqXynjfp38b1BkJAIzGSBDZFnifftRjmoXitkxlNE7EllxELwoUtkwNe7a1WalPT-M26ZVzGauQNjliDfyAiGvtel_eJeJ2lFpfs3Oh950zLXCz5yb4yMXCA5QPat36Jmdeuh3hZOVg1dBFUtZgXaiXZbpU09e_3FoYN6hQ",
       "e": "AQAB",
-      "kid": "2O0kch2UzmLkn4-iv3-tB6tXBIikPC8ZJud4XQ_qcMA"
+      "kid": "2O0kch2UzmLkn4-iv3-tB6tXBIikPC8ZJud4XQ_qcMA",
+      "use": "sig"
     }
   ]
 }
