@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback</title>
+</head>
+<body>
+    <h1>Callback Received</h1>
+    <p>Check the URL for the authorization code.</p>
+    <script>
+        // Extract the authorization code from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        const state = urlParams.get('state');
+
+        // Log the code to the console (for debugging)
+        console.log("Authorization Code:", code);
+        console.log("State:", state);
+
+        // Optionally, send the code to your backend for processing
+        // fetch('https://your-backend.com/handle-code', { method: 'POST', body: JSON.stringify({ code, state }) });
+    </script>
+</body>
+</html>
