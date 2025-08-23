@@ -4,9 +4,9 @@ title: Resources
 permalink: /resources/
 ---
 
-# AI-Powered Patient Engagement
+# Customer Service Chatbots
 
-AI technology, in particular chatbots / assistants / agents, provides a means to enhance the experience and workflow pertaining to all aspects of the patient engagement process. Benefits include better health outcomes for patients and a more efficient process for the provider.
+AI technology, in particular chatbots / assistants / agents, provides a means to enhance the experience and workflow pertaining to all aspects of the customer service process. 
 
 {% for resource in site.resources %}
 ## [{{ resource.title }}]({{ resource.url | relative_url }})
