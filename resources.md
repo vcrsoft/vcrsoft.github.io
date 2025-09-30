@@ -4,9 +4,9 @@ title: Resources
 permalink: /resources/
 ---
 
-# Remote Diagnostics & Instant Estimates for Pros
+# AI Lead Qualification for Home Service Pros
 
-Understand how AI-powered **remote diagnostic chatbots** can fundamentally transform your home service business, from pre-qualifying leads to delivering instant, accurate free estimates—all without picking up the phone.
+Learn how AI-powered **lead qualification chatbots** can transform your home service business. From pre-qualifying leads to delivering polished, actionable reports, these virtual assistants help you focus on real opportunities, cut wasted trips, and respond faster—all without lifting a phone.
 
 {% for resource in site.resources %}
 ## [{{ resource.title }}]({{ resource.url | relative_url }})
