@@ -18,7 +18,7 @@ title: Home
 <h3 style="font-size: 1.5em; color: #333; border-bottom: 2px solid #eee; padding-bottom: 0.3em;">How It Works</h3>
 
 <p style="line-height: 1.4;">
-    I’m testing an AI chatbot that turns every inquiry into a **qualified lead**. Customers describe their issue, the bot asks questions, narrows down the problem, and then emails you the full chat log with their contact info—so you know exactly what you’re walking into.
+    This AI chatbot that turns every inquiry into a **qualified lead**. Customers describe their issue, the bot asks questions, narrows down the problem, and then emails you the full chat log with their contact info—so you know exactly what you’re walking into.
 </p>
 
 <h3 style="font-size: 1.5em; color: #333; margin-top: 1.5em;">The Results: Zero Effort, Maximum Efficiency</h3>
