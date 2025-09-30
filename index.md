@@ -7,20 +7,22 @@ title: Home
 
 <p style="font-size: 1.25em; color: #666; margin-top: -1em; margin-bottom: 1em;">for home service pros</p>
 
-<h2 style="font-size: 2em; color: #333; margin-top: 0.5em;">Give Customers <span style="color: #0078d4;">AI-Generated Free Estimates</span></h2>
+<h2 style="font-size: 2em; color: #333; margin-top: 0.5em;">Turn Every Inquiry into a <span style="color: #0078d4;">Qualified Lead</span></h2>
 
 <div style="border-left: 5px solid #0078d4; background-color: #f0f8ff; padding: 1em 1.5em; margin: 1.5em 0;">
     <p style="font-size: 1.15em; line-height: 1.5;">
-        Most customers expect free estimates and prefer not to pay a trip or diagnostic fee. 
+        Homeowners and customers often call or fill forms that go nowhere. 
         <br><br>
-        What if you could offer fast, free estimates automatically—**without leaving the shop or picking up the phone?**
+        What if you could **pre-qualify leads automatically**, 24/7, and focus only on serious opportunities—without leaving the shop or picking up the phone?
     </p>
 </div>
 
 <h3 style="font-size: 1.5em; color: #333; border-bottom: 2px solid #eee; padding-bottom: 0.3em;">How It Works</h3>
 
 <p style="line-height: 1.4;">
-    This AI chatbot turns every inquiry into a **qualified lead**. Customers describe their issue, the bot asks questions, narrows down the problem, and then emails you the full chat log with their contact info—so you know exactly what you’re walking into.
+    Your AI-powered virtual assistant handles initial customer inquiries. It asks the right questions, narrows down the problem, and delivers a **polished diagnostic report**—including a summary and the full chat log—directly to your inbox with the customer's contact info. 
+    <br><br>
+    You get all the information you need to respond quickly, accurately, and efficiently.
 </p>
 
 <img src="/assets/images/image.jpg" alt="Homeowner using chatbot" style="max-width: 100%; height: auto; margin: 1em 0;">
@@ -29,12 +31,23 @@ title: Home
 
 <ul style="list-style-type: none; padding-left: 0;">
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
-        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> **Pre-qualify jobs** and improve lead quality.
+        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> **Pre-qualify jobs** and focus on serious leads.
     </li>
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
-        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> **Cut wasted trips** and diagnostic time.
+        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> **Cut wasted trips** and time on low-value calls.
     </li>
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
-        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> Give **fast, free estimates**—all with no extra effort.
+        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> Receive **polished diagnostic reports** with full details and contact info—ready to act on.
+    </li>
+    <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
+        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> Provide faster responses and improve customer satisfaction—all with zero extra effort.
     </li>
 </ul>
+
+<h3 style="font-size: 1.5em; color: #333; margin-top: 2em;">See It in Action</h3>
+
+<p style="font-size: 1.15em; line-height: 1.5;">
+    Visit <a href="https://vcrsoft.com" target="_blank" style="color: #0078d4; text-decoration: underline;">vcrsoft.com</a> to watch a quick demo video showing the AI virtual assistant in action. 
+    <br><br>
+    If it looks useful for your business, <strong>reach out through the contact form</strong> to explore how you can get your own hosted chatbot page.
+</p>
