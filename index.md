@@ -49,5 +49,5 @@ title: Home
 <p style="font-size: 1.15em; line-height: 1.5;">
     Visit <a href="https://youtu.be/chtCykQpBmc" target="_blank" style="color: #0078d4; text-decoration: underline;">Demo</a> to watch a quick demo video showing the AI virtual assistant in action. 
     <br><br>
-If it looks useful for your business, <strong><a href="contact.md" style="text-decoration: underline; color: #0078d4;">reach out through the contact form</a></strong> to explore how you can get your own hosted chatbot page.
+If it looks useful for your business, <strong><a href="contact" style="text-decoration: underline; color: #0078d4;">reach out through the contact form</a></strong> to explore how you can get your own hosted chatbot page.
 </p>
