@@ -23,6 +23,8 @@ title: Home
     This AI chatbot turns every inquiry into a **qualified lead**. Customers describe their issue, the bot asks questions, narrows down the problem, and then emails you the full chat log with their contact info—so you know exactly what you’re walking into.
 </p>
 
+<img src="/assets/images/image.jpg" alt="Homeowner using chatbot" style="max-width: 100%; height: auto; margin: 1em 0;">
+
 <h3 style="font-size: 1.5em; color: #333; margin-top: 1.5em;">The Results: Zero Effort, Maximum Efficiency</h3>
 
 <ul style="list-style-type: none; padding-left: 0;">
