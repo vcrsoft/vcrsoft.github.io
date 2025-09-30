@@ -20,7 +20,7 @@ title: Home
 <h3 style="font-size: 1.5em; color: #333; border-bottom: 2px solid #eee; padding-bottom: 0.3em;">How It Works</h3>
 
 <p style="line-height: 1.4;">
-    Your AI-powered virtual assistant handles initial customer inquiries. It asks the right questions, narrows down the problem, and delivers a **polished diagnostic report**—including a summary and the full chat log—directly to your inbox with the customer's contact info. 
+    Your AI-powered virtual assistant handles initial customer inquiries. It asks the right questions, narrows down the problem, and delivers a **polished lead qualification report**—including a summary and the full chat log—directly to your inbox with the customer's contact info. 
     <br><br>
     You get all the information you need to respond quickly, accurately, and efficiently.
 </p>
@@ -37,7 +37,7 @@ title: Home
         <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> **Cut wasted trips** and time on low-value calls.
     </li>
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
-        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> Receive **polished diagnostic reports** with full details and contact info—ready to act on.
+        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> Receive **polished lead qualification reports** with full details and contact info—ready to act on.
     </li>
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
         <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> Provide faster responses and improve customer satisfaction—all with zero extra effort.
