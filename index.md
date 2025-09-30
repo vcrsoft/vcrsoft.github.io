@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<h1 style="color: #0078d4; font-size: 2.5em; font-weight: bold;">Remote Diagnostic Chatbot</h1>
+<h1 style="color: #0078d4; font-size: 2.5em; font-weight: bold;">Lead Qualification Chatbot</h1>
 
 <p style="font-size: 1.25em; color: #666; margin-top: -1em; margin-bottom: 1em;">for home service pros</p>
 
