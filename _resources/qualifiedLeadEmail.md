@@ -14,10 +14,10 @@ This article shows you exactly what a **Qualified Lead Email** looks like, so yo
 
 ## Customer Contact Information
 
-<table>
-  <tr>
-    <th>Field</th>
-    <th>Detail</th>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tr style="background-color: #f0f8ff;">
+    <th style="text-align: left;">Field</th>
+    <th style="text-align: left;">Detail</th>
   </tr>
   <tr>
     <td><strong>Full Name</strong></td>
@@ -41,23 +41,33 @@ This article shows you exactly what a **Qualified Lead Email** looks like, so yo
 
 ## Diagnostic Summary
 
-**Confirmed Issue:** Leaky Bathtub Faucet  
-
-**Diagnosis Confidence:** High  
-
-**Detailed Finding:**  
-Based on the customer's responses, the issue is a **constant drip** coming from the main spout of a **single-handle Moen** bathtub faucet, even when fully turned off.
-
-This strongly indicates a worn internal **Moen cartridge**—a common component that controls water flow and temperature—likely requiring replacement.
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tr style="background-color: #f0f8ff;">
+    <th style="text-align: left;">Field</th>
+    <th style="text-align: left;">Detail</th>
+  </tr>
+  <tr>
+    <td><strong>Confirmed Issue</strong></td>
+    <td>Leaky Bathtub Faucet</td>
+  </tr>
+  <tr>
+    <td><strong>Diagnosis Confidence</strong></td>
+    <td>High</td>
+  </tr>
+  <tr>
+    <td><strong>Detailed Finding</strong></td>
+    <td>Based on the customer's responses, the issue is a <strong>constant drip</strong> coming from the main spout of a <strong>single-handle Moen</strong> bathtub faucet, even when fully turned off. This strongly indicates a worn internal <strong>Moen cartridge</strong>—likely requiring replacement.</td>
+  </tr>
+</table>
 
 ---
 
 ## Preliminary Cost Estimate
 
-<table>
-  <tr>
-    <th>Item</th>
-    <th>Detail</th>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tr style="background-color: #f0f8ff;">
+    <th style="text-align: left;">Item</th>
+    <th style="text-align: left;">Detail</th>
   </tr>
   <tr>
     <td><strong>Service Required</strong></td>
@@ -69,18 +79,16 @@ This strongly indicates a worn internal **Moen cartridge**—a common component 
   </tr>
 </table>
 
-*Note: This estimate is based solely on the chatbot's remote intake. An on-site visit may adjust the final cost.*
+<p><em>Note: This estimate is based solely on the chatbot's remote intake. An on-site visit may adjust the final cost.</em></p>
 
 ---
 
 ## Full Diagnostic Transcript
 
-The transcript provides full context of the customer's issue and ensures your team can review the details if needed.
-
-<table>
-  <tr>
-    <th>Source</th>
-    <th>Exchange</th>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tr style="background-color: #f0f8ff;">
+    <th style="text-align: left;">Source</th>
+    <th style="text-align: left;">Exchange</th>
   </tr>
   <tr>
     <td><strong>User</strong></td>
@@ -96,7 +104,7 @@ The transcript provides full context of the customer's issue and ensures your te
   </tr>
   <tr>
     <td><strong>Model</strong></td>
-    <td>Okay, the leak is coming from the main spout. This is a common issue. To help me diagnose further, could you tell me if your bathtub faucet has: 1. A single handle that controls both hot and cold water? 2. Two separate handles, one for hot and one for cold?</td>
+    <td>Okay, the leak is coming from the main spout. This is a common issue. To help me diagnose further, could you tell me if your bathtub faucet has: 1. A single handle that controls both hot and cold water? 2. Two separate handles, one for hot and one for cold? </td>
   </tr>
   <tr>
     <td><strong>User</strong></td>
@@ -154,9 +162,9 @@ The transcript provides full context of the customer's issue and ensures your te
     <td><strong>Model</strong></td>
     <td>Thank you for providing your contact information, Joe. 
 
-**Summary Diagnosis:** Based on the information provided, it appears you have a single-handle Moen bathtub faucet with a constant drip from the spout even when turned off. This strongly suggests the internal Moen cartridge needs to be replaced. This is a common wear-and-tear item that controls the water flow and temperature.
+<strong>Summary Diagnosis:</strong> Based on the information provided, it appears you have a single-handle Moen bathtub faucet with a constant drip from the spout even when turned off. This strongly suggests the internal Moen cartridge needs to be replaced. This is a common wear-and-tear item that controls the water flow and temperature.
 
-**Rough Estimate:** The typical cost for replacing a Moen single-handle bathtub faucet cartridge, including parts and labor, generally ranges from $200 to $400. This estimate can vary slightly depending on the specific Moen cartridge model and ease of access.
+<strong>Rough Estimate:</strong> The typical cost for replacing a Moen single-handle bathtub faucet cartridge, including parts and labor, generally ranges from $200 to $400. This estimate can vary slightly depending on the specific Moen cartridge model and ease of access.
 
 Someone will contact you shortly to schedule an appointment for a visit to confirm the diagnosis and provide a precise quote.
 
