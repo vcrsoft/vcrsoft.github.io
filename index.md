@@ -47,7 +47,7 @@ title: Home
 <h3 style="font-size: 1.5em; color: #333; margin-top: 2em;">See It in Action</h3>
 
 <p style="font-size: 1.15em; line-height: 1.5;">
-    Visit <a href="https://vcrsoft.com" target="_blank" style="color: #0078d4; text-decoration: underline;">vcrsoft.com</a> to watch a quick demo video showing the AI virtual assistant in action. 
+    Visit <a href="https://youtu.be/chtCykQpBmc" target="_blank" style="color: #0078d4; text-decoration: underline;">Demo</a> to watch a quick demo video showing the AI virtual assistant in action. 
     <br><br>
     If it looks useful for your business, <strong>reach out through the contact form</strong> to explore how you can get your own hosted chatbot page.
 </p>
