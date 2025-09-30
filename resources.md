@@ -4,9 +4,9 @@ title: Resources
 permalink: /resources/
 ---
 
-# Customer Service Chatbots
+# Remote Diagnostics & Instant Estimates for Pros
 
-AI technology, in particular chatbots / assistants / agents, provides a means to enhance the experience and workflow pertaining to all aspects of the customer service process. 
+Understand how AI-powered **remote diagnostic chatbots** can fundamentally transform your home service business, from pre-qualifying leads to delivering instant, accurate free estimates—all without picking up the phone.
 
 {% for resource in site.resources %}
 ## [{{ resource.title }}]({{ resource.url | relative_url }})
