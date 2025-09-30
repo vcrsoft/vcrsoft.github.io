@@ -5,6 +5,8 @@ title: Home
 
 <h1 style="color: #0078d4; font-size: 2.5em; font-weight: bold;">Remote Diagnostic Chatbot</h1>
 
+<p style="font-size: 1.25em; color: #666; margin-top: -1em; margin-bottom: 1em;">for home service pros</p>
+
 <h2 style="font-size: 2em; color: #333; margin-top: 0.5em;">Give Customers <span style="color: #0078d4;">AI-Generated Free Estimates</span></h2>
 
 <div style="border-left: 5px solid #0078d4; background-color: #f0f8ff; padding: 1em 1.5em; margin: 1.5em 0;">
