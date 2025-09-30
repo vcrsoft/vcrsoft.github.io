@@ -31,7 +31,7 @@ title: Home
 
 <ul style="list-style-type: none; padding-left: 0;">
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
-        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> <a href="https://vcrsoft.com/resources/leadQualification/" style="text-decoration: underline; color: #0078d4;"> **Pre-qualify jobs** </a>  and focus on serious leads.
+        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> <a href="https://vcrsoft.com/resources/leadQualification/" style="text-decoration: underline; color: #0078d4;"> **Pre-qualify jobs** </a>&nbsp;and focus on serious leads.
     </li>
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
         <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> **Cut wasted trips** and time on low-value calls.
