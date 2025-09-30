@@ -37,7 +37,7 @@ title: Home
         <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> **Cut wasted trips** and time on low-value calls.
     </li>
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
-        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> Receive **polished lead qualification reports** with full details and contact info—ready to act on.
+        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> <a href="https://vcrsoft.com/resources/qualifiedLeadEmail/" style="text-decoration: underline; color: #0078d4;"> Receive **polished lead qualification reports** </a> with full details and contact info—ready to act on.
     </li>
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
         <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> Provide faster responses and improve customer satisfaction—all with zero extra effort.
