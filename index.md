@@ -20,7 +20,7 @@ title: Home
 <h3 style="font-size: 1.5em; color: #333; border-bottom: 2px solid #eee; padding-bottom: 0.3em;">How It Works</h3>
 
 <p style="line-height: 1.4;">
-    Your AI-powered virtual assistant handles initial customer inquiries. It asks the right questions, narrows down the problem, and delivers a **polished lead qualification report**—including a summary and the full chat log—directly to your inbox with the customer's contact info. 
+    Your AI-powered virtual assistant handles initial customer inquiries <b>anytime, 24/7</b>. It asks the right questions, narrows down the problem, and delivers a **polished lead qualification report**—including a summary and the full chat log—directly to your inbox with the customer's contact info. 
     <br><br>
     You get all the information you need to respond quickly, accurately, and efficiently.
 </p>
