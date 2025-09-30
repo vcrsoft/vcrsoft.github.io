@@ -14,12 +14,28 @@ This article shows you exactly what a **Qualified Lead Email** looks like, so yo
 
 ## Customer Contact Information
 
-| Field | Detail |
-| :--- | :--- |
-| **Full Name** | Joe Blake |
-| **Address** | 2345 Joe Lane, Chicago, IL 67890 |
-| **Phone Number** | 567-890-1233 |
-| **Email Address** | joe@blake.com |
+<table>
+  <tr>
+    <th>Field</th>
+    <th>Detail</th>
+  </tr>
+  <tr>
+    <td><strong>Full Name</strong></td>
+    <td>Joe Blake</td>
+  </tr>
+  <tr>
+    <td><strong>Address</strong></td>
+    <td>2345 Joe Lane, Chicago, IL 67890</td>
+  </tr>
+  <tr>
+    <td><strong>Phone Number</strong></td>
+    <td>567-890-1233</td>
+  </tr>
+  <tr>
+    <td><strong>Email Address</strong></td>
+    <td>joe@blake.com</td>
+  </tr>
+</table>
 
 ---
 
@@ -38,10 +54,20 @@ This strongly indicates a worn internal **Moen cartridge**—a common component 
 
 ## Preliminary Cost Estimate
 
-| Item | Detail |
-| :--- | :--- |
-| **Service Required** | Moen Cartridge Replacement |
-| **Estimated Range** | **\$200 to \$400** (Parts and labor included) |
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Detail</th>
+  </tr>
+  <tr>
+    <td><strong>Service Required</strong></td>
+    <td>Moen Cartridge Replacement</td>
+  </tr>
+  <tr>
+    <td><strong>Estimated Range</strong></td>
+    <td><strong>$200 to $400</strong> (Parts and labor included)</td>
+  </tr>
+</table>
 
 *Note: This estimate is based solely on the chatbot's remote intake. An on-site visit may adjust the final cost.*
 
@@ -51,15 +77,89 @@ This strongly indicates a worn internal **Moen cartridge**—a common component 
 
 The transcript provides full context of the customer's issue and ensures your team can review the details if needed.
 
-| Source | Exchange |
-| :--- | :--- |
-| **User** | leaky bathtub faucet |
-| **Model** | Thank you for reaching out about your leaky bathtub faucet. Can you tell me exactly where the leak is coming from? Is it dripping from the main spout, leaking around the handles, or elsewhere? |
-| **User** | spout |
-| **Model** | The leak is from the main spout. Could you tell me if your bathtub faucet has: 1. A single handle for hot and cold, or 2. Two separate handles? |
-| **User** | single handle |
-| **Model** | Understood. Is the leak constant, even when turned off, or only when in use? |
-| **User** | constant drip |
-| **Model** | Thanks. A constant drip from a single-handle bathtub spout usually indicates a problem with the internal cartridge. What is the brand of your faucet, if known? |
-| **User** | moen |
-| **Model** | A Moen single-handle faucet with a constant drip. Likely the cartridge needs replacement. |
+<table>
+  <tr>
+    <th>Source</th>
+    <th>Exchange</th>
+  </tr>
+  <tr>
+    <td><strong>User</strong></td>
+    <td>leaky bathtub faucet</td>
+  </tr>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>Thank you for reaching out about your leaky bathtub faucet. To help me understand the problem better, could you please tell me exactly where the leak is coming from? Is it dripping from the main spout, leaking around the handles, or somewhere else?</td>
+  </tr>
+  <tr>
+    <td><strong>User</strong></td>
+    <td>spout</td>
+  </tr>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>Okay, the leak is coming from the main spout. This is a common issue. To help me diagnose further, could you tell me if your bathtub faucet has: 1. A single handle that controls both hot and cold water? 2. Two separate handles, one for hot and one for cold?</td>
+  </tr>
+  <tr>
+    <td><strong>User</strong></td>
+    <td>single handle</td>
+  </tr>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>Understood, a single-handle faucet leaking from the spout. Is the leak a constant drip, even when the faucet is completely turned off, or does it only leak when you're using the faucet?</td>
+  </tr>
+  <tr>
+    <td><strong>User</strong></td>
+    <td>constant drip</td>
+  </tr>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>Thank you for clarifying. A constant drip from a single-handle bathtub spout, even when turned off, typically indicates an issue with the faucet's internal cartridge. To help confirm this and narrow down the specific cartridge type, could you tell me the brand of your bathtub faucet, if you know it? Sometimes the brand name is visible on the handle, escutcheon plate, or spout.</td>
+  </tr>
+  <tr>
+    <td><strong>User</strong></td>
+    <td>moen</td>
+  </tr>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>Okay, a Moen single-handle faucet with a constant drip from the spout. That's very helpful. This usually means the Moen cartridge inside needs to be replaced. Before I give you a summary and an estimate, I need to collect your contact information.</td>
+  </tr>
+  <tr>
+    <td><strong>User</strong></td>
+    <td>full name: Joe Blake</td>
+  </tr>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>address:</td>
+  </tr>
+  <tr>
+    <td><strong>User</strong></td>
+    <td>2345 Joe Lane, Chicago, IL 67890</td>
+  </tr>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>phone number:</td>
+  </tr>
+  <tr>
+    <td><strong>User</strong></td>
+    <td>567-890-1233</td>
+  </tr>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>email address:</td>
+  </tr>
+  <tr>
+    <td><strong>User</strong></td>
+    <td>joe@blake.com</td>
+  </tr>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>Thank you for providing your contact information, Joe. 
+
+**Summary Diagnosis:** Based on the information provided, it appears you have a single-handle Moen bathtub faucet with a constant drip from the spout even when turned off. This strongly suggests the internal Moen cartridge needs to be replaced. This is a common wear-and-tear item that controls the water flow and temperature.
+
+**Rough Estimate:** The typical cost for replacing a Moen single-handle bathtub faucet cartridge, including parts and labor, generally ranges from $200 to $400. This estimate can vary slightly depending on the specific Moen cartridge model and ease of access.
+
+Someone will contact you shortly to schedule an appointment for a visit to confirm the diagnosis and provide a precise quote.
+
+Goodbye.</td>
+  </tr>
+</table>
