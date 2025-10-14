@@ -2,6 +2,7 @@
 layout: resource
 title: "Qualified Lead Example – Plumbing"
 excerpt: "See a full AI-qualified lead email for a leaky bathtub faucet, including diagnosis, cost estimate, and transcript."
+nav_exclude: true
 ---
 
 # 📧 NEW QUALIFIED LEAD: Leaky Bathtub Faucet (Moen Cartridge Suspected)
