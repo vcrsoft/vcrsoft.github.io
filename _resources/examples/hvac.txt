@@ -1,0 +1,31 @@
+NEW QUALIFIED LEAD: AC Not Cooling (Outdoor Unit Failure Suspected)
+
+Customer Contact Information
+Full Name:	Joe Blow
+Address:	2345 joe
+Phone Number:	817-234-7859
+Email Address:	joe@blow.com
+Remote Diagnostic Summary
+Reported Issue: Thermostat flashing "cool on," but no cold air.
+
+Key Observations:
+
+Indoor fan is running (air moving from vents).
+Heater mode is working correctly.
+Outdoor AC unit is completely off and silent (no fan, no humming/buzzing).
+Circuit breaker for AC was checked and reset; no change.
+No signs of clogged drain pan or water overflow.
+Suspected Cause: Electrical component failure in the outdoor unit or an issue with the low-voltage control signal getting to it. Most common culprits are a failed run capacitor, a faulty contactor, or control wiring issues.
+
+Confidence Level: High (based on systematic troubleshooting).
+
+Preliminary Cost Estimate
+Estimate Range: $200 to $600
+
+Note: This is a rough estimate and may vary significantly after an in-person inspection, as further diagnostics may reveal a different underlying cause.
+
+Lead Qualification Details
+Urgency/Service Preference:	Wants service today if possible.
+Scheduling Preference:	Prefers a call first to confirm details.
+Full Diagnostic Transcript
+User: my thermostat is flashing cool on Model: Thank you for reaching out! When your thermostat is flashing "cool on," it usually means it's trying to start the cooling cycle but there might be a delay or an issue preventing it from fully engaging. To help me understand what's happening, could you tell me if you feel any cold air coming out of your vents right now? User: no Model: Okay, thank you. So, no cold air and the thermostat is flashing "cool on." Is the fan running inside your home? You should hear air moving from the vents even if it's not cold. User: yes, fan is running. so is the heater mode. just the cool mode is not working Model: Thanks for that detailed information. It sounds like the indoor system is working correctly for the fan and heating, but the cooling isn't engaging the outdoor unit. Could you please go outside and check your air conditioning unit (the large box with a fan on top)? Is that fan spinning, or does it seem completely off? Also, do you hear any humming or buzzing from it? User: it is off, no humming or buzzing Model: Thank you for checking that. The outdoor unit being completely off with no sound is a key piece of information. The next step is to check the circuit breaker for your outdoor air conditioning unit. This is usually located in your main electrical panel. Look for a double-pole breaker (two switches tied together) labeled "AC," "Furnace," or "Condenser." Could you please check your electrical panel and see if any of the breakers are tripped (usually in the middle position, or fully off)? If you find one, try toggling it completely off and then firmly back on. User: I just did. It didn't make any difference. Model: Thank you for checking the breaker. Since resetting it didn't make a difference and the outdoor unit remains completely off, it helps narrow things down. Sometimes, a safety switch on your indoor unit's drain pan can prevent the AC from turning on if there's a clog and water is backing up. Have you noticed any water overflowing near your indoor furnace or air handler, or any signs of a clogged drain line? User: no Model: Thank you for systematically checking all those points. Based on your description – the thermostat flashing "cool on," the indoor fan running, but the outdoor unit being completely off and silent even after checking the breaker, and no signs of a clogged drain – it strongly suggests an electrical component failure in the outdoor unit or an issue with the low-voltage control signal getting to it. The most common culprits for these symptoms are a failed run capacitor, a faulty contactor, or potentially an issue with the control wiring. These components are essential for getting power to the compressor and outdoor fan. I have enough information for a preliminary diagnosis and estimate. Now, I'll need some contact details to set up a potential service visit. full name: User: Joe blow Model: address: User: 2345 joe Model: phone number: User: 817-234-7859 Model: email address: User: joe@blow.com Model: Summary Diagnosis: Your AC system is experiencing a failure where the outdoor condenser unit is not receiving power or is failing to start, despite the indoor fan running and the thermostat calling for cooling. This is likely due to a faulty run capacitor, a bad contactor, or an issue with the low-voltage control wiring in the outdoor unit. Rough Estimate: $200 to $600. This estimate may vary upon in-person inspection, as further diagnostic steps may reveal a different underlying cause. When would you like someone to come take a look — today, this week, or later? User: today if possible Model: Would you like us to go ahead and schedule a visit, or would you prefer a call first? User: I would prefer a call Model: Thank you. Someone will contact you soon to confirm the appointment and discuss details. Goodbye.
