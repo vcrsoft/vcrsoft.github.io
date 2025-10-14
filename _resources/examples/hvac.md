@@ -9,7 +9,7 @@ nav_exclude: true
 
 ## Customer Contact Information
 **Full Name:** Joe Blow  
-**Address:** 2345 Joe  
+**Address:** 2345 Joe Lane, Houston, TX 77056 
 **Phone Number:** 817-234-7859  
 **Email Address:** joe@blow.com
 
