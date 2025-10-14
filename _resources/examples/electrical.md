@@ -9,7 +9,7 @@ nav_exclude: true
 
 ## Customer Contact Information
 **Full Name:** Joe White  
-**Address:** 3456 Joe Lane, Chicago, IL  
+**Address:** 3456 Joe Lane, Chicago, IL 60131    
 **Phone Number:** 784-345-6798  
 **Email Address:** joe@white.com
 
