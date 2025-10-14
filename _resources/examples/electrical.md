@@ -2,6 +2,7 @@
 layout: resource
 title: "Qualified Lead Example – Electrical"
 excerpt: "AI-qualified lead email example for a kitchen power outage—showing structured intake, diagnosis, and transcript."
+nav_exclude: true
 ---
 
 # 📧 NEW QUALIFIED LEAD: Kitchen Power Outage (Electrical Fault Suspected)
