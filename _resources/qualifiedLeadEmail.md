@@ -13,18 +13,18 @@ Below are three examples showing what these lead emails look like for different 
 ## 🪠 Plumbing Example
 See how the chatbot qualifies a **leaky bathtub faucet job**, including brand-specific diagnosis and cost estimate.
 
-➡️ [View Plumbing Example →](/_resources/examples/plumbing)
+➡️ [View Plumbing Example →](/resources/examples/plumbing)
 
 ---
 
 ## ⚡ Electrical Example
 Here’s how the chatbot triages a **complete kitchen power outage**, narrowing it to likely circuit or panel faults.
 
-➡️ [View Electrical Example →](/_resources/examples/electrical)
+➡️ [View Electrical Example →](/resources/examples/electrical)
 
 ---
 
 ## ❄️ HVAC Example
 See a diagnostic intake for **“AC not cooling”**, including likely electrical component failure and service urgency.
 
-➡️ [View HVAC Example →](/_resources/examples/hvac)
+➡️ [View HVAC Example →](/resources/examples/hvac)
