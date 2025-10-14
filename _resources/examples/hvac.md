@@ -2,6 +2,7 @@
 layout: resource
 title: "Qualified Lead Example – HVAC"
 excerpt: "AI-qualified lead email example for an air conditioner not cooling, including diagnostic logic and repair estimate."
+nav_exclude: true
 ---
 
 # 📧 NEW QUALIFIED LEAD: AC Not Cooling (Outdoor Unit Failure Suspected)
