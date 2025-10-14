@@ -9,6 +9,7 @@ permalink: /resources/:title/
 collections:
   resources:
     output: true
+    nav_exclude: true
     permalink: /resources/:path/
 
 sass:
