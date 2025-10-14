@@ -8,10 +8,10 @@ nav_exclude: true
 # 📧 NEW QUALIFIED LEAD: AC Not Cooling (Outdoor Unit Failure Suspected)
 
 ## Customer Contact Information
-**Full Name:** Joe Blow  
+**Full Name:** Harry Smith  
 **Address:** 2345 Joe Lane, Houston, TX 77056  
 **Phone Number:** 817-234-7859  
-**Email Address:** joe@blow.com
+**Email Address:** harry@smith.com
 
 ---
 
