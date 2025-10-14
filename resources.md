@@ -9,7 +9,7 @@ permalink: /resources/
 Learn how an AI-powered **lead qualification chatbot** can transform your home service business. From pre-qualifying leads to delivering polished, actionable reports, this virtual assistant helps you focus on real opportunities, cut wasted trips, and respond faster—all without lifting a phone.
 
 {% for resource in site.resources %}
-  {% unless resource.path contains "/resources/examples/" %}
+  {% unless resource.url contains "/resources/examples/" %}
 ## [{{ resource.title }}]({{ resource.url | relative_url }})
 
 {{ resource.excerpt | markdownify }}
@@ -17,4 +17,6 @@ Learn how an AI-powered **lead qualification chatbot** can transform your home s
 [Read more]({{ resource.url | relative_url }})
 
 ---
+  {% endunless %}
 {% endfor %}
+
