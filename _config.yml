@@ -9,7 +9,7 @@ permalink: /resources/:title/
 collections:
   resources:
     output: true
-    permalink: /resources/:title/
+    permalink: /resources/:path/
 
 sass:
   style: compressed
