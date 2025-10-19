@@ -7,9 +7,6 @@ nav_exclude: true
 
 # ⚡ NEW QUALIFIED LEAD: Kitchen Power Outage (Electrical Fault Suspected)
 
-The AI Lead Qualification Chatbot captures detailed responses from homeowners and delivers fully structured lead reports that help your team identify likely issues before dispatch.  
-This example shows how a **qualified electrical service lead** looks in your inbox.
-
 ---
 
 ## Customer Contact Information
