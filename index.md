@@ -38,7 +38,7 @@ title: Home
         <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> <a href="https://vcrsoft.com/resources/wastedTime/" style="text-decoration: underline; color: #0078d4;">**Cut wasted trips**</a>&nbsp; and avoid unprepared service calls.
     </li>
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
-        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> Receive **polished Job Readiness Reports** with likely diagnosis, estimate, and scheduling intent — ready to act on.
+        <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> <a href="https://vcrsoft.com/resources/jobReadinessEmail/" style="text-decoration: underline; color: #0078d4;">Receive **polished Job Readiness Reports**</a>&nbsp;  with likely diagnosis, estimate, and scheduling intent — ready to act on.
     </li>
     <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
         <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span> Respond faster and improve customer satisfaction — with zero extra effort.
