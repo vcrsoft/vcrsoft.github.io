@@ -55,7 +55,7 @@ nav_exclude: true
 ---
 
 ## Full Diagnostic Transcript
-<pre>
+<pre style="white-space: pre-wrap; word-wrap: break-word;">
 User: leaky bathtub faucet 
 Model: I understand you have a leaky bathtub faucet. To help me understand the problem better, 
   could you tell me where exactly the water is leaking from? Is it dripping from the spout, or is it leaking from the handles? 
