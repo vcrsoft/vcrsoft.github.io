@@ -1,11 +1,11 @@
 ---
 layout: resource
-title: "Qualified Lead Example – HVAC"
-excerpt: "AI-qualified lead email example for an air conditioner not cooling, including diagnostic logic and repair estimate."
+title: "Job Readiness Report – HVAC"
+excerpt: "Example Job Readiness Report for an AC not cooling—showing intake summary, cost estimate, and transcript."
 nav_exclude: true
 ---
 
-# 📧 NEW QUALIFIED LEAD: AC Not Cooling (Outdoor Unit Failure Suspected)
+# ❄️ JOB READINESS REPORT: AC Not Cooling (Outdoor Unit Failure Suspected)
 
 ## Customer Contact Information
 **Full Name:** Harry Smith  
@@ -15,47 +15,31 @@ nav_exclude: true
 
 ---
 
-## Remote Diagnostic Summary
+## Diagnostic Intake Summary
 **Reported Issue:** Thermostat flashing "cool on," but no cold air.
 
 **Key Observations:**
-- Indoor fan runs; heater works.  
-- Outdoor AC unit completely off and silent.  
+- Indoor fan runs; heater works normally.  
+- Outdoor AC unit is completely off and silent.  
 - Breaker checked and reset; no change.  
-- No water overflow or drain clog.
+- No drain clog or water overflow.
 
-**Suspected Cause:** Failed run capacitor, bad contactor, or control wiring issue.  
+**Preliminary Assessment:** Failed run capacitor, bad contactor, or control wiring fault.  
 **Confidence Level:** High
 
 ---
 
-## Preliminary Cost Estimate
-**Estimate Range:** $200–$600  
-*Varies with actual cause confirmed on-site.*
+## Estimated Cost Range
+**Estimate:** $200–$600  
+*Estimate varies based on actual fault confirmed during inspection.*
 
 ---
 
-## Lead Qualification Details
-**Urgency:** Wants service today  
-**Scheduling Preference:** Prefers a call first
+## Readiness Details
+**Scheduling Urgency:** Customer wants service today  
+**Customer Preference:** Prefers a call first to confirm appointment
 
 ---
 
-## Full Diagnostic Transcript
+## Full Chat Transcript
 
-```
-User: My thermostat is flashing "cool on."
-Model: That means cooling is trying to start. Do you feel cold air?
-User: No.
-Model: Is the indoor fan running?
-User: Yes. Heat works fine too.
-Model: Check outdoor unit — fan spinning or off?
-User: It’s off, silent.
-Model: Check AC breaker and reset.
-User: Done, no change.
-Model: Any drain clog or overflow?
-User: No.
-Model: Likely failed run capacitor, contactor, or low-voltage control issue. Needs service. 
-[Contact info: Joe Blow, 2345 Joe, 817-234-7859, joe@blow.com]
-Summary: Outdoor unit not receiving power; electrical fault likely. $200–$600 estimate. Prefers call first.
-```
