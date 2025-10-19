@@ -72,7 +72,7 @@ nav_exclude: true
 ---
 
 ## Full Diagnostic Transcript
-
+<pre>
 User: The electric power to my kitchen (all appliances) is out.
 Model: Have you checked if the kitchen circuit breaker has tripped?
 User: The breaker has not tripped.
@@ -86,3 +86,4 @@ Model: Everything in kitchen dead, breaker not tripped — likely faulty breaker
 [Contact info collected — Joe White, 3456 Joe Lane, 784-345-6798, joe@white.com
 ]
 Model: Summary — full outage on single circuit; probable breaker/panel fault; $150–$450 range. Prefers call first.
+</pre>  
