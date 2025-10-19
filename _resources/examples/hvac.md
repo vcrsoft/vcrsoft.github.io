@@ -71,7 +71,7 @@ nav_exclude: true
 ---
 
 ## Full Diagnostic Transcript
-
+<pre>
 User: My thermostat is flashing "cool on."
 Model: That means cooling is trying to start. Do you feel cold air?
 User: No.
@@ -87,3 +87,4 @@ Model: Likely failed run capacitor, contactor, or low-voltage control issue. Nee
 [Contact info: Joe Blow, 2345 Joe, 817-234-7859, joe@blow.com
 ]
 Summary: Outdoor unit not receiving power; electrical fault likely. $200–$600 estimate. Prefers call first.
+</pre>
