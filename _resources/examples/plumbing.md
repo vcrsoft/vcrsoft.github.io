@@ -55,7 +55,7 @@ nav_exclude: true
 ---
 
 ## Full Diagnostic Transcript
-
+<pre>
 User: leaky bathtub faucet 
 Model: I understand you have a leaky bathtub faucet. To help me understand the problem better, could you tell me where exactly the water is leaking from? Is it dripping from the spout, or is it leaking from the handles? 
 User: spout 
@@ -66,3 +66,4 @@ User: slow drip after it is turned off
 Model: Thank you. A slow drip from a single-handle faucet spout after it's turned off is a classic symptom of a worn or faulty cartridge inside the faucet. The cartridge is responsible for controlling the water flow and temperature, and over time, its seals can wear out, leading to leaks. Based on this, we're likely looking at a cartridge replacement. Now, to provide you with a summary diagnosis and estimate, I'll need some contact information. full name: 
 User: Joe bloke Model: address: User: 2345 joe Model: phone number: User: 871-234-5678 Model: email address: User: joe@bloke.com 
 Model: Summary Diagnosis: Your single-handle bathtub faucet is experiencing a slow drip from the spout after being turned off, which is a common indicator of a worn-out or faulty internal cartridge. The repair will likely involve replacing this cartridge. Rough Estimate: The cost for this type of repair, including parts and labor, typically ranges from $150 to $350. Someone will contact you shortly to schedule an appointment for a visit to confirm the diagnosis and provide a precise quote. Goodbye.
+</pre>
