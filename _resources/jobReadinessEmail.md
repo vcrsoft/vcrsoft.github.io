@@ -14,18 +14,18 @@ Below are three examples showing what these reports look like across different h
 ## 🪠 Plumbing Example
 See how the chatbot prepares a **Job Readiness Report for a leaky bathtub faucet**, summarizing likely causes, required parts, and a cost range to ensure budget alignment.
 
-➡️ [View Plumbing Report →](/resources/jobReadinessEmail/plumbing)
+➡️ [View Plumbing Report →](/resources/examples/plumbing)
 
 ---
 
 ## ⚡ Electrical Example
 Here’s how the chatbot builds a **Job Readiness Report for a full kitchen power outage**, outlining probable electrical issues and urgency indicators.
 
-➡️ [View Electrical Report →](/resources/jobReadinessEmail/electrical)
+➡️ [View Electrical Report →](/resources/examples/electrical)
 
 ---
 
 ## ❄️ HVAC Example
 See how the chatbot captures details for an **“AC not cooling”** call—providing early clues about components to check and readiness data before dispatch.
 
-➡️ [View HVAC Report →](/resources/jobReadinessEmail/hvac)
+➡️ [View HVAC Report →](/resources/examples/hvac)
