@@ -7,10 +7,6 @@ nav_exclude: true
 
 # 📧 NEW QUALIFIED LEAD: Leaky Bathtub Faucet (Moen Cartridge Suspected)
 
-The core purpose of the AI Lead Qualification Chatbot is to filter out low-value inquiries and deliver highly qualified, actionable jobs straight to your inbox. It replaces a tedious initial phone call with a structured digital intake, producing a **polished lead report** that your team can act on immediately.
-
-This article shows you exactly what a **Qualified Lead Email** looks like, so you know what information arrives in your inbox and how it helps you prioritize your workload.
-
 ---
 
 ## Customer Contact Information
