@@ -6,10 +6,6 @@ nav_exclude: true
 ---
 
 # 📧 NEW QUALIFIED LEAD: AC Not Cooling (Outdoor Unit Failure Suspected)
-
-The AI Lead Qualification Chatbot captures key details from customer conversations, filters low-value inquiries, and delivers actionable, high-quality leads to your inbox.  
-This example shows exactly how a **qualified HVAC lead email** looks — complete with intake data, diagnostic logic, and cost range.
-
 ---
 
 ## Customer Contact Information
