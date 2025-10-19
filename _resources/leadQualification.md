@@ -1,31 +1,31 @@
 ---
 layout: resource
-title: "Pre-Qualify Leads and Assess Urgency"
-excerpt: "Learn how AI lead qualification chatbots deliver actionable reports, filter low-value leads, and prioritize ready-to-book jobs."
+title: "Assess Job Readiness with AI"
+excerpt: "See how AI chatbots transform incoming service requests into actionable Job Readiness Reports—highlighting problem summary, cost estimate, and scheduling urgency."
 ---
 
-Landing new service jobs often means dealing with **low-quality leads** or customers who are not ready to act — costing you time and fuel. Customers expect prompt answers and estimates, but assessing every request manually can be inefficient.
+Landing new service jobs often means dealing with **unprepared leads** or customers who don’t provide enough information — costing you time, fuel, and first-time fix opportunities. Customers expect prompt answers, but manually assessing every request is inefficient.
 
-Our AI Lead Qualification Chatbot solves this problem.
+Our AI Job Readiness Chatbot solves this problem.
 
-### The Power of Automated Lead Qualification and Scheduling
+### The Power of Automated Job Readiness Assessment
 
-The bot acts as a tireless, expert intake agent. When a potential customer describes their issue, the chatbot guides them through a structured, diagnostic conversation — collecting essential information **and assessing urgency**.
+The bot acts as a tireless, expert front desk. When a potential customer describes their issue, the chatbot guides them through a structured diagnostic conversation — collecting essential information **and providing early clues about tools, parts, and urgency**.
 
 **This process delivers four key benefits:**
 
-1.  **Accurate Data Collection:** The bot gathers precise details on the problem, the customer’s situation, and any prior troubleshooting steps.  
-2.  **Polished Lead Reports:** You receive a professional, easy-to-read report with a summary and full chat log, including the customer’s contact info.  
-3.  **Preliminary Estimates & Lead Qualification:** Based on the collected data, the bot can generate a ballpark estimate and identify serious, actionable leads — so every lead in your inbox is qualified and ready to act on.  
-4.  **Scheduling/Intent Assessment:** The bot asks when the customer wants service — today, this week, or later — allowing you to prioritize leads by urgency and readiness to book.
+1.  **Accurate Intake Data:** The bot gathers precise details on the problem, customer context, and any prior troubleshooting.  
+2.  **Job Readiness Reports:** You receive a professional, easy-to-read report summarizing the issue, likely tools/parts needed, and full transcript of the conversation.  
+3.  **Preliminary Estimates & Readiness Insight:** Based on collected information, the bot provides a wide-range cost estimate and flags the urgency/intent to schedule.  
+4.  **Scheduling & Urgency Assessment:** Customers indicate when they want service — today, this week, or later — so you can prioritize jobs by readiness and first-time fix probability.
 
 ### Business Advantages
 
-For home service pros, this approach saves time and increases revenue:
+For home service pros, this approach saves time and increases efficiency:
 
-* **Eliminate Wasted Trips:** Only visit customers with qualified, actionable jobs.  
-* **Focus on Billable Work:** Technicians spend less time on low-value diagnostic calls.  
-* **Prioritize Ready-to-Book Jobs:** Know which leads are urgent and schedule accordingly.  
-* **Increase Conversion Rates:** Delivering instant insights, estimates, and urgency improves your chances of closing sales quickly.
+* **Reduce Wasted Trips:** Technicians arrive prepared, lowering the risk of second visits.  
+* **Optimize Technician Time:** Less time spent chasing unclear or unprepared leads.  
+* **Prioritize Ready-to-Book Jobs:** Know which jobs are urgent and schedule effectively.  
+* **Improve First-Fix Rates:** Early diagnostics and cost estimates help your team bring the right tools and parts for a successful first visit.
 
-The AI Lead Qualification Chatbot ensures your effort is spent on the right jobs — giving you faster, more efficient, and more profitable service.
+The AI Job Readiness Chatbot ensures your effort is focused on the right jobs — enabling faster, more efficient, and more profitable service.
