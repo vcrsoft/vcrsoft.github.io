@@ -1,25 +1,26 @@
 ---
 layout: resource
-title: "Qualified Lead Example – Electrical"
-excerpt: "AI-qualified lead email example for a kitchen power outage—showing structured intake, diagnosis, and transcript."
+title: "Diagnostic Intake Example – Electrical (Commercial)"
+excerpt: "AI-generated diagnostic report example for a restaurant kitchen power outage — showing structured intake, assessment, and transcript."
 nav_exclude: true
 ---
 
-# ⚡ NEW QUALIFIED LEAD: Kitchen Power Outage (Electrical Fault Suspected)
+# ⚡ NEW DIAGNOSTIC REPORT: Restaurant Kitchen Power Outage
 
 ---
 
-## Customer Contact Information
+## Client Information
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tr style="background-color: #f0f8ff;">
     <th style="text-align: left;">Field</th>
     <th style="text-align: left;">Detail</th>
   </tr>
-  <tr><td><strong>Full Name</strong></td><td>Joe White</td></tr>
-  <tr><td><strong>Address</strong></td><td>3456 Joe Lane, Chicago, IL 60131</td></tr>
+  <tr><td><strong>Business Name</strong></td><td>Joe’s Diner</td></tr>
+  <tr><td><strong>Location</strong></td><td>3456 Joe Lane, Chicago, IL 60131</td></tr>
+  <tr><td><strong>Contact Person</strong></td><td>Joe White, Manager</td></tr>
   <tr><td><strong>Phone Number</strong></td><td>784-345-6798</td></tr>
-  <tr><td><strong>Email Address</strong></td><td>joe@white.com</td></tr>
+  <tr><td><strong>Email Address</strong></td><td>joe@joesdiner.com</td></tr>
 </table>
 
 ---
@@ -31,59 +32,46 @@ nav_exclude: true
     <th style="text-align: left;">Field</th>
     <th style="text-align: left;">Detail</th>
   </tr>
-  <tr><td><strong>Reported Issue</strong></td><td>Complete power outage in kitchen—affecting all outlets, lights, and appliances.</td></tr>
+  <tr><td><strong>Reported Issue</strong></td><td>Complete power loss in kitchen area — all prep stations, outlets, and ceiling lights affected.</td></tr>
   <tr><td><strong>Key Observations</strong></td><td>
     <ul>
       <li>Kitchen circuit breaker has <strong>not tripped</strong>.</li>
-      <li>Other lights and outlets in the house are working normally.</li>
-      <li>Resetting GFI outlets did not restore power.</li>
-      <li>No loud pop or appliance change before outage.</li>
+      <li>Dining area and office circuits remain powered.</li>
+      <li>Resetting GFCI outlets did not restore power.</li>
+      <li>No burnt smell, sparks, or equipment failure reported before outage.</li>
     </ul>
   </td></tr>
-  <tr><td><strong>Preliminary Assessment</strong></td><td>Faulty circuit breaker not tripping, loose panel connection, or open circuit.</td></tr>
+  <tr><td><strong>Preliminary Assessment</strong></td><td>Likely fault in the panel feed or a failing breaker not tripping properly. Possible neutral disconnect or loose lug connection.</td></tr>
   <tr><td><strong>Confidence Level</strong></td><td>High</td></tr>
 </table>
 
 ---
 
-## Preliminary Cost Estimate
-
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <tr style="background-color: #f0f8ff;">
-    <th style="text-align: left;">Item</th>
-    <th style="text-align: left;">Detail</th>
-  </tr>
-  <tr><td><strong>Estimated Range</strong></td><td><strong>$150–$450</strong> (diagnosis and repair for a faulty breaker, panel connection, or open circuit)</td></tr>
-</table>
-
----
-
-## Lead Qualification Details
+## Scheduling Information
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tr style="background-color: #f0f8ff;">
     <th style="text-align: left;">Field</th>
     <th style="text-align: left;">Detail</th>
   </tr>
-  <tr><td><strong>Scheduling Urgency</strong></td><td>Customer wants service today</td></tr>
-  <tr><td><strong>Customer Preference</strong></td><td>Prefers a call first to confirm appointment</td></tr>
+  <tr><td><strong>Urgency</strong></td><td>High — power loss affects kitchen operations</td></tr>
+  <tr><td><strong>Access Availability</strong></td><td>Kitchen access available today after 2 PM; main electrical room key at front desk</td></tr>
 </table>
 
 ---
 
-## Full Diagnostic Transcript
+## Diagnostic Transcript
 <pre>
-User: The electric power to my kitchen (all appliances) is out.
-Model: Have you checked if the kitchen circuit breaker has tripped?
-User: The breaker has not tripped.
-Model: Are other lights/outlets working?
-User: Just the kitchen is out.
-Model: Try pressing RESET on GFI outlets?
-User: Yes, didn’t help.
-Model: Any loud pop or flickering before outage?
-User: No.
-Model: Everything in kitchen dead, breaker not tripped — likely faulty breaker or panel connection.
-[Contact info collected — Joe White, 3456 Joe Lane, 784-345-6798, joe@white.com
-]
-Model: Summary — full outage on single circuit; probable breaker/panel fault; $150–$450 range. Prefers call first.
-</pre>  
+User: The kitchen power is completely out — no outlets or lights working.
+Model: Has the kitchen circuit breaker tripped?
+User: No, breaker looks fine.
+Model: Are other areas of the building affected?
+User: Only the kitchen.
+Model: Tried resetting the GFCI outlets?
+User: Yes, no change.
+Model: Any burning smell or pop before outage?
+User: None.
+Model: Understood. It’s likely a breaker or panel connection fault. Please confirm access availability.
+User: Kitchen accessible after 2 PM. Main electrical room key is at the front desk.
+Model: Got it. Preparing report for your service contractor.
+</pre>
