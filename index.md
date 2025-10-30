@@ -38,19 +38,27 @@ title: Home
 <ul style="list-style-type: none; padding-left: 0;">
   <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
     <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span>
-    Capture accurate fault details directly from the client, before the call.
+    <a href="/resources/diagnosticIntake" style="text-decoration: none; color: inherit;">
+      Capture accurate fault details directly from the client, before the call.
+    </a>
   </li>
   <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
     <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span>
-    Reduce diagnostic phone time and technician uncertainty.
+    <a href="/resources/wastedTime" style="text-decoration: none; color: inherit;">
+      Reduce diagnostic phone time and technician uncertainty.
+    </a>
   </li>
   <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
     <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span>
-    Standardize incoming problem reports — all in a consistent email format.
+    <a href="/resources/diagnosticIntakeEmail" style="text-decoration: none; color: inherit;">
+      Standardize incoming problem reports — all in a consistent email format.
+    </a>
   </li>
   <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
     <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span>
-    Keep technicians informed and prepared — before arriving on-site.
+    <a href="/resources/diagnosticIntake" style="text-decoration: none; color: inherit;">
+      Keep technicians informed and prepared — before arriving on-site.
+    </a>
   </li>
 </ul>
 
