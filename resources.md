@@ -4,9 +4,12 @@ title: Resources
 permalink: /resources/
 ---
 
-# AI Lead Qualification for Home Service Pros
+# AI Diagnostic Automation for Commercial Service Pros
 
-Learn how an AI-powered **lead qualification chatbot** can transform your home service business. From pre-qualifying leads to delivering polished, actionable reports, this virtual assistant helps you focus on real opportunities, cut wasted trips, and respond faster—all without lifting a phone.
+Explore how an AI-powered **diagnostic chatbot** can streamline service intake for your commercial clients — restaurants, apartments, hotels, or offices.  
+Instead of phone calls or vague service requests, your chatbot gathers detailed fault information automatically and delivers a structured diagnostic report to your inbox.
+
+This approach helps your team prepare better, eliminate wasted diagnostic time, and ensure technicians arrive on-site ready to work.
 
 {% for resource in site.resources %}
   {% unless resource.url contains "/resources/examples/" %}
@@ -19,4 +22,3 @@ Learn how an AI-powered **lead qualification chatbot** can transform your home s
 ---
   {% endunless %}
 {% endfor %}
-
