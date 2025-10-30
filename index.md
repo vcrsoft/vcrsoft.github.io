@@ -65,7 +65,6 @@ title: Home
 <h3 style="font-size: 1.5em; color: #333; margin-top: 2em;">See It in Action</h3>
 
 <p style="font-size: 1.15em; line-height: 1.5;">
-  Watch a quick <a href="https://youtu.be/chtCykQpBmc" target="_blank" style="color: #0078d4; text-decoration: underline;">demo video</a> showing how a commercial client uses the bot to report an equipment issue.  
-  <br><br>
+  
   If you'd like to test it with your own business clients, <strong><a href="contact" style="text-decoration: underline; color: #0078d4;">reach out through the contact form</a></strong>.
 </p>
