@@ -1,24 +1,26 @@
 ---
 layout: resource
-title: "Qualified Lead Example – HVAC"
-excerpt: "AI-qualified lead email example for an air conditioner not cooling, including diagnostic logic and repair estimate."
+title: "Qualified Lead Example – HVAC (Commercial)"
+excerpt: "AI-qualified lead email example for a rooftop unit not cooling in an office suite—showing structured intake, diagnosis, and transcript."
 nav_exclude: true
 ---
 
-# 📧 NEW QUALIFIED LEAD: AC Not Cooling (Outdoor Unit Failure Suspected)
+# 📧 NEW QUALIFIED LEAD: Rooftop Unit Not Cooling (Compressor or Contactor Issue Suspected)
+
 ---
 
-## Customer Contact Information
+## Client Information
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tr style="background-color: #f0f8ff;">
     <th style="text-align: left;">Field</th>
     <th style="text-align: left;">Detail</th>
   </tr>
-  <tr><td><strong>Full Name</strong></td><td>Harry Smith</td></tr>
-  <tr><td><strong>Address</strong></td><td>2345 Joe Lane, Houston, TX 77056</td></tr>
-  <tr><td><strong>Phone Number</strong></td><td>817-234-7859</td></tr>
-  <tr><td><strong>Email Address</strong></td><td>harry@smith.com</td></tr>
+  <tr><td><strong>Business Name</strong></td><td>Metro Office Suites</td></tr>
+  <tr><td><strong>Location</strong></td><td>Suite 210, 4901 Westheimer Rd, Houston, TX 77056</td></tr>
+  <tr><td><strong>Contact Person</strong></td><td>Harry Smith, Facility Manager</td></tr>
+  <tr><td><strong>Phone</strong></td><td>832-555-9832</td></tr>
+  <tr><td><strong>Email</strong></td><td>harry.smith@metrooffice.com</td></tr>
 </table>
 
 ---
@@ -30,61 +32,48 @@ nav_exclude: true
     <th style="text-align: left;">Field</th>
     <th style="text-align: left;">Detail</th>
   </tr>
-  <tr><td><strong>Reported Issue</strong></td><td>Thermostat flashing “cool on,” but no cold air.</td></tr>
+  <tr><td><strong>Reported Issue</strong></td><td>One rooftop unit not cooling — thermostat indicates “cooling,” but no cold air in affected zone.</td></tr>
   <tr><td><strong>Key Observations</strong></td><td>
     <ul>
-      <li>Indoor fan runs; heater works normally.</li>
-      <li>Outdoor AC unit is completely off and silent.</li>
-      <li>Breaker checked and reset; no change.</li>
-      <li>No drain clog or water overflow.</li>
+      <li>Indoor blower is operational.</li>
+      <li>Compressor/condenser fan not running on rooftop unit.</li>
+      <li>Circuit breaker and disconnect checked — both on.</li>
+      <li>No standing water or drain alarm triggered.</li>
     </ul>
   </td></tr>
-  <tr><td><strong>Preliminary Assessment</strong></td><td>Failed run capacitor, bad contactor, or control wiring fault.</td></tr>
+  <tr><td><strong>Preliminary Assessment</strong></td><td>Probable failed contactor, control board fault, or compressor start capacitor failure.</td></tr>
   <tr><td><strong>Confidence Level</strong></td><td>High</td></tr>
 </table>
 
 ---
 
-## Preliminary Cost Estimate
-
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <tr style="background-color: #f0f8ff;">
-    <th style="text-align: left;">Item</th>
-    <th style="text-align: left;">Detail</th>
-  </tr>
-  <tr><td><strong>Estimated Range</strong></td><td><strong>$200–$600</strong> (varies with confirmed cause during inspection)</td></tr>
-</table>
-
----
-
-## Lead Qualification Details
+## Service Coordination Details
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tr style="background-color: #f0f8ff;">
     <th style="text-align: left;">Field</th>
     <th style="text-align: left;">Detail</th>
   </tr>
-  <tr><td><strong>Urgency</strong></td><td>Wants service today</td></tr>
-  <tr><td><strong>Scheduling Preference</strong></td><td>Prefers a call first</td></tr>
+  <tr><td><strong>Access Requirements</strong></td><td>Roof access via service ladder behind mechanical room.</td></tr>
+  <tr><td><strong>Urgency</strong></td><td>Moderate — cooling needed during business hours, but other zones unaffected.</td></tr>
+  <tr><td><strong>Preferred Scheduling</strong></td><td>Morning service window (before 10:00 AM)</td></tr>
+  <tr><td><strong>Contact Preference</strong></td><td>Email confirmation preferred before dispatch.</td></tr>
 </table>
 
 ---
 
 ## Full Diagnostic Transcript
 <pre>
-User: My thermostat is flashing "cool on."
-Model: That means cooling is trying to start. Do you feel cold air?
-User: No.
-Model: Is the indoor fan running?
-User: Yes. Heat works fine too.
-Model: Check outdoor unit — fan spinning or off?
-User: It’s off, silent.
-Model: Check AC breaker and reset.
-User: Done, no change.
-Model: Any drain clog or overflow?
-User: No.
-Model: Likely failed run capacitor, contactor, or low-voltage control issue. Needs service.
-[Contact info: Joe Blow, 2345 Joe, 817-234-7859, joe@blow.com
-]
-Summary: Outdoor unit not receiving power; electrical fault likely. $200–$600 estimate. Prefers call first.
+User: One of our rooftop AC units isn’t cooling. The thermostat shows “cooling,” but no cold air.
+Model: Is the indoor blower working in that zone?
+User: Yes, airflow is fine, but it’s warm.
+Model: Can you check if the outdoor unit fan or compressor is running on the roof?
+User: No, the fan and compressor are both off.
+Model: Breaker and disconnect switched on?
+User: Yes, both are on.
+Model: Any drain alarms or overflow lights?
+User: No, nothing like that.
+Model: Likely control or contactor issue on rooftop unit — could also be a failed start capacitor or control board fault.
+[Client info collected — Metro Office Suites, Suite 210, 4901 Westheimer Rd, 832-555-9832, harry.smith@metrooffice.com]
+Model: Summary — rooftop unit non-operational, probable control or contactor fault; service requested for next business morning.
 </pre>
