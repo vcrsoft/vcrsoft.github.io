@@ -75,5 +75,5 @@ Model: Any drain alarms or overflow lights?
 User: No, nothing like that.
 Model: Likely control or contactor issue on rooftop unit — could also be a failed start capacitor or control board fault.
 [Client info collected — Metro Office Suites, Suite 210, 4901 Westheimer Rd, 832-555-9832, harry.smith@metrooffice.com]
-Model: Summary — rooftop unit non-operational, probable control or contactor fault; service requested for next business morning.
+Model: Summary — rooftop unit non-operational, probable control or contactor fault.
 </pre>
