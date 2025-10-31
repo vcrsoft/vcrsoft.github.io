@@ -39,7 +39,7 @@ title: Home
   <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
     <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">&#10003;</span>
     <a href="/resources/diagnosticIntake" style="text-decoration: none; color: inherit;">
-      Capture accurate fault details directly from the client, before the call.
+      Capture accurate fault details directly from the client, before creating the service call.
     </a>
   </li>
   <li style="margin-bottom: 0.75em; padding-left: 1.5em; text-indent: -1.5em;">
