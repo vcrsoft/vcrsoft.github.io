@@ -17,58 +17,88 @@ Turn Customer Service Calls into <span style="color: #0078d4;">Dispatch-Ready Jo
 
 <div style="border-left: 5px solid #0078d4; background-color: #f0f8ff; padding: 1em 1.5em; margin: 1.5em 0;">
   <p style="font-size: 1.15em; line-height: 1.5;">
-    This system replaces the first 5–15 minutes of back-and-forth phone intake.
+    This system replaces the first 5–15 minutes of phone intake and back-and-forth clarification.
     <br><br>
-    Instead of incomplete descriptions from site managers or staff, you receive a structured diagnostic report before dispatch — including symptoms, context, and site details.
-    <br><br>
-    Your technicians arrive knowing what they are walking into.
+    Instead of incomplete descriptions, you receive a structured diagnostic report before dispatch.
   </p>
 </div>
 
 <h3 style="font-size: 1.5em; color: #333; border-bottom: 2px solid #eee; padding-bottom: 0.3em;">
-What This Does
+How It Works
 </h3>
 
 <p style="line-height: 1.5;">
-Each contractor gets a simple branded intake link they can send to their customers.
+Each contractor gets a simple branded intake link they can send to customers.
 <br><br>
-When a service request comes in, the system guides the customer through structured questions about the issue, equipment, and conditions.
+The system guides the customer through structured troubleshooting questions and collects key job context.
 <br><br>
-You receive a <strong>clean diagnostic intake report by email</strong> that is ready for dispatch or technician review — no phone clarification required.
+You receive a <strong>structured diagnostic report by email</strong> ready for dispatch or technician review.
 </p>
 
-<img src="/assets/images/image.jpg" alt="Facility manager using diagnostic intake system" style="max-width: 100%; height: auto; margin: 1em 0;">
+<!-- ================= SVG DIAGRAM ================= -->
+<div style="margin: 2em 0; text-align: center;">
+
+<svg width="100%" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    .box { fill: #f0f8ff; stroke: #0078d4; stroke-width: 2; rx: 10; ry: 10; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; fill: #333; }
+    .arrow { stroke: #0078d4; stroke-width: 2; marker-end: url(#arrowhead); }
+    .label { font-weight: bold; fill: #0078d4; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0078d4" />
+    </marker>
+  </defs>
+
+  <!-- Boxes -->
+  <rect x="20" y="70" width="160" height="80" class="box"/>
+  <text x="100" y="100" text-anchor="middle" class="text">
+    Customer<br/>Service Request
+  </text>
+
+  <rect x="230" y="70" width="180" height="80" class="box"/>
+  <text x="320" y="95" text-anchor="middle" class="text">
+    AI Intake Chat<br/>
+    (Branded Link)
+  </text>
+
+  <rect x="460" y="70" width="200" height="80" class="box"/>
+  <text x="560" y="95" text-anchor="middle" class="text">
+    Structured Diagnostic<br/>Report (Email)
+  </text>
+
+  <rect x="720" y="70" width="160" height="80" class="box"/>
+  <text x="800" y="100" text-anchor="middle" class="text">
+    Contractor<br/>Dispatch Team
+  </text>
+
+  <!-- Arrows -->
+  <line x1="180" y1="110" x2="230" y2="110" class="arrow"/>
+  <line x1="410" y1="110" x2="460" y2="110" class="arrow"/>
+  <line x1="660" y1="110" x2="720" y2="110" class="arrow"/>
+
+</svg>
+
+</div>
+<!-- ================= END SVG ================= -->
 
 <h3 style="font-size: 1.5em; color: #333; margin-top: 1.5em;">
 What Changes Operationally
 </h3>
 
 <ul style="list-style-type: none; padding-left: 0;">
-  <li style="margin-bottom: 0.75em;">
-    <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">✓</span>
-    Dispatch receives structured job context before the truck is sent out
-  </li>
-  <li style="margin-bottom: 0.75em;">
-    <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">✓</span>
-    Fewer clarification calls between office staff and customers
-  </li>
-  <li style="margin-bottom: 0.75em;">
-    <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">✓</span>
-    Technicians arrive with better expectations of issue severity and context
-  </li>
-  <li style="margin-bottom: 0.75em;">
-    <span style="color: #0078d4; font-weight: bold; margin-right: 0.5em;">✓</span>
-    Standardized intake across all service requests and clients
-  </li>
+  <li style="margin-bottom: 0.75em;">✓ Structured job context before dispatch</li>
+  <li style="margin-bottom: 0.75em;">✓ Fewer clarification calls with customers</li>
+  <li style="margin-bottom: 0.75em;">✓ Better prepared technicians on arrival</li>
+  <li style="margin-bottom: 0.75em;">✓ Standardized intake across all service requests</li>
 </ul>
 
 <h3 style="font-size: 1.5em; color: #333; margin-top: 2em;">
 See Examples
 </h3>
-
-<p style="font-size: 1.15em; line-height: 1.5;">
-Real diagnostic intake reports generated by the system:
-</p>
 
 <p>
 <a href="/resources/diagnosticIntake" style="color: #0078d4; text-decoration: underline;">How it works →</a><br>
@@ -79,7 +109,6 @@ Real diagnostic intake reports generated by the system:
 Try It
 </h3>
 
-<p style="font-size: 1.15em; line-height: 1.5;">
-If you'd like to test it with your own service workflow, 
-<strong><a href="contact" style="color: #0078d4;">use the contact form</a></strong>.
+<p>
+<strong><a href="contact" style="color: #0078d4;">Contact form →</a></strong>
 </p>
