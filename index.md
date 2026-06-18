@@ -37,7 +37,7 @@ When a service request comes in, the system guides the customer through structur
 You receive a <strong>clean diagnostic intake report by email</strong> that is ready for dispatch or technician review — no phone clarification required.
 </p>
 
-<img src="/assets/images/image.jpg" alt="Facility manager using diagnostic intake system" style="max-width: 100%; height: auto; margin: 1em 0;">
+<img src="/assets/images/ChatGPT Image Jun 18, 2026, 05_25_23 PM.png" alt="Depiction" style="max-width: 100%; height: auto; margin: 1em 0;">
 
 <h3 style="font-size: 1.5em; color: #333; margin-top: 1.5em;">
 What Changes Operationally
