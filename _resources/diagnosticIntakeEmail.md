@@ -1,6 +1,6 @@
 ---
 layout: resource
-title: "Missed Details on Commercial Service Calls"
+title: "Missed Details on Commercial Service Calls (Example Reports)"
 excerpt: "See examples of structured Diagnostic Intake reports that help technicians arrive with better context before dispatch."
 ---
 
