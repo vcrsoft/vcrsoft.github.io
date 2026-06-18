@@ -1,11 +1,11 @@
 ---
 layout: resource
 title: "Diagnostic Intake Example – HVAC (Commercial)"
-excerpt: "AI-generated diagnostic intake example for a rooftop unit not cooling in an office suite — showing structured intake, assessment, and transcript."
+excerpt: "Example of a structured diagnostic intake report for a commercial rooftop HVAC unit not cooling, showing pre-dispatch information captured from customer intake."
 nav_exclude: true
 ---
 
-# 📧 NEW DIAGNOSTIC INTAKE: Rooftop Unit Not Cooling (Compressor or Contactor Issue Suspected)
+# ❄️ Diagnostic Intake Report: Rooftop Unit Not Cooling
 
 ---
 
@@ -25,23 +25,23 @@ nav_exclude: true
 
 ---
 
-## Diagnostic Summary
+## Report Summary
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tr style="background-color: #f0f8ff;">
     <th style="text-align: left;">Field</th>
     <th style="text-align: left;">Detail</th>
   </tr>
-  <tr><td><strong>Reported Issue</strong></td><td>One rooftop unit not cooling — thermostat indicates “cooling,” but no cold air in the affected zone.</td></tr>
+  <tr><td><strong>Reported Issue</strong></td><td>Rooftop HVAC unit not cooling despite thermostat calling for cooling.</td></tr>
   <tr><td><strong>Key Observations</strong></td><td>
     <ul>
-      <li>Indoor blower is operating normally.</li>
-      <li>Outdoor compressor/condenser fan is not running.</li>
-      <li>Breaker and disconnect have been checked and are on.</li>
-      <li>No drain alarms, standing water, or other fault indicators reported.</li>
+      <li>Indoor blower operating normally.</li>
+      <li>Outdoor compressor and condenser fan not running.</li>
+      <li>Breaker and disconnect verified as on.</li>
+      <li>No alarms, leaks, or recent maintenance issues reported.</li>
     </ul>
   </td></tr>
-  <tr><td><strong>Preliminary Assessment</strong></td><td>Probable failed contactor, control board fault, or compressor start capacitor issue.</td></tr>
+  <tr><td><strong>Preliminary Assessment</strong></td><td>Likely failed contactor, start capacitor issue, or control board fault preventing compressor engagement.</td></tr>
   <tr><td><strong>Confidence Level</strong></td><td>High</td></tr>
 </table>
 
@@ -54,26 +54,27 @@ nav_exclude: true
     <th style="text-align: left;">Field</th>
     <th style="text-align: left;">Detail</th>
   </tr>
-  <tr><td><strong>Access Requirements</strong></td><td>Roof access via service ladder behind mechanical room. Technician badge required at reception.</td></tr>
-  <tr><td><strong>Contact Preference</strong></td><td>Email confirmation preferred before dispatch.</td></tr>
+  <tr><td><strong>Access</strong></td><td>Roof access via service ladder behind mechanical room. Facility badge required at reception.</td></tr>
+  <tr><td><strong>Preferred Contact</strong></td><td>Email confirmation prior to dispatch preferred; phone for urgent coordination.</td></tr>
 </table>
 
 ---
 
-## Diagnostic Transcript
+## Intake Conversation Log
+
 <pre>
-User: One of our rooftop AC units isn’t cooling. The thermostat shows “cooling,” but the zone is warm.
-Model: Is the indoor blower running in that zone?
-User: Yes, the blower is running.
-Model: Can you check if the outdoor unit fan or compressor is operating?
-User: No, the fan and compressor are both off.
-Model: Has the breaker and the outdoor disconnect been checked?
-User: Yes, both are on.
-Model: Any drain alarms, water on the roof, or recent maintenance?
-User: No alarms; coils were cleaned about six months ago.
-Model: Understood. Preliminary assessment: likely contactor or control board failure, or a failed start capacitor.
-Model: Please provide your business name and site location for the report.
-User: Metro Office Suites, Suite 210, 4901 Westheimer Rd.
-Model: Contact is Harry Smith, facility manager.
-Model: Thank you — preparing the diagnostic intake for your service contractor. Goodbye.
+Customer: One of our rooftop AC units is not cooling. Thermostat shows cooling but the space is warm.
+System: Is the indoor blower running in that zone?
+Customer: Yes, blower is running.
+System: Is the outdoor condenser fan or compressor running?
+Customer: No, both are off.
+System: Have the breaker and disconnect been checked?
+Customer: Yes, both are on.
+System: Any alarms, leaks, or recent maintenance?
+Customer: No issues reported. Unit was serviced months ago.
+System: Understood. Likely issue is a failed contactor, capacitor, or control board preventing compressor startup.
+System: Capturing business and contact details for structured report.
+Customer: Metro Office Suites, Suite 210, 4901 Westheimer Rd, Houston.
+System: Contact confirmed: Harry Smith, Facility Manager.
+System: Intake complete. Preparing report for service technician.
 </pre>
