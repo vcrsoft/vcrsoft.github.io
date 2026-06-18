@@ -30,7 +30,7 @@ What This Does
 </h3>
 
 <p style="line-height: 1.5;">
-Each contractor gets a simple branded intake link they can send to their customers.
+You get a simple branded intake link you can send to your customers.
 <br><br>
 When a service request comes in, the system guides the customer through structured questions about the issue, equipment, and conditions.
 <br><br>
