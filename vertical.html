@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Compare Business Proposals | ProposalCompare</title>
+    <meta id="meta-desc" name="description" content="Compare vendor proposals with AI.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">ProposalCompare</a>
+        <a href="https://propcompare.pythonanywhere.com" class="nav-cta">Launch App ($99)</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 id="vertical-heading">Compare Vendor Proposals</h1>
+            <p id="vertical-subtext">Upload multiple bids and evaluate relative merits instantly.</p>
+            <div class="cta-group">
+                <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Upload & Compare Now</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>What Vendors Leave Out</h3>
+                <p id="feature-1">Identify hidden exclusions, vague warranties, or missing line items unique to this type of project.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Targeted Questions</h3>
+                <p id="feature-2">Get specific questions designed to extract clarification from competing bidders.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Unbiased Feature Matrix</h3>
+                <p id="feature-3">View specifications side-by-side without arbitrary scores or vendor favoritism.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 VCRSoft / ProposalCompare. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple dynamic router script to change text based on query string parameters for SEO/UX focus
+        const params = new URLSearchParams(window.location.search);
+        const type = params.get('type') || 'general';
+
+        const contentMap = {
+            hvac: {
+                title: "Compare HVAC Replacement Proposals | ProposalCompare",
+                desc: "Compare commercial and residential HVAC vendor bids. Uncover missing scope, equipment specification gaps, and maintenance omissions.",
+                heading: "Compare HVAC Replacement Proposals",
+                subtext: "Easily evaluate efficiency ratings, warranties, labor scope, and hidden exclusions between competing contractor bids."
+            },
+            solar: {
+                title: "Compare Commercial Solar Proposals | ProposalCompare",
+                desc: "Analyze commercial solar panel bids side-by-side. Compare degradation rates, inverter warranties, and production estimates.",
+                heading: "Compare Commercial Solar Bids",
+                subtext: "Break down complex solar proposals to analyze financing, equipment tier quality, and guaranteed output metrics."
+            },
+            roofing: {
+                title: "Compare Roofing Contractor Proposals | ProposalCompare",
+                desc: "Review competing roofing estimates. Spot material grade differences, tear-off exclusions, and warranty limitations.",
+                heading: "Compare Roofing Proposals",
+                subtext: "Side-by-side analysis of membrane specs, insulation values, workmanship guarantees, and disposal fees."
+            },
+            software: {
+                title: "Compare SaaS & Technology Vendor Proposals | ProposalCompare",
+                desc: "Evaluate software vendor quotes, custom development statements of work, and hidden implementation fees.",
+                heading: "Compare Tech & Software Bids",
+                subtext: "Unpack licensing tiers, implementation scope gaps, and service-level agreement conditions across vendors."
+            },
+            construction: {
+                title: "Compare Construction Bids & General Contractor Proposals",
+                desc: "Analyze contractor estimates, allowance breakdowns, and payment milestones.",
+                heading: "Compare Construction Proposals",
+                subtext: "Find discrepancies in material allowances, contingency funds, and sub-contractor inclusions."
+            },
+            equipment: {
+                title: "Compare Heavy Equipment Vendor Proposals",
+                desc: "Evaluate machinery quotes, financing options, maintenance packages, and delivery terms.",
+                heading: "Compare Equipment Vendor Bids",
+                subtext: "Direct comparison of machine specifications, attachments, parts availability, and warranty terms."
+            }
+        };
+
+        const currentData = contentMap[type] || contentMap.hvac;
+
+        document.getElementById('page-title').innerText = currentData.title;
+        document.getElementById('meta-desc').setAttribute('content', currentData.desc);
+        document.getElementById('vertical-heading').innerText = currentData.heading;
+        document.getElementById('vertical-subtext').innerText = currentData.subtext;
+    </script>
+
+</body>
+</html>
