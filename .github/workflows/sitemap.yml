@@ -1,0 +1,30 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches:
+      - main # Or 'master' depending on your default branch
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # This automated community action crawls your HTML files and builds the sitemap
+      - name: Generate the sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: 'https://vcrsoft.com/'
+          sitemap-format: 'xml'
+          include-html: true
+
+      # Automatically commits the updated sitemap.xml back to your repository
+      - name: Commit and push sitemap if it changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Automatic sitemap update'
+          file_pattern: 'sitemap.xml'
