@@ -23,6 +23,11 @@
             </div>
         </section>
 
+        <!-- SEO Rich Context Block -->
+        <section class="seo-context-section" style="max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; text-align: left;">
+            <p id="vertical-seo-intro" style="font-size: 1.1rem; line-height: 1.6; color: #444;"></p>
+        </section>
+
         <section class="features">
             <div class="feature-card">
                 <h3>What Vendors Leave Out</h3>
@@ -44,55 +49,69 @@
     </footer>
 
     <script>
-        // Simple dynamic router script to change text based on query string parameters for SEO/UX focus
+        // Enhanced dynamic router script with deep SEO keyword content mappings
         const params = new URLSearchParams(window.location.search);
         const type = params.get('type') || 'general';
 
         const contentMap = {
             hvac: {
-                title: "Compare HVAC Replacement Proposals | ProposalCompare",
-                desc: "Compare commercial and residential HVAC vendor bids. Uncover missing scope, equipment specification gaps, and maintenance omissions.",
+                title: "Compare HVAC Replacement Proposals & Contractor Bids | ProposalCompare",
+                desc: "Compare commercial and residential HVAC vendor bids. Uncover missing scope, equipment specification gaps, SEER2 ratings, and maintenance omissions.",
                 heading: "Compare HVAC Replacement Proposals",
-                subtext: "Easily evaluate efficiency ratings, warranties, labor scope, and hidden exclusions between competing contractor bids."
+                subtext: "Easily evaluate efficiency ratings, SEER2 specs, equipment tiers, labor scope, and hidden exclusions between competing contractor bids.",
+                seoIntro: "Commercial and industrial HVAC replacement quotes frequently mask hidden costs like crane rentals, electrical panel upgrades, duct modification, refrigerant line sizing, and municipal permit fees. Our decision engine breaks down competing contractor estimates side-by-side, exposing scope gaps and letting you compare manufacturer warranties and labor commitments transparently."
             },
             solar: {
-                title: "Compare Commercial Solar Proposals | ProposalCompare",
-                desc: "Analyze commercial solar panel bids side-by-side. Compare degradation rates, inverter warranties, and production estimates.",
+                title: "Compare Commercial Solar Proposals & Bids | ProposalCompare",
+                desc: "Analyze commercial solar panel bids side-by-side. Compare degradation rates, inverter warranties, tier-1 equipment quality, and production estimates.",
                 heading: "Compare Commercial Solar Bids",
-                subtext: "Break down complex solar proposals to analyze financing, equipment tier quality, and guaranteed output metrics."
+                subtext: "Break down complex solar proposals to analyze PPA vs. cash financing, equipment tier quality, panel degradation, and guaranteed output metrics.",
+                seoIntro: "Evaluating commercial solar array proposals requires navigating complex financing structures, inverter efficiency curves, tier-1 photovoltaic module specifications, and long-term production guarantees. Use ProposalCompare to align metrics across competing solar developers and spot buried operation and maintenance (O&M) cost exclusions."
             },
             roofing: {
-                title: "Compare Roofing Contractor Proposals | ProposalCompare",
-                desc: "Review competing roofing estimates. Spot material grade differences, tear-off exclusions, and warranty limitations.",
+                title: "Compare Roofing Contractor Proposals & Estimates | ProposalCompare",
+                desc: "Review competing roofing estimates. Spot material grade differences, TPO/EPDM membrane specs, tear-off exclusions, and warranty limitations.",
                 heading: "Compare Roofing Proposals",
-                subtext: "Side-by-side analysis of membrane specs, insulation values, workmanship guarantees, and disposal fees."
+                subtext: "Side-by-side analysis of membrane specs, insulation R-values, decking replacement allowances, workmanship guarantees, and disposal fees.",
+                seoIntro: "Commercial roofing bids often hide high unit-price change orders for wet insulation replacement, deteriorated wooden decking, and complex flashing details. Our proposal analyzer pulls apart competing TPO, EPDM, and metal roofing estimates to expose differences in mil thickness, manufacturer NDL (No Dollar Limit) warranties, and debris disposal fees."
             },
             software: {
                 title: "Compare SaaS & Technology Vendor Proposals | ProposalCompare",
-                desc: "Evaluate software vendor quotes, custom development statements of work, and hidden implementation fees.",
+                desc: "Evaluate software vendor quotes, custom development statements of work (SOW), implementation milestones, and hidden API licensing fees.",
                 heading: "Compare Tech & Software Bids",
-                subtext: "Unpack licensing tiers, implementation scope gaps, and service-level agreement conditions across vendors."
+                subtext: "Unpack licensing tiers, implementation scope gaps, custom data migration costs, and service-level agreement (SLA) conditions across software vendors.",
+                seoIntro: "Technology vendor proposals and custom software development SOWs are notorious for vague scope definitions, escalating hourly change-order rates, and buried data migration fees. ProposalCompare evaluates software contracts line-by-line to verify user-seat pricing structures, API limits, security compliance provisions, and post-launch maintenance terms."
             },
             construction: {
-                title: "Compare Construction Bids & General Contractor Proposals",
-                desc: "Analyze contractor estimates, allowance breakdowns, and payment milestones.",
+                title: "Compare Construction Bids & General Contractor Proposals | ProposalCompare",
+                desc: "Analyze contractor estimates, allowance breakdowns, contingency funds, subcontractor inclusions, and payment milestones.",
                 heading: "Compare Construction Proposals",
-                subtext: "Find discrepancies in material allowances, contingency funds, and sub-contractor inclusions."
+                subtext: "Find discrepancies in material allowances, contingency fund percentages, general conditions, and sub-contractor markups across competing general contractor bids.",
+                seoIntro: "General construction bids can look deceptively close on bottom-line numbers while varying wildly in material allowances, builder's risk insurance, project management overhead, and contingency control. Upload competing construction estimates to instantly surface hidden exclusions and level the playing field."
             },
             equipment: {
-                title: "Compare Heavy Equipment Vendor Proposals",
-                desc: "Evaluate machinery quotes, financing options, maintenance packages, and delivery terms.",
+                title: "Compare Heavy Equipment Vendor Proposals & Quotes | ProposalCompare",
+                desc: "Evaluate machinery quotes, lease-to-own financing terms, attachments, parts availability, and maintenance service packages.",
                 heading: "Compare Equipment Vendor Bids",
-                subtext: "Direct comparison of machine specifications, attachments, parts availability, and warranty terms."
+                subtext: "Direct comparison of heavy machinery specifications, hydraulic attachments, delivery timelines, parts warranties, and dealer service agreements.",
+                seoIntro: "Purchasing or leasing heavy machinery and industrial equipment involves parsing complex dealer quotes packed with delivery surcharges, proprietary maintenance contracts, and varying warranty limitations. Use our decision engine to match machine specs, operational capacity, and lifetime support terms apples-to-apples."
+            },
+            general: {
+                title: "Compare Business & Vendor Proposals Objectively | ProposalCompare",
+                desc: "Upload two or more business or vendor proposals. Get instant AI breakdown of relative merits, missing elements, and critical questions to ask.",
+                heading: "Compare Vendor Proposals",
+                subtext: "Upload multiple bids and evaluate relative merits, missing exclusions, and critical questions to ask competing vendors instantly.",
+                seoIntro: "Whether you are evaluating complex service contracts, vendor bids, or industrial project estimates, our decision-support engine highlights hidden operational gaps, missing deliverables, and actionable trade questions without arbitrary scoring systems."
             }
         };
 
-        const currentData = contentMap[type] || contentMap.hvac;
+        const currentData = contentMap[type] || contentMap.general;
 
         document.getElementById('page-title').innerText = currentData.title;
         document.getElementById('meta-desc').setAttribute('content', currentData.desc);
         document.getElementById('vertical-heading').innerText = currentData.heading;
         document.getElementById('vertical-subtext').innerText = currentData.subtext;
+        document.getElementById('vertical-seo-intro').innerText = currentData.seoIntro;
     </script>
 
 </body>
