@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://vcrsoft.com/</loc>
-<lastmod>2026-08-29T12:58:52-05:00</lastmod>
-</url>
-<url>
-<loc>https://vcrsoft.com/vertical.html</loc>
-<lastmod>2026-08-29T12:58:52-05:00</lastmod>
-</url>
+  <url>
+    <loc>https://vcrsoft.com/</loc>
+    <lastmod>2026-08-29</lastmod>
+  </url>
+  <url>
+    <loc>https://vcrsoft.com/vertical.html?type=hvac</loc>
+    <lastmod>2026-08-29</lastmod>
+  </url>
+  <url>
+    <loc>https://vcrsoft.com/vertical.html?type=solar</loc>
+    <lastmod>2026-08-29</lastmod>
+  </url>
+  <url>
+    <loc>https://vcrsoft.com/vertical.html?type=roofing</loc>
+    <lastmod>2026-08-29</lastmod>
+  </url>
+  <url>
+    <loc>https://vcrsoft.com/vertical.html?type=software</loc>
+    <lastmod>2026-08-29</lastmod>
+  </url>
+  <url>
+    <loc>https://vcrsoft.com/vertical.html?type=construction</loc>
+    <lastmod>2026-08-29</lastmod>
+  </url>
+  <url>
+    <loc>https://vcrsoft.com/vertical.html?type=equipment</loc>
+    <lastmod>2026-08-29</lastmod>
+  </url>
 </urlset>
