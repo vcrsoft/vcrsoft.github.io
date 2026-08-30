@@ -18,9 +18,10 @@
         <section class="hero">
             <h1>Stop Guessing. Compare Vendor Proposals Objectively.</h1>
             <p>Upload two or more proposals. Discover what's missing, get smart questions to ask your vendors, and review a feature-by-feature breakdown—free of artificial rankings or forced scores.</p>
-            <p>The report is $99 per comparison, with no subscription or ongoing commitment</p>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem;">The report is $99 per comparison, with no subscription or ongoing commitment</p>
             <div class="cta-group">
                 <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Compare Proposals Now</a>
+                <button id="open-report-btn" class="btn-secondary">View sample report</button>
             </div>
         </section>
 
@@ -53,9 +54,46 @@
         </section>
     </main>
 
+    <!-- Sample Report Modal Popup -->
+    <div id="report-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Sample Proposal Comparison Report (Restaurant HVAC)</h3>
+                <button id="close-report-btn" class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe src="sample-report.pdf" title="Sample Proposal Comparison Report"></iframe>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2026 VCRSoft / ProposalCompare. All rights reserved.</p>
     </footer>
+
+    <script>
+        const modal = document.getElementById('report-modal');
+        const openBtn = document.getElementById('open-report-btn');
+        const closeBtn = document.getElementById('close-report-btn');
+
+        openBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking outside the container content
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
 
 </body>
 </html>
