@@ -244,19 +244,19 @@ footer {
 }
 
 .legal-note {
-  max-width: 900px; /* was 640px - that's why it wrapped */
+  max-width: 990px; /* was 640px - that's why it wrapped */
   margin: 0 auto 1.5rem;
   text-align: center;
 }
 .legal-note p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: var(--text-muted);
   margin-bottom: 0.6rem;
   text-align: center;
 }
 /* Force single line on desktop only */
-@media (min-width: 900px) {
+@media (min-width: 990px) {
   .legal-note p {
     white-space: nowrap;
   }
