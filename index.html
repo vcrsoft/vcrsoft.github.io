@@ -97,6 +97,11 @@
         openBtn.addEventListener('click', () => {
             modal.classList.add('active');
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
+
+            gtag('event', 'sample_report_view', {
+                event_category: 'engagement',
+                event_label: 'Sample Proposal Comparison Report'
+            });
         });
 
         closeBtn.addEventListener('click', () => {
