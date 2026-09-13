@@ -117,6 +117,15 @@
                 document.body.style.overflow = 'auto';
             }
         });
+
+        // Track clicks on "Compare Proposals Now"
+        document.querySelector('.btn-primary').addEventListener('click', () => {
+            gtag('event', 'launch_app_click', {
+                event_category: 'engagement',
+                event_label: 'Compare Proposals Now'
+            });
+        });
+        
     </script>
 
 </body>
