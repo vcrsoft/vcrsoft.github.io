@@ -124,24 +124,14 @@
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
             e.preventDefault();
         
-            const destination = e.currentTarget.href;
-        
-            console.log("COMPARE BUTTON CLICK HANDLER FIRED");
+            console.log("CLICK FIRED — navigation stopped");
         
             gtag('event', 'launch_app_click', {
                 event_category: 'engagement',
-                event_label: 'Compare Proposals Now',
-                transport_type: 'beacon',
-                event_callback: function() {
-                    console.log("GA4 CALLBACK FIRED");
-                    window.location.href = destination;
-                }
+                event_label: 'Compare Proposals Now'
             });
         
-            // Safety fallback in case the callback doesn't fire
-            setTimeout(() => {
-                window.location.href = destination;
-            }, 1000);
+            console.log("GTAG CALL COMPLETED");
         });
         
     </script>
