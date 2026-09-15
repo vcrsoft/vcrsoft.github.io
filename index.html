@@ -124,21 +124,15 @@
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
             e.preventDefault();
         
-            const destination = e.currentTarget.href;
-        
             console.log("CLICK FIRED");
-            
+            console.log("dataLayer BEFORE:", JSON.stringify(window.dataLayer));
+        
             gtag('event', 'launch_app_click', {
                 event_category: 'engagement',
                 event_label: 'Compare Proposals Now'
             });
         
-            console.log("EVENT SENT — waiting 3 seconds");
-        
-            setTimeout(() => {
-                console.log("NAVIGATING NOW");
-                window.location.href = destination;
-            }, 3000);
+            console.log("dataLayer AFTER:", JSON.stringify(window.dataLayer));
         });
         
     </script>
