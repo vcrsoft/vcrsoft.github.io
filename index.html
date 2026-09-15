@@ -122,23 +122,12 @@
         
         // Track clicks on "Compare Proposals Now"
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
-            e.preventDefault();
-        
-            const destination = e.currentTarget.href;
+            console.log('COMPARE BUTTON CLICK HANDLER FIRED');
         
             gtag('event', 'launch_app_click', {
                 event_category: 'engagement',
-                event_label: 'Compare Proposals Now',
-                transport_type: 'beacon',
-                event_callback: function() {
-                    window.location.href = destination;
-                }
+                event_label: 'Compare Proposals Now'
             });
-        
-            // Fallback in case the callback does not fire
-            setTimeout(() => {
-                window.location.href = destination;
-            }, 1000);
         });
         
     </script>
