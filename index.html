@@ -121,15 +121,27 @@
 
         
         // Track clicks on "Compare Proposals Now"
-        console.log("ABOUT TO INSTALL COMPARE BUTTON HANDLER");
-        
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
-            console.log('COMPARE BUTTON CLICK HANDLER FIRED');
+            e.preventDefault();
+        
+            const destination = e.currentTarget.href;
+        
+            console.log("COMPARE BUTTON CLICK HANDLER FIRED");
         
             gtag('event', 'launch_app_click', {
                 event_category: 'engagement',
-                event_label: 'Compare Proposals Now'
+                event_label: 'Compare Proposals Now',
+                transport_type: 'beacon',
+                event_callback: function() {
+                    console.log("GA4 CALLBACK FIRED");
+                    window.location.href = destination;
+                }
             });
+        
+            // Safety fallback in case the callback doesn't fire
+            setTimeout(() => {
+                window.location.href = destination;
+            }, 1000);
         });
         
     </script>
