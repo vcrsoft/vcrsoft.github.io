@@ -124,14 +124,16 @@
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
             e.preventDefault();
         
-            console.log("CLICK FIRED — navigation stopped");
+            const destination = e.currentTarget.href;
         
             gtag('event', 'launch_app_click', {
                 event_category: 'engagement',
                 event_label: 'Compare Proposals Now'
             });
         
-            console.log("GTAG CALL COMPLETED");
+            setTimeout(() => {
+                window.location.href = destination;
+            }, 500);
         });
         
     </script>
