@@ -124,15 +124,16 @@
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
             e.preventDefault();
         
-            console.log("CLICK FIRED");
-            console.log("dataLayer BEFORE:", JSON.stringify(window.dataLayer));
+            const destination = e.currentTarget.href;
         
             gtag('event', 'launch_app_click', {
                 event_category: 'engagement',
                 event_label: 'Compare Proposals Now'
             });
         
-            console.log("dataLayer AFTER:", JSON.stringify(window.dataLayer));
+            setTimeout(() => {
+                window.location.href = destination;
+            }, 2000);
         });
         
     </script>
