@@ -139,6 +139,26 @@
                 window.location.href = destination;
             }, 5000);
         });
+
+        // Track clicks on the "Launch App ($99)" CTA button
+        document.getElementById('launch-app-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+        
+            const button = e.currentTarget;
+            const destination = button.href;
+        
+            button.textContent = 'Launching app...';
+            button.style.pointerEvents = 'none';
+        
+            gtag('event', 'launch_app_click', {
+                event_category: 'engagement',
+                event_label: 'Launch App ($99)'
+            });
+        
+            setTimeout(() => {
+                window.location.href = destination;
+            }, 5000);
+        });
         
     </script>
 
