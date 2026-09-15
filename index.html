@@ -124,15 +124,28 @@
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
             e.preventDefault();
         
-            const destination = e.currentTarget.href;
+            const button = e.currentTarget;
+            const destination = button.href;
+        
+            button.textContent = 'Launching app...';
+            button.style.pointerEvents = 'none';
+        
+            let launched = false;
+        
+            function launch() {
+                if (launched) return;
+                launched = true;
+                window.location.href = destination;
+            }
         
             gtag('event', 'launch_app_click', {
                 event_category: 'engagement',
                 event_label: 'Compare Proposals Now',
-                event_callback: function() {
-                    window.location.href = destination;
-                }
+                event_callback: launch
             });
+        
+            // Safety fallback in case GA4 callback does not complete
+            setTimeout(launch, 5000);
         });
         
     </script>
