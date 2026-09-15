@@ -130,22 +130,14 @@
             button.textContent = 'Launching app...';
             button.style.pointerEvents = 'none';
         
-            let launched = false;
-        
-            function launch() {
-                if (launched) return;
-                launched = true;
-                window.location.href = destination;
-            }
-        
             gtag('event', 'launch_app_click', {
                 event_category: 'engagement',
-                event_label: 'Compare Proposals Now',
-                event_callback: launch
+                event_label: 'Compare Proposals Now'
             });
         
-            // Safety fallback in case GA4 callback does not complete
-            setTimeout(launch, 5000);
+            setTimeout(() => {
+                window.location.href = destination;
+            }, 5000);
         });
         
     </script>
