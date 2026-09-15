@@ -126,19 +126,16 @@
         
             const destination = e.currentTarget.href;
         
-            console.log("1. CLICK");
+            console.log("CLICK");
         
             gtag('event', 'launch_app_click', {
                 event_category: 'engagement',
-                event_label: 'Compare Proposals Now'
+                event_label: 'Compare Proposals Now',
+                event_callback: function() {
+                    console.log("GA4 CALLBACK FIRED");
+                    window.location.href = destination;
+                }
             });
-        
-            console.log("2. GTAG CALLED");
-        
-            setTimeout(() => {
-                console.log("3. NAVIGATING");
-                window.location.href = destination;
-            }, 5000);
         });
         
     </script>
