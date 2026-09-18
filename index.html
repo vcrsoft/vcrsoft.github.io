@@ -95,6 +95,34 @@
         const openBtn = document.getElementById('open-report-btn');
         const closeBtn = document.getElementById('close-report-btn');
 
+            // Detect human-like interaction for traffic-quality measurement.
+            // This does NOT prove a human, but is stronger evidence than
+            // GA4 automatic page_view / engagement / scroll events.
+            let humanLikeInteractionRecorded = false;
+            const pageLoadTime = Date.now();
+    
+            function recordHumanLikeInteraction() {
+                if (humanLikeInteractionRecorded) return;
+    
+                // Require the page to have been open for at least 5 seconds.
+                if (Date.now() - pageLoadTime < 5000) return;
+    
+                humanLikeInteractionRecorded = true;
+    
+                gtag('event', 'human_like_interaction', {
+                    event_category: 'traffic_quality',
+                    event_label: 'Pointer interaction after 5 seconds',
+                    page_location: window.location.href
+                });
+    
+                // Remove listeners after the first event.
+                document.removeEventListener('mousemove', recordHumanLikeInteraction);
+                document.removeEventListener('touchstart', recordHumanLikeInteraction);
+            }
+    
+            document.addEventListener('mousemove', recordHumanLikeInteraction);
+            document.addEventListener('touchstart', recordHumanLikeInteraction, { passive: true });
+
         openBtn.addEventListener('click', () => {
             modal.classList.add('active');
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
