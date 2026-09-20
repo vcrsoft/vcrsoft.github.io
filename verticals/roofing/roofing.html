@@ -1,1 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Roofing Proposal Comparison - Vcrsoft Intelligence</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #1e293b;
+            --accent: #2563eb;
+            --bg-light: #f8fafc;
+            --text-main: #334155;
+            --border-color: #cbd5e1;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%);
+            color: white;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            margin: 0 0 0.75rem 0;
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        header .subtitle {
+            font-size: 1.15rem;
+            color: #93c5fd;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        header .warning-note {
+            font-size: 0.95rem;
+            color: #e2e8f0;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            border-left: 4px solid #60a5fa;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        main {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .section-card h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 0.50rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: 650px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: #e2e8f0;
+        }
+
+        .side-by-side {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 968px) {
+            .side-by-side {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .proposal-wrapper h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        /* Footer Industry Navigation */
+        .industry-nav {
+            background: white;
+            border-top: 1px solid var(--border-color);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .industry-nav h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+        }
+
+        .button-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .industry-btn {
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .industry-btn:hover {
+            background-color: var(--accent);
+            color: white;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .industry-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Compare Roofing Proposals</h1>
+            <div class="subtitle">Side-by-side analysis of membrane specs, insulation R-values, decking replacement allowances, workmanship guarantees, and disposal fees.</div>
+            <div class="warning-note">
+                <em>Commercial roofing bids often hide high unit-price change orders for wet insulation replacement, deteriorated wooden decking, and complex flashing details. Ensure complete clarity on unit limits before signing.</em>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Final Comparison Report Section -->
+        <section class="section-card">
+            <h2>📊 Comprehensive AI Comparison Report</h2>
+            <p>Review the breakdown of commercial proposals A and B, structured against project requirements, warranty protections, and long-term asset value.</p>
+            <iframe src="roofing.pdf" class="pdf-container" type="application/pdf">
+                <p>Your browser does not support embedded PDFs. You can <a href="roofing.pdf" target="_blank">download the comparison report PDF here</a>.</p>
+            </iframe>
+        </section>
+
+        <!-- Side-by-Side Source Proposals -->
+        <section class="section-card">
+            <h2>📄 Original Vendor Proposals</h2>
+            <p>Examine the raw documents side-by-side for exact scope, pricing breakdowns, and contractual limitations.</p>
+            
+            <div class="side-by-side">
+                <div class="proposal-wrapper">
+                    <h3>Proposal A: Apex Commercial Roofing</h3>
+                    <iframe src="roofingA.pdf" class="pdf-container" style="height: 550px;" type="application/pdf">
+                        <p>Your browser does not support embedded PDFs. <a href="roofingA.pdf" target="_blank">Download Proposal A</a>.</p>
+                    </iframe>
+                </div>
+                <div class="proposal-wrapper">
+                    <h3>Proposal B: Summit Commercial Systems</h3>
+                    <iframe src="roofingB.pdf" class="pdf-container" style="height: 550px;" type="application/pdf">
+                        <p>Your browser does not support embedded PDFs. <a href="roofingB.pdf" target="_blank">Download Proposal B</a>.</p>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Explore Other Industries -->
+    <div class="industry-nav">
+        <h3>Explore Other Use-Cases and Industries</h3>
+        <div class="button-grid">
+            <a href="roofing.html" class="industry-btn active">Commercial Roofing</a>
+            <a href="../hvac/hvac.html" class="industry-btn">Commercial HVAC</a>
+            <a href="../solar/solar.html" class="industry-btn">Commercial Solar</a>
+            <a href="../plumbing/plumbing.html" class="industry-btn">Plumbing & Mechanical</a>
+            <a href="../electrical/electrical.html" class="industry-btn">Electrical Infrastructure</a>
+            <a href="../saas/saas.html" class="industry-btn">SaaS & Software Vendor Bids</a>
+        </div>
+    </div>
+
+</body>
+</html>
