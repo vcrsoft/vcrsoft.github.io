@@ -24,6 +24,7 @@
         <a href="https://propcompare.pythonanywhere.com" class="nav-cta" id="launch-app-btn">Launch App ($99)</a>
     </header>
 
+    <!-- Layout Container with Sidebar and Main Content -->
     <div class="app-layout">
         
         <!-- Persistent Sidebar Navigation -->
@@ -41,14 +42,16 @@
             </nav>
         </aside>
 
+        <!-- Main Content Area -->
         <main class="main-content">
             <section class="hero">
                 <h1>Stop Guessing. Compare Vendor Proposals Objectively.</h1>
                 <p>Upload two or more proposals. Discover what's missing, get smart questions to ask your vendors, and review a feature-by-feature breakdown—free of artificial rankings or forced scores.</p>
                 
-                <div class="cta-group" style="margin-bottom: 1.5rem;">
-                    <button id="open-report-btn" class="btn-secondary">View sample report</button>
-                    <a href="report.html" class="btn-secondary" style="font-size: 0.9rem; padding: 0.8125rem 1rem;">Full Report Page &rarr;</a>
+                <!-- High-Impact Urgency CTA Buttons -->
+                <div class="cta-group" style="margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                    <button id="open-report-btn" class="btn-sample-green">📊 View Sample Report</button>
+                    <a href="report.html" class="btn-report-purple">📄 Open Full Report Page &rarr;</a>
                 </div>
 
                 <div class="legal-note">
@@ -131,5 +134,6 @@
             }
         });
     </script>
+
 </body>
 </html>
