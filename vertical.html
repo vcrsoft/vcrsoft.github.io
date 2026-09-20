@@ -6,17 +6,16 @@
     <title id="page-title">Compare Business Proposals | ProposalCompare</title>
     <meta id="meta-desc" name="description" content="Compare vendor proposals with AI.">
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QDJ92NQN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-V2QDJ92NQN');
-    </script>    
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QDJ92NQN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-V2QDJ92NQN');
+</script>    
 <body>
 
     <header>
@@ -24,36 +23,50 @@
         <a href="https://propcompare.pythonanywhere.com" class="nav-cta">Launch App ($99)</a>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1 id="vertical-heading">Compare Vendor Proposals</h1>
-            <p id="vertical-subtext">Upload multiple bids and evaluate relative merits instantly.</p>
-            <p>The report is $99 per comparison, with no subscription or ongoing commitment</p>
-            <div class="cta-group">
-                <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Upload & Compare Now</a>
-            </div>
-        </section>
+    <!-- Layout Container with Sidebar and Main Content -->
+    <div class="app-layout">
+        
+        <!-- Vertical Sidebar Navigation -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-link">Home</a>
+                <a href="report.html" class="sidebar-link">Report</a>
+                <a href="vertical.html" class="sidebar-link active">Verticals</a>
+            </nav>
+        </aside>
 
-        <!-- SEO Rich Context Block -->
-        <section class="seo-context-section" style="max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; text-align: left;">
-            <p id="vertical-seo-intro" style="font-size: 1.1rem; line-height: 1.6; color: #444;"></p>
-        </section>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <section class="hero">
+                <h1 id="vertical-heading">Compare Vendor Proposals</h1>
+                <p id="vertical-subtext">Upload multiple bids and evaluate relative merits instantly.</p>
+                <p>The report is $99 per comparison, with no subscription or ongoing commitment</p>
+                <div class="cta-group">
+                    <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Upload & Compare Now</a>
+                </div>
+            </section>
 
-        <section class="features">
-            <div class="feature-card">
-                <h3>What Vendors Leave Out</h3>
-                <p id="feature-1">Identify hidden exclusions, vague warranties, or missing line items unique to this type of project.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Targeted Questions</h3>
-                <p id="feature-2">Get specific questions designed to extract clarification from competing bidders.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Unbiased Feature Matrix</h3>
-                <p id="feature-3">View specifications side-by-side without arbitrary scores or vendor favoritism.</p>
-            </div>
-        </section>
-    </main>
+            <!-- SEO Rich Context Block -->
+            <section class="seo-context-section" style="max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; text-align: left;">
+                <p id="vertical-seo-intro" style="font-size: 1.1rem; line-height: 1.6; color: #444;"></p>
+            </section>
+
+            <section class="features">
+                <div class="feature-card">
+                    <h3>What Vendors Leave Out</h3>
+                    <p id="feature-1">Identify hidden exclusions, vague warranties, or missing line items unique to this type of project.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Targeted Questions</h3>
+                    <p id="feature-2">Get specific questions designed to extract clarification from competing bidders.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Unbiased Feature Matrix</h3>
+                    <p id="feature-3">View specifications side-by-side without arbitrary scores or vendor favoritism.</p>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2026 VCRSoft / ProposalCompare. All rights reserved.</p>
