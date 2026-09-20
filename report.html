@@ -27,12 +27,18 @@
     <!-- Layout Container with Sidebar and Main Content -->
     <div class="app-layout">
         
-        <!-- Vertical Sidebar Navigation -->
+        <!-- Vertical Sidebar Navigation with Individual Verticals -->
         <aside class="sidebar">
             <nav class="sidebar-nav">
                 <a href="index.html" class="sidebar-link">Home</a>
                 <a href="report.html" class="sidebar-link active">Report</a>
-                <a href="vertical.html" class="sidebar-link">Verticals</a>
+                <div class="sidebar-category">Verticals</div>
+                <a href="vertical.html?type=hvac" class="sidebar-link sub-link">HVAC</a>
+                <a href="vertical.html?type=solar" class="sidebar-link sub-link">Solar</a>
+                <a href="vertical.html?type=roofing" class="sidebar-link sub-link">Roofing</a>
+                <a href="vertical.html?type=software" class="sidebar-link sub-link">Software</a>
+                <a href="vertical.html?type=construction" class="sidebar-link sub-link">Construction</a>
+                <a href="vertical.html?type=equipment" class="sidebar-link sub-link">Equipment</a>
             </nav>
         </aside>
 
@@ -101,12 +107,10 @@
     </footer>
 
     <script>
-        // Track clicks on "Compare Your Proposals Now"
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
             e.preventDefault();
             const button = e.currentTarget;
             const destination = button.href;
-        
             button.textContent = 'Launching app...';
             button.style.pointerEvents = 'none';
         
@@ -124,7 +128,6 @@
             e.preventDefault();
             const button = e.currentTarget;
             const destination = button.href;
-        
             button.textContent = 'Launching app...';
             button.style.pointerEvents = 'none';
         
