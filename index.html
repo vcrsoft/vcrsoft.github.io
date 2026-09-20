@@ -24,7 +24,6 @@
         <a href="https://propcompare.pythonanywhere.com" class="nav-cta" id="launch-app-btn">Launch App ($99)</a>
     </header>
 
-    <!-- Layout Container with Sidebar and Main Content -->
     <div class="app-layout">
         
         <!-- Persistent Sidebar Navigation -->
@@ -42,7 +41,6 @@
             </nav>
         </aside>
 
-        <!-- Main Content Area -->
         <main class="main-content">
             <section class="hero">
                 <h1>Stop Guessing. Compare Vendor Proposals Objectively.</h1>
@@ -116,36 +114,9 @@
         const openBtn = document.getElementById('open-report-btn');
         const closeBtn = document.getElementById('close-report-btn');
 
-        let humanLikeInteractionRecorded = false;
-        const pageLoadTime = Date.now();
-
-        function recordHumanLikeInteraction() {
-            if (humanLikeInteractionRecorded) return;
-            if (Date.now() - pageLoadTime < 5000) return;
-            humanLikeInteractionRecorded = true;
-
-            gtag('event', 'human_like_interaction', {
-                event_category: 'traffic_quality',
-                event_label: 'Pointer interaction after 5 seconds',
-                page_location: window.location.href
-            });
-
-            document.removeEventListener('mousemove', recordHumanLikeInteraction);
-            document.removeEventListener('touchstart', recordHumanLikeInteraction);
-        }
-
-        document.addEventListener('mousemove', recordHumanLikeInteraction);
-        document.addEventListener('touchstart', recordHumanLikeInteraction, { passive: true });
-
         openBtn.addEventListener('click', () => {
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
-
-            gtag('event', 'sample_report_view', {
-                event_category: 'engagement',
-                event_label: 'Sample Proposal Comparison Report Modal',
-                page_location: window.location.href
-            });
         });
 
         closeBtn.addEventListener('click', () => {
@@ -159,41 +130,6 @@
                 document.body.style.overflow = 'auto';
             }
         });
-        
-        document.querySelector('.btn-primary').addEventListener('click', (e) => {
-            e.preventDefault();
-            const button = e.currentTarget;
-            const destination = button.href;
-            button.textContent = 'Launching app...';
-            button.style.pointerEvents = 'none';
-        
-            gtag('event', 'launch_app_click', {
-                event_category: 'engagement',
-                event_label: 'Compare Proposals Now'
-            });
-        
-            setTimeout(() => {
-                window.location.href = destination;
-            }, 5000);
-        });
-
-        document.getElementById('launch-app-btn').addEventListener('click', (e) => {
-            e.preventDefault();
-            const button = e.currentTarget;
-            const destination = button.href;
-            button.textContent = 'Launching app...';
-            button.style.pointerEvents = 'none';
-        
-            gtag('event', 'launch_app_click', {
-                event_category: 'engagement',
-                event_label: 'Launch App ($99)'
-            });
-        
-            setTimeout(() => {
-                window.location.href = destination;
-            }, 5000);
-        });
     </script>
-
 </body>
 </html>
