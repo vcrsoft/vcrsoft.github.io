@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Compare Business Proposals | ProposalCompare</title>
-    <meta id="meta-desc" name="description" content="Compare vendor proposals with AI.">
+    <title id="page-title">Explore Industries & Proposal Verticals | ProposalCompare</title>
+    <meta id="meta-desc" name="description" content="Explore vendor proposal comparison use cases across HVAC, Solar, Roofing, Software, Construction, and Heavy Equipment.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <!-- Google tag (gtag.js) -->
@@ -13,7 +13,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-V2QDJ92NQN');
 </script>    
 <body>
@@ -23,15 +22,15 @@
         <a href="https://propcompare.pythonanywhere.com" class="nav-cta">Launch App ($99)</a>
     </header>
 
-    <!-- Layout Container with Sidebar and Main Content -->
+    <!-- Layout Container with Persistent Sidebar and Main Content -->
     <div class="app-layout">
         
-        <!-- Vertical Sidebar Navigation with Individual Verticals -->
+        <!-- Persistent Sidebar Navigation -->
         <aside class="sidebar">
             <nav class="sidebar-nav">
                 <a href="index.html" class="sidebar-link">Home</a>
                 <a href="report.html" class="sidebar-link">Report</a>
-                <div class="sidebar-category">Verticals</div>
+                <a href="vertical.html" class="sidebar-link" id="sidebar-verticals-heading">Verticals</a>
                 <a href="vertical.html?type=hvac" class="sidebar-link sub-link" data-vertical="hvac">HVAC</a>
                 <a href="vertical.html?type=solar" class="sidebar-link sub-link" data-vertical="solar">Solar</a>
                 <a href="vertical.html?type=roofing" class="sidebar-link sub-link" data-vertical="roofing">Roofing</a>
@@ -41,23 +40,23 @@
             </nav>
         </aside>
 
-        <!-- Main Content Area -->
+        <!-- Main Content Area (Dynamically Populated) -->
         <main class="main-content">
             <section class="hero">
-                <h1 id="vertical-heading">Compare Vendor Proposals</h1>
-                <p id="vertical-subtext">Upload multiple bids and evaluate relative merits instantly.</p>
-                <p>The report is $99 per comparison, with no subscription or ongoing commitment</p>
-                <div class="cta-group">
+                <h1 id="vertical-heading">Explore Proposal Verticals</h1>
+                <p id="vertical-subtext">Optimized for complex vendor bids across multiple high-stakes industries. Select a vertical below to learn more or compare your proposals.</p>
+                <div id="hero-cta-group" class="cta-group" style="display: none;">
                     <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Upload & Compare Now</a>
                 </div>
             </section>
 
-            <!-- SEO Rich Context Block -->
-            <section class="seo-context-section" style="max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; text-align: left;">
+            <!-- SEO Rich Context Block (Hidden on general index view, shown on specific verticals) -->
+            <section id="seo-section" class="seo-context-section" style="max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; text-align: left; display: none;">
                 <p id="vertical-seo-intro" style="font-size: 1.1rem; line-height: 1.6; color: #444;"></p>
             </section>
 
-            <section class="features">
+            <!-- Features Grid (Shown on specific verticals) -->
+            <section id="features-section" class="features" style="display: none;">
                 <div class="feature-card">
                     <h3>What Vendors Leave Out</h3>
                     <p id="feature-1">Identify hidden exclusions, vague warranties, or missing line items unique to this type of project.</p>
@@ -72,10 +71,10 @@
                 </div>
             </section>
 
-            <!-- Verticals Grid Section Recreated on Vertical Page for SEO and Navigation -->
-            <section class="verticals-section">
-                <h2>Explore Other Use Cases & Industries</h2>
-                <p>Optimized for complex vendor bids across multiple high-stakes industries.</p>
+            <!-- Verticals Directory Grid (Highlighted on general index view, also acts as quick switcher) -->
+            <section class="verticals-section" style="margin-top: 2rem;">
+                <h2 id="grid-heading">Explore Common Use Cases</h2>
+                <p id="grid-subtext">Choose an industry below to view tailored proposal comparison insights.</p>
                 <div class="verticals-grid">
                     <a href="vertical.html?type=hvac" class="vertical-pill">HVAC Replacement</a>
                     <a href="vertical.html?type=solar" class="vertical-pill">Commercial Solar</a>
@@ -89,12 +88,12 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 VCRSoft / ProposalCompare. All rights reserved.</p>
+        <p>&copy; 2026 Vcrsoft LLC. All rights reserved.</p>
     </footer>
 
     <script>
         const params = new URLSearchParams(window.location.search);
-        const type = params.get('type') || 'general';
+        const type = params.get('type');
 
         const contentMap = {
             hvac: {
@@ -138,28 +137,33 @@
                 heading: "Compare Equipment Vendor Bids",
                 subtext: "Direct comparison of heavy machinery specifications, hydraulic attachments, delivery timelines, parts warranties, and dealer service agreements.",
                 seoIntro: "Purchasing or leasing heavy machinery and industrial equipment involves parsing complex dealer quotes packed with delivery surcharges, proprietary maintenance contracts, and varying warranty limitations. Use our decision engine to match machine specs, operational capacity, and lifetime support terms apples-to-apples."
-            },
-            general: {
-                title: "Compare Business & Vendor Proposals Objectively | ProposalCompare",
-                desc: "Upload two or more business or vendor proposals. Get instant AI breakdown of relative merits, missing elements, and critical questions to ask.",
-                heading: "Compare Vendor Proposals",
-                subtext: "Upload multiple bids and evaluate relative merits, missing exclusions, and critical questions to ask competing vendors instantly.",
-                seoIntro: "Whether you are evaluating complex service contracts, vendor bids, or industrial project estimates, our decision-support engine highlights hidden operational gaps, missing deliverables, and actionable trade questions without arbitrary scoring systems."
             }
         };
 
-        const currentData = contentMap[type] || contentMap.general;
+        if (type && contentMap[type]) {
+            const currentData = contentMap[type];
+            document.getElementById('page-title').innerText = currentData.title;
+            document.getElementById('meta-desc').setAttribute('content', currentData.desc);
+            document.getElementById('vertical-heading').innerText = currentData.heading;
+            document.getElementById('vertical-subtext').innerText = currentData.subtext;
+            document.getElementById('vertical-seo-intro').innerText = currentData.seoIntro;
 
-        document.getElementById('page-title').innerText = currentData.title;
-        document.getElementById('meta-desc').setAttribute('content', currentData.desc);
-        document.getElementById('vertical-heading').innerText = currentData.heading;
-        document.getElementById('vertical-subtext').innerText = currentData.subtext;
-        document.getElementById('vertical-seo-intro').innerText = currentData.seoIntro;
+            document.getElementById('seo-section').style.display = 'block';
+            document.getElementById('features-section').style.display = 'grid';
+            document.getElementById('hero-cta-group').style.display = 'flex';
 
-        // Highlight active vertical link in sidebar
-        const activeSidebarLink = document.querySelector(`.sidebar-link[data-vertical="${type}"]`);
-        if (activeSidebarLink) {
-            activeSidebarLink.classList.add('active');
+            // Update grid header context for specific view
+            document.getElementById('grid-heading').innerText = "Explore Other Use Cases & Industries";
+            document.getElementById('grid-subtext').innerText = "Optimized for complex vendor bids across multiple high-stakes industries.";
+
+            // Highlight active vertical link in sidebar
+            const activeSidebarLink = document.querySelector(`.sidebar-link[data-vertical="${type}"]`);
+            if (activeSidebarLink) {
+                activeSidebarLink.classList.add('active');
+            }
+        } else {
+            // General Index Hub View
+            document.getElementById('sidebar-verticals-heading').classList.add('active');
         }
     </script>
 
