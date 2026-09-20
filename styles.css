@@ -19,6 +19,9 @@ body {
     background-color: var(--bg-light);
     color: var(--text-main);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -54,9 +57,61 @@ header {
     background: var(--primary-dark);
 }
 
+/* Sidebar & Main App Layout */
+.app-layout {
+    display: flex;
+    flex: 1;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 240px;
+    background: var(--white);
+    border-right: 1px solid #e2e8f0;
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 73px;
+    height: calc(100vh - 73px);
+    flex-shrink: 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: var(--radius);
+    transition: all 0.2s;
+}
+
+.sidebar-link:hover {
+    background: #eff6ff;
+    color: var(--primary);
+}
+
+.sidebar-link.active {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .hero {
-    max-width: 900px;
-    margin: 4rem auto 2rem;
+    margin: 2rem auto 2rem;
     padding: 0 1.5rem;
     text-align: center;
 }
@@ -79,6 +134,8 @@ header {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .btn-primary {
@@ -90,6 +147,8 @@ header {
     font-size: 1.1rem;
     font-weight: 600;
     box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+    display: inline-block;
+    text-align: center;
 }
 
 .btn-primary:hover {
@@ -97,7 +156,6 @@ header {
 }
 
 .features {
-    max-width: 1000px;
     margin: 4rem auto;
     padding: 0 1.5rem;
     display: grid;
@@ -118,7 +176,6 @@ header {
 }
 
 .verticals-section {
-    max-width: 1000px;
     margin: 4rem auto;
     padding: 0 1.5rem;
     text-align: center;
@@ -150,13 +207,13 @@ header {
 
 footer {
     text-align: center;
-    padding: 3rem;
+    padding: 2rem;
     color: var(--text-muted);
     border-top: 1px solid #e2e8f0;
-    margin-top: 4rem;
+    background: var(--white);
 }
 
-/* Secondary Button Style for View Sample Report */
+/* Secondary Button Style */
 .btn-secondary {
     background: transparent;
     color: var(--primary);
@@ -168,13 +225,15 @@ footer {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s;
+    display: inline-block;
+    text-align: center;
 }
 
 .btn-secondary:hover {
     background: #eff6ff;
 }
 
-/* Modal Overlay */
+/* Modal Overlay & Container Restored */
 .modal-overlay {
     display: none;
     position: fixed;
@@ -193,7 +252,6 @@ footer {
     display: flex;
 }
 
-/* Modal Container */
 .modal-container {
     background: var(--white);
     width: 100%;
@@ -244,7 +302,7 @@ footer {
 }
 
 .legal-note {
-  max-width: 990px; /* was 640px - that's why it wrapped */
+  max-width: 990px;
   margin: 0 auto 1.5rem;
   text-align: center;
 }
@@ -255,7 +313,6 @@ footer {
   margin-bottom: 0.6rem;
   text-align: center;
 }
-/* Force single line on desktop only */
 @media (min-width: 990px) {
   .legal-note p {
     white-space: nowrap;
@@ -263,4 +320,30 @@ footer {
 }
 .legal-note p:last-child {
   margin-bottom: 0;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .app-layout {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 1rem;
+    }
+    .sidebar-nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .sidebar-link {
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+    .main-content {
+        padding: 1rem;
+    }
 }
