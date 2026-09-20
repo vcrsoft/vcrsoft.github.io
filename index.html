@@ -24,66 +24,67 @@
         <a href="https://propcompare.pythonanywhere.com" class="nav-cta" id="launch-app-btn">Launch App ($99)</a>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Stop Guessing. Compare Vendor Proposals Objectively.</h1>
-            <p>Upload two or more proposals. Discover what's missing, get smart questions to ask your vendors, and review a feature-by-feature breakdown—free of artificial rankings or forced scores.</p>
-            
-            <div class="cta-group" style="margin-bottom: 1.5rem;">
-                <button id="open-report-btn" class="btn-secondary">View sample report</button>
-            </div>
+    <!-- Layout Container with Sidebar and Main Content -->
+    <div class="app-layout">
+        
+        <!-- Vertical Sidebar Navigation -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-link active">Home</a>
+                <a href="report.html" class="sidebar-link">Report</a>
+                <a href="vertical.html" class="sidebar-link">Verticals</a>
+            </nav>
+        </aside>
 
-            <div class="legal-note">
-              <p>The report is $99 per comparison, with no subscription or ongoing commitment.</p>
-              <p>Uploaded proposals and other session information are deleted promptly after your comparison is completed.</p>
-              <p>We do not retain, sell, or use your documents for any purpose other than preparing your requested comparison report.</p>
-            </div>
-            
-            <div class="cta-group">
-                <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Compare Proposals Now</a>
-            </div>
-        </section>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <section class="hero">
+                <h1>Stop Guessing. Compare Vendor Proposals Objectively.</h1>
+                <p>Upload two or more proposals. Discover what's missing, get smart questions to ask your vendors, and review a feature-by-feature breakdown—free of artificial rankings or forced scores.</p>
+                
+                <div class="cta-group" style="margin-bottom: 1.5rem;">
+                    <a href="report.html" class="btn-secondary" id="open-report-btn">View sample report</a>
+                </div>
 
-        <section class="features">
-            <div class="feature-card">
-                <h3>🔍 Find Missing Details</h3>
-                <p>Spot hidden gaps, excluded maintenance items, or vague scope descriptions that standard review processes miss.</p>
-            </div>
-            <div class="feature-card">
-                <h3>❓ Smart Vendor Questions</h3>
-                <p>Instantly generate precise, hard-hitting questions to put back on vendors to level the playing field.</p>
-            </div>
-            <div class="feature-card">
-                <h3>⚖️ Real Feature Breakdown</h3>
-                <p>Apples-to-apples comparison of specs and terms. No artificial numbers or misleading scoring systems.</p>
-            </div>
-        </section>
+                <div class="legal-note">
+                  <p>The report is $99 per comparison, with no subscription or ongoing commitment.</p>
+                  <p>Uploaded proposals and other session information are deleted promptly after your comparison is completed.</p>
+                  <p>We do not retain, sell, or use your documents for any purpose other than preparing your requested comparison report.</p>
+                </div>
+                
+                <div class="cta-group">
+                    <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Compare Proposals Now</a>
+                </div>
+            </section>
 
-        <section class="verticals-section">
-            <h2>Explore Common Use Cases</h2>
-            <p>Optimized for complex vendor bids across multiple high-stakes industries.</p>
-            <div class="verticals-grid">
-                <a href="vertical.html?type=hvac" class="vertical-pill">HVAC Replacement</a>
-                <a href="vertical.html?type=solar" class="vertical-pill">Commercial Solar</a>
-                <a href="vertical.html?type=roofing" class="vertical-pill">Roofing Bids</a>
-                <a href="vertical.html?type=software" class="vertical-pill">SaaS & Tech Vendor Bids</a>
-                <a href="vertical.html?type=construction" class="vertical-pill">General Construction</a>
-                <a href="vertical.html?type=equipment" class="vertical-pill">Heavy Equipment Purchase</a>
-            </div>
-        </section>
-    </main>
+            <section class="features">
+                <div class="feature-card">
+                    <h3>🔍 Find Missing Details</h3>
+                    <p>Spot hidden gaps, excluded maintenance items, or vague scope descriptions that standard review processes miss.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>❓ Smart Vendor Questions</h3>
+                    <p>Instantly generate precise, hard-hitting questions to put back on vendors to level the playing field.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚖️ Real Feature Breakdown</h3>
+                    <p>Apples-to-apples comparison of specs and terms. No artificial numbers or misleading scoring systems.</p>
+                </div>
+            </section>
 
-    <!-- Sample Report Modal Popup -->
-    <div id="report-modal" class="modal-overlay">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h3>Sample Proposal Comparison Report (Restaurant HVAC)</h3>
-                <button id="close-report-btn" class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <iframe src="sample-report.pdf" title="Sample Proposal Comparison Report"></iframe>
-            </div>
-        </div>
+            <section class="verticals-section">
+                <h2>Explore Common Use Cases</h2>
+                <p>Optimized for complex vendor bids across multiple high-stakes industries.</p>
+                <div class="verticals-grid">
+                    <a href="vertical.html?type=hvac" class="vertical-pill">HVAC Replacement</a>
+                    <a href="vertical.html?type=solar" class="vertical-pill">Commercial Solar</a>
+                    <a href="vertical.html?type=roofing" class="vertical-pill">Roofing Bids</a>
+                    <a href="vertical.html?type=software" class="vertical-pill">SaaS & Tech Vendor Bids</a>
+                    <a href="vertical.html?type=construction" class="vertical-pill">General Construction</a>
+                    <a href="vertical.html?type=equipment" class="vertical-pill">Heavy Equipment Purchase</a>
+                </div>
+            </section>
+        </main>
     </div>
 
     <footer>
@@ -91,63 +92,6 @@
     </footer>
 
     <script>
-        const modal = document.getElementById('report-modal');
-        const openBtn = document.getElementById('open-report-btn');
-        const closeBtn = document.getElementById('close-report-btn');
-
-            // Detect human-like interaction for traffic-quality measurement.
-            // This does NOT prove a human, but is stronger evidence than
-            // GA4 automatic page_view / engagement / scroll events.
-            let humanLikeInteractionRecorded = false;
-            const pageLoadTime = Date.now();
-    
-            function recordHumanLikeInteraction() {
-                if (humanLikeInteractionRecorded) return;
-    
-                // Require the page to have been open for at least 5 seconds.
-                if (Date.now() - pageLoadTime < 5000) return;
-    
-                humanLikeInteractionRecorded = true;
-    
-                gtag('event', 'human_like_interaction', {
-                    event_category: 'traffic_quality',
-                    event_label: 'Pointer interaction after 5 seconds',
-                    page_location: window.location.href
-                });
-    
-                // Remove listeners after the first event.
-                document.removeEventListener('mousemove', recordHumanLikeInteraction);
-                document.removeEventListener('touchstart', recordHumanLikeInteraction);
-            }
-    
-            document.addEventListener('mousemove', recordHumanLikeInteraction);
-            document.addEventListener('touchstart', recordHumanLikeInteraction, { passive: true });
-
-        openBtn.addEventListener('click', () => {
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
-
-            gtag('event', 'sample_report_view', {
-                event_category: 'engagement',
-                event_label: 'Sample Proposal Comparison Report',
-                page_location: window.location.href
-            });
-        });
-
-        closeBtn.addEventListener('click', () => {
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        });
-
-        // Close modal when clicking outside the container content
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        
         // Track clicks on "Compare Proposals Now"
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
             e.preventDefault();
@@ -187,7 +131,14 @@
                 window.location.href = destination;
             }, 5000);
         });
-        
+
+        document.getElementById('open-report-btn').addEventListener('click', (e) => {
+            gtag('event', 'sample_report_view', {
+                event_category: 'engagement',
+                event_label: 'Sample Proposal Comparison Report Link',
+                page_location: window.location.href
+            });
+        });
     </script>
 
 </body>
