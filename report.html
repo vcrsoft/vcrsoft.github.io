@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Proposal Comparison Report | ProposalCompare</title>
-    <meta name="description" content="Review a sample commercial HVAC proposal comparison report.">
+    <meta name="description" content="Review a sample commercial HVAC proposal comparison report alongside its original input proposals.">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google tag (gtag.js) -->
@@ -45,7 +45,9 @@
                 <p>Explore a live example of how ProposalCompare transforms competing commercial HVAC bids into an objective, structured decision-making artifact.</p>
             </section>
 
+            <!-- 1. Output Sample Report Panel (Untouched) -->
             <section style="margin-bottom: 3rem;">
+                <h2 style="font-size: 1.3rem; color: #0f172a; margin-bottom: 1rem;">Generated Comparison Output Report</h2>
                 <div style="width: 100%; height: 75vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
                     <iframe src="sample-report.pdf" title="Sample Proposal Comparison Report" style="width: 100%; height: 100%; border: none;"></iframe>
                 </div>
@@ -54,21 +56,56 @@
                 </p>
             </section>
 
+            <!-- 2. Side-by-Side Input Proposals Panels -->
+            <section style="margin-bottom: 3rem;">
+                <h2 style="font-size: 1.3rem; color: #0f172a; margin-bottom: 0.5rem;">Source Input Proposals</h2>
+                <p style="color: var(--text-muted); margin-bottom: 1.25rem; font-size: 0.95rem;">Review the raw vendor documents evaluated to generate the comparison report above.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                    <!-- Proposal A -->
+                    <div>
+                        <h3 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">Proposal A: ABC Mechanical Services ($68,500)</h3>
+                        <div style="width: 100%; height: 60vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                            <iframe src="proposalA.pdf" title="Proposal A - ABC Mechanical Services" style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <p style="text-align: center; margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
+                            <a href="proposalA.pdf" target="_blank" style="color: var(--primary);">Open Proposal A PDF in new tab</a>
+                        </p>
+                    </div>
+
+                    <!-- Proposal B -->
+                    <div>
+                        <h3 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">Proposal B: XYZ Climate Solutions ($82,900)</h3>
+                        <div style="width: 100%; height: 60vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                            <iframe src="proposalB.pdf" title="Proposal B - XYZ Climate Solutions" style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <p style="text-align: center; margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
+                            <a href="proposalB.pdf" target="_blank" style="color: var(--primary);">Open Proposal B PDF in new tab</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Expanded Key Insights Section -->
             <section style="background: var(--white); padding: 2.5rem; border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: 3rem;">
                 <h2 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 1.25rem;">Why This Structure Changes the Game</h2>
                 
-                <div style="display: grid; gap: 1.5rem;">
+                <div style="display: grid; gap: 1.75rem;">
                     <div>
-                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.25rem;">1. Apples-to-Apples Feature Breakdown</h3>
-                        <p style="color: var(--text-muted);">Normalizes conflicting vendor terminologies across equipment tiers, warranties, and maintenance commitments without arbitrary scoring.</p>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">1. Apples-to-Apples Feature Breakdown</h3>
+                        <p style="color: var(--text-muted);">Normalizes conflicting vendor terminologies across equipment tiers, warranties, and maintenance commitments without arbitrary scoring. For instance, it directly pairs Proposal A's standard ACME RTU-125 units (capped at 11.2 EER) against Proposal B's high-efficiency Carrier units equipped with variable-speed indoor blower motors, helping you evaluate engineering specs side-by-side.</p>
                     </div>
                     <div>
-                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.25rem;">2. Exposing Hidden Price Differences</h3>
-                        <p style="color: var(--text-muted);">Reveals why a cheaper bid might exclude critical components like variable-speed motors, extended parts warranties, or digital controls.</p>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">2. Exposing Hidden Price Differences & Scope Gaps</h3>
+                        <p style="color: var(--text-muted);">Unpacks the exact $14,400 price delta between Proposal A ($68,500) and Proposal B ($82,900). Rather than leaving you to guess why XYZ Climate Solutions costs more, the report highlights tangible additions: duct modifications, digital programmable thermostats, building management system integration, and extended 5-year parts / 2-year labor warranties versus Proposal A's baseline 1-year terms.</p>
                     </div>
                     <div>
-                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.25rem;">3. Hard-Hitting Questions for Vendors</h3>
-                        <p style="color: var(--text-muted);">Equips you with targeted questions to level the playing field and force contractors to clarify missing scope before you sign.</p>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">3. Operational Disruption & Scheduling Impact</h3>
+                        <p style="color: var(--text-muted);">Translates fine print into business realities. Proposal A restricts work to standard business hours over 2 days, which risks shutting down a restaurant during peak service hours and hurting revenue. Proposal B accounts for this operational risk by factoring in the flexibility to schedule work outside operating hours.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">4. Hard-Hitting Questions for Vendors</h3>
+                        <p style="color: var(--text-muted);">Equips you with targeted questions to level the playing field before signing. By analyzing omissions in both source documents—such as Proposal B's missing exact EER efficiency ratings and Proposal A's lack of duct integration clarity—the tool forces contractors to close loopholes and clarify missing scope upfront.</p>
                     </div>
                 </div>
 
