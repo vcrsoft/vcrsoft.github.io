@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Solar Proposal Comparison | ProposalCompare</title>
+    <meta name="description" content="Side-by-side analysis of multi-megawatt commercial solar and BESS bids: utility interconnection risk, string vs. central inverters, DC/AC degradation ratios, and tariff arbitrage.">
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        .cta-container {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2.5rem;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            border-radius: 12px;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+        }
 
+        .cta-container h3 {
+            margin-top: 0;
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-container p {
+            color: #bfdbfe;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            background-color: #ffffff;
+            color: #1e3a8a;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-btn:hover {
+            background-color: #f8fafc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .industry-nav {
+            background: white;
+            border-top: 1px solid var(--border);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .industry-nav h3 {
+            color: #0f172a;
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+        }
+
+        .button-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .industry-btn {
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            border: 1px solid var(--border);
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .industry-btn:hover {
+            background-color: #2563eb;
+            color: white;
+            border-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .industry-btn.active {
+            background-color: #1e3a8a;
+            color: white;
+            border-color: #1e3a8a;
+        }
+
+        /* 2-Column Split Layout for 2 Complex Solar Proposals */
+        .proposals-grid-2col {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 900px) {
+            .proposals-grid-2col {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QDJ92NQN"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-V2QDJ92NQN');
+    </script>
+</head>
+<body>
+
+    <header>
+        <a href="../../index.html" class="logo">ProposalCompare</a>
+        <div class="header-center-title">Compare Vendor Proposals</div>
+        <a href="https://propcompare.pythonanywhere.com" class="nav-cta" id="launch-app-btn">Launch App ($99)</a>
+    </header>
+
+    <div class="app-layout">
+        
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="../../index.html" class="sidebar-link">Home</a>
+                <a href="../../report.html" class="sidebar-link">Report</a>
+                <a href="../../vertical.html" class="sidebar-link">Verticals</a>
+                <a href="../hvac/hvac.html" class="sidebar-link sub-link">HVAC</a>
+                <a href="../electrical/electrical.html" class="sidebar-link sub-link">Electrical</a>
+                <a href="../plumbing/plumbing.html" class="sidebar-link sub-link">Plumbing</a>
+                <a href="../roofing/roofing.html" class="sidebar-link sub-link">Roofing</a>
+                <a href="../construction/construction.html" class="sidebar-link sub-link">Construction</a>
+                <a href="../equipment/equipment.html" class="sidebar-link sub-link">Equipment</a>
+                <a href="solar.html" class="sidebar-link sub-link active">Solar</a>
+                <a href="../software/software.html" class="sidebar-link sub-link">Software/Tech</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="hero" style="margin-top: 1rem;">
+                <h1>Commercial Solar Proposal Comparison</h1>
+                <p>Comprehensive side-by-side analysis of multi-megawatt commercial solar PV and BESS proposals: managing utility interconnection delays, inverter supply-chain volatility, DC/AC degradation ratios, and local tariff arbitrage.</p>
+                <div class="legal-note" style="margin-top: 1rem; text-align: left;">
+                    <p><em>Commercial solar bids frequently understate utility interconnection upgrade costs, delay timelines associated with transmission service provider (TSP) studies, and gloss over DC-to-AC clipping losses under high irradiance conditions. Verify all curtailment and tariff shift guarantees prior to execution.</em></p>
+                </div>
+            </section>
+
+            <!-- 1. Output Comparison Report Panel -->
+            <section style="margin-bottom: 3rem;">
+                <h2 style="font-size: 1.3rem; color: #0f172a; margin-bottom: 1rem;">Generated Comparison Output Report (Comprehensive 5-Page Analysis)</h2>
+                <div style="width: 100%; height: 75vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                    <iframe src="solar.pdf" title="Commercial Solar Comparison Report" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+                <p style="text-align: center; margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-muted);">
+                    Having trouble viewing? <a href="solar.pdf" target="_blank" style="color: var(--primary);">Open the PDF in a new tab</a>.
+                </p>
+            </section>
+
+            <!-- 2. Source Input Proposals (2-Column Layout for 2 Complex Bids) -->
+            <section style="margin-bottom: 3rem;">
+                <h2 style="font-size: 1.3rem; color: #0f172a; margin-bottom: 0.5rem;">Source Input Proposals (2 Comprehensive Vendor Bids Evaluated)</h2>
+                <p style="color: var(--text-muted); margin-bottom: 1.25rem; font-size: 0.95rem;">Examine the two multi-page engineering proposals side-by-side to evaluate DC/AC ratios, inverter allocation, and financial pro-formas.</p>
+                
+                <div class="proposals-grid-2col">
+                    <!-- Proposal A -->
+                    <div>
+                        <h3 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">Bid A: Heliosphere Industrial Power Corp</h3>
+                        <div style="width: 100%; height: 65vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                            <iframe src="solarA.pdf" title="Proposal A - Heliosphere Industrial Power" style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <p style="text-align: center; margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
+                            <a href="solarA.pdf" target="_blank" style="color: var(--primary);">Open Proposal A PDF in new tab</a>
+                        </p>
+                    </div>
+
+                    <!-- Proposal B -->
+                    <div>
+                        <h3 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">Bid B: SunVault Engineering Solutions</h3>
+                        <div style="width: 100%; height: 65vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                            <iframe src="solarB.pdf" title="Proposal B - SunVault Engineering" style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <p style="text-align: center; margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
+                            <a href="solarB.pdf" target="_blank" style="color: var(--primary);">Open Proposal B PDF in new tab</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Expanded Key Insights Section (Tailored for Commercial Solar) -->
+            <section style="background: var(--white); padding: 2.5rem; border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: 3rem;">
+                <h2 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 1.25rem;">Why Evaluating Complex Commercial Solar Bids Matters</h2>
+                
+                <div style="display: grid; gap: 1.75rem;">
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">1. Utility Interconnection & Curtailment Risk Mitigation</h3>
+                        <p style="color: var(--text-muted);">Scrutinizes Transmission Service Provider (TSP) queue positions, distribution grid impact studies, and whether the vendor assumes risk for utility-mandated substation upgrades or reverse power relay systems.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">2. Inverter Procurement Volatility & Architecture</h3>
+                        <p style="color: var(--text-muted);">Compares string inverter redundancy against central skid-mounted units, evaluating supply chain lead times, local spare parts depots, and modular hot-swap capabilities under fault conditions.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">3. DC-to-AC Degradation Ratios & Bifacial Gain Optimization</h3>
+                        <p style="color: var(--text-muted);">Analyzes oversizing ratios (DC/AC load ratios up to 1.35:1), annual degradation guarantees (0.45% vs 0.55%), and albedo assumptions for bifacial modules mounted on ballasted roofs and parking canopies.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">4. Local Tariff Arbitrage & Battery Energy Storage (BESS)</h3>
+                        <p style="color: var(--text-muted);">Evaluates time-of-use (TOU) rate shifting, demand charge shaving algorithms, and round-trip efficiency (RTE) guarantees for integrated LFP battery storage systems.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <div class="cta-container">
+                <h3>Have your own commercial solar and BESS proposals to evaluate?</h3>
+                <p>Upload your multi-megawatt vendor bids to instantly generate a comprehensive comparative report tailored to your exact utility tariff structure and capacity targets.</p>
+                <a href="../../index.html" class="cta-btn">Upload & Compare Now</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer Explore Other Industries -->
+    <div class="industry-nav">
+        <h3>Explore Other Use-Cases and Industries</h3>
+        <div class="button-grid">
+            <a href="../roofing/roofing.html" class="industry-btn">Commercial Roofing</a>
+            <a href="../hvac/hvac.html" class="industry-btn">Commercial HVAC</a>
+            <a href="../plumbing/plumbing.html" class="industry-btn">Commercial Plumbing</a>
+            <a href="../electrical/electrical.html" class="industry-btn">Commercial Electrical</a>
+            <a href="../equipment/equipment.html" class="industry-btn">Commercial Equipment</a>
+            <a href="../construction/construction.html" class="industry-btn">General Construction</a>
+            <a href="solar.html" class="industry-btn active">Commercial Solar</a>
+            <a href="../software/software.html" class="industry-btn">Software & Tech</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Vcrsoft LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
