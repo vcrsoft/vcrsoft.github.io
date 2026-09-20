@@ -43,7 +43,9 @@
                 <p>Upload two or more proposals. Discover what's missing, get smart questions to ask your vendors, and review a feature-by-feature breakdown—free of artificial rankings or forced scores.</p>
                 
                 <div class="cta-group" style="margin-bottom: 1.5rem;">
-                    <a href="report.html" class="btn-secondary" id="open-report-btn">View sample report</a>
+                    <!-- Triggers Modal OR links to Report Page -->
+                    <button id="open-report-btn" class="btn-secondary">View sample report</button>
+                    <a href="report.html" class="btn-secondary" style="font-size: 0.9rem; padding: 0.8125rem 1rem;">Full Report Page &rarr;</a>
                 </div>
 
                 <div class="legal-note">
@@ -87,15 +89,76 @@
         </main>
     </div>
 
+    <!-- Sample Report Modal Popup -->
+    <div id="report-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Sample Proposal Comparison Report (Restaurant HVAC)</h3>
+                <button id="close-report-btn" class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe src="sample-report.pdf" title="Sample Proposal Comparison Report"></iframe>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2026 Vcrsoft LLC. All rights reserved.</p>
     </footer>
 
     <script>
+        const modal = document.getElementById('report-modal');
+        const openBtn = document.getElementById('open-report-btn');
+        const closeBtn = document.getElementById('close-report-btn');
+
+        // Human-like interaction tracking
+        let humanLikeInteractionRecorded = false;
+        const pageLoadTime = Date.now();
+
+        function recordHumanLikeInteraction() {
+            if (humanLikeInteractionRecorded) return;
+            if (Date.now() - pageLoadTime < 5000) return;
+            humanLikeInteractionRecorded = true;
+
+            gtag('event', 'human_like_interaction', {
+                event_category: 'traffic_quality',
+                event_label: 'Pointer interaction after 5 seconds',
+                page_location: window.location.href
+            });
+
+            document.removeEventListener('mousemove', recordHumanLikeInteraction);
+            document.removeEventListener('touchstart', recordHumanLikeInteraction);
+        }
+
+        document.addEventListener('mousemove', recordHumanLikeInteraction);
+        document.addEventListener('touchstart', recordHumanLikeInteraction, { passive: true });
+
+        openBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+
+            gtag('event', 'sample_report_view', {
+                event_category: 'engagement',
+                event_label: 'Sample Proposal Comparison Report Modal',
+                page_location: window.location.href
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
         // Track clicks on "Compare Proposals Now"
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
             e.preventDefault();
-        
             const button = e.currentTarget;
             const destination = button.href;
         
@@ -115,7 +178,6 @@
         // Track clicks on the "Launch App ($99)" CTA button
         document.getElementById('launch-app-btn').addEventListener('click', (e) => {
             e.preventDefault();
-        
             const button = e.currentTarget;
             const destination = button.href;
         
@@ -130,14 +192,6 @@
             setTimeout(() => {
                 window.location.href = destination;
             }, 5000);
-        });
-
-        document.getElementById('open-report-btn').addEventListener('click', (e) => {
-            gtag('event', 'sample_report_view', {
-                event_category: 'engagement',
-                event_label: 'Sample Proposal Comparison Report Link',
-                page_location: window.location.href
-            });
         });
     </script>
 
