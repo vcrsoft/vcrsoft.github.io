@@ -113,6 +113,51 @@
             color: var(--primary);
         }
 
+        /* Call to Action Banner */
+        .cta-container {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2.5rem;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            border-radius: 12px;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+        }
+
+        .cta-container h3 {
+            margin-top: 0;
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-container p {
+            color: #bfdbfe;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            background-color: #ffffff;
+            color: var(--primary);
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-btn:hover {
+            background-color: #f8fafc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
         /* Footer Industry Navigation */
         .industry-nav {
             background: white;
@@ -205,6 +250,13 @@
                 </div>
             </div>
         </section>
+
+        <!-- Call to Action Section -->
+        <div class="cta-container">
+            <h3>Have your own roofing proposals to evaluate?</h3>
+            <p>Upload your vendor bids to instantly generate a custom side-by-side comparative report tailored to your exact scope and priorities.</p>
+            <a href="../../index.html" class="cta-btn">Upload & Compare Now</a>
+        </div>
     </main>
 
     <!-- Footer Explore Other Industries -->
