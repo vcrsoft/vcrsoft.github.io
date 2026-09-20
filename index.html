@@ -27,12 +27,18 @@
     <!-- Layout Container with Sidebar and Main Content -->
     <div class="app-layout">
         
-        <!-- Vertical Sidebar Navigation -->
+        <!-- Vertical Sidebar Navigation with Individual Verticals -->
         <aside class="sidebar">
             <nav class="sidebar-nav">
                 <a href="index.html" class="sidebar-link active">Home</a>
                 <a href="report.html" class="sidebar-link">Report</a>
-                <a href="vertical.html" class="sidebar-link">Verticals</a>
+                <div class="sidebar-category">Verticals</div>
+                <a href="vertical.html?type=hvac" class="sidebar-link sub-link">HVAC</a>
+                <a href="vertical.html?type=solar" class="sidebar-link sub-link">Solar</a>
+                <a href="vertical.html?type=roofing" class="sidebar-link sub-link">Roofing</a>
+                <a href="vertical.html?type=software" class="sidebar-link sub-link">Software</a>
+                <a href="vertical.html?type=construction" class="sidebar-link sub-link">Construction</a>
+                <a href="vertical.html?type=equipment" class="sidebar-link sub-link">Equipment</a>
             </nav>
         </aside>
 
@@ -43,7 +49,6 @@
                 <p>Upload two or more proposals. Discover what's missing, get smart questions to ask your vendors, and review a feature-by-feature breakdown—free of artificial rankings or forced scores.</p>
                 
                 <div class="cta-group" style="margin-bottom: 1.5rem;">
-                    <!-- Triggers Modal OR links to Report Page -->
                     <button id="open-report-btn" class="btn-secondary">View sample report</button>
                     <a href="report.html" class="btn-secondary" style="font-size: 0.9rem; padding: 0.8125rem 1rem;">Full Report Page &rarr;</a>
                 </div>
@@ -111,7 +116,6 @@
         const openBtn = document.getElementById('open-report-btn');
         const closeBtn = document.getElementById('close-report-btn');
 
-        // Human-like interaction tracking
         let humanLikeInteractionRecorded = false;
         const pageLoadTime = Date.now();
 
@@ -156,12 +160,10 @@
             }
         });
         
-        // Track clicks on "Compare Proposals Now"
         document.querySelector('.btn-primary').addEventListener('click', (e) => {
             e.preventDefault();
             const button = e.currentTarget;
             const destination = button.href;
-        
             button.textContent = 'Launching app...';
             button.style.pointerEvents = 'none';
         
@@ -175,12 +177,10 @@
             }, 5000);
         });
 
-        // Track clicks on the "Launch App ($99)" CTA button
         document.getElementById('launch-app-btn').addEventListener('click', (e) => {
             e.preventDefault();
             const button = e.currentTarget;
             const destination = button.href;
-        
             button.textContent = 'Launching app...';
             button.style.pointerEvents = 'none';
         
