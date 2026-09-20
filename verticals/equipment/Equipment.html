@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental CBCT Proposal Comparison | ProposalCompare - 3D Imaging</title>
+    <meta name="description" content="Side-by-side analysis of 3D CBCT scanner bids for outpatient dental clinic: voxel resolution, dose ALARA, DICOM integration, site requirements, and service SLA.">
+    <style>
+        :root { --primary:#2563eb; --border:#e2e8f0; --text-main:#0f172a; --text-muted:#64748b; --white:#ffffff; --radius:12px; }
+        *{box-sizing:border-box} body{margin:0;background:#f8fafc;font-family:Inter,Arial,sans-serif;color:var(--text-main)}
+        header{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;background:white;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+        .logo{font-weight:800;font-size:1.2rem;color:#1e3a8a;text-decoration:none}
+        .header-center-title{font-weight:600;color:var(--text-muted)}
+        .nav-cta{background:#1e3a8a;color:white;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:600}
+        .app-layout{display:flex}
+        .sidebar{width:220px;background:white;border-right:1px solid var(--border);min-height:calc(100vh - 60px);padding:1.5rem 1rem}
+        .sidebar-nav{display:flex;flex-direction:column;gap:0.4rem}
+        .sidebar-link{color:var(--text-muted);text-decoration:none;padding:0.5rem 0.75rem;border-radius:6px;font-size:0.9rem}
+        .sidebar-link.active{background:#eff6ff;color:#1e3a8a;font-weight:600}
+        .sidebar-link.sub-link{padding-left:1.5rem;font-size:0.85rem}
+        .main-content{flex:1;padding:2rem;max-width:1200px;margin:0 auto}
+        .hero h1{font-size:2rem;margin:0 0 0.75rem;color:#0f172a}
+        .hero p{color:var(--text-muted);line-height:1.6;max-width:900px}
+        .legal-note{background:#fffbeb;border:1px solid #fde68a;padding:1rem;border-radius:8px;margin-top:1rem}
+        .proposals-grid-2col{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+        @media(max-width:900px){.proposals-grid-2col{grid-template-columns:1fr}.sidebar{display:none}}
+        .cta-container{text-align:center;margin:3rem 0;padding:2.5rem;background:linear-gradient(135deg,#0f172a 0%,#2563eb 100%);border-radius:12px;color:white;box-shadow:0 10px 15px -3px rgba(37,99,235,0.2)}
+        .cta-container h3{margin-top:0;font-size:1.75rem;margin-bottom:0.75rem}
+        .cta-container p{color:#bfdbfe;font-size:1.1rem;margin-bottom:1.5rem;max-width:700px;margin-left:auto;margin-right:auto}
+        .cta-btn{background-color:#ffffff;color:#1e3a8a;padding:1rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:700;font-size:1.1rem;display:inline-block;transition:all 0.2s ease;box-shadow:0 4px 6px rgba(0,0,0,0.1)}
+        .cta-btn:hover{background-color:#f8fafc;transform:translateY(-2px)}
+        .industry-nav{background:white;border-top:1px solid var(--border);padding:2.5rem 1.5rem;text-align:center;margin-top:4rem}
+        .button-grid{display:flex;justify-content:center;flex-wrap:wrap;gap:1rem;max-width:1000px;margin:0 auto}
+        .industry-btn{background-color:#f1f5f9;color:var(--text-main);border:1px solid var(--border);padding:0.75rem 1.25rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.2s ease}
+        .industry-btn:hover{background-color:#2563eb;color:white;border-color:#2563eb;transform:translateY(-2px)}
+        .industry-btn.active{background-color:#1e3a8a;color:white;border-color:#1e3a8a}
+        footer{text-align:center;padding:2rem;color:var(--text-muted);font-size:0.85rem}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../../index.html" class="logo">ProposalCompare</a>
+        <div class="header-center-title">Compare Vendor Proposals</div>
+        <a href="https://propcompare.pythonanywhere.com" class="nav-cta">Launch App ($99)</a>
+    </header>
+
+    <div class="app-layout">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="../../index.html" class="sidebar-link">Home</a>
+                <a href="../../report.html" class="sidebar-link">Report</a>
+                <a href="../../vertical.html" class="sidebar-link">Verticals</a>
+                <a href="../hvac/hvac.html" class="sidebar-link sub-link">HVAC</a>
+                <a href="../electrical/electrical.html" class="sidebar-link sub-link">Electrical</a>
+                <a href="../plumbing/plumbing.html" class="sidebar-link sub-link">Plumbing</a>
+                <a href="../roofing/roofing.html" class="sidebar-link sub-link">Roofing</a>
+                <a href="../construction/construction.html" class="sidebar-link sub-link">Construction</a>
+                <a href="equipment.html" class="sidebar-link sub-link active">Equipment</a>
+                <a href="../solar/solar.html" class="sidebar-link sub-link">Solar</a>
+                <a href="../software/software.html" class="sidebar-link sub-link">Software/Tech</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="hero" style="margin-top:1rem;">
+                <h1>Dental CBCT Equipment Proposal Comparison</h1>
+                <p>Comprehensive side-by-side analysis of 3D CBCT scanner bids for outpatient dental clinic: evaluating voxel resolution (68μm vs 75μm), radiation dose ALARA protocols, dual-detector vs single flat-panel architecture, DICOM/HL7/FHIR integration with Dentrix/Eaglesoft, Texas DSHS compliance, site infrastructure (150 vs 200 lbs/sq ft), and service SLA (NBD vs 4-hour critical).</p>
+                <div class="legal-note" style="margin-top:1rem;text-align:left;">
+                    <p><em>Dental CBCT proposals frequently understate shielding upgrade costs, underestimate HVAC heat load (2.1kW vs 3.8kW), and gloss over detector calibration and MAR artifact reduction efficacy under heavy metal restorations. Verify DAP measurements per IEC 60601-2-63, Texas physicist acceptance, and recurring cloud PACS fees prior to execution.</em></p>
+                </div>
+            </section>
+
+            <!-- Output Comparison Report -->
+            <section style="margin-bottom:3rem;">
+                <h2 style="font-size:1.3rem;color:#0f172a;margin-bottom:1rem;">Generated Comparison Output Report</h2>
+                <div style="width:100%;height:85vh;border:1px solid var(--border);border-radius:var(--radius);background:#e2e8f0;overflow:hidden;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+                    <iframe src="equipment.pdf" title="Dental CBCT Comparison Report" style="width:100%;height:100%;border:none;"></iframe>
+                </div>
+                <p style="text-align:center;margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">
+                    Having trouble viewing? <a href="equipment.pdf" target="_blank" style="color:var(--primary);">Open the PDF in a new tab</a>.
+                </p>
+            </section>
+
+            <!-- Input Proposals -->
+            <section style="margin-bottom:3rem;">
+                <h2 style="font-size:1.3rem;color:#0f172a;margin-bottom:0.5rem;">Source Input Proposals</h2>
+                <p style="color:var(--text-muted);margin-bottom:1.25rem;font-size:0.95rem;">Examine the two CBCT engineering proposals side-by-side to evaluate FOV options, dose protocols, software AI modules, and total cost of ownership.</p>
+                
+                <div class="proposals-grid-2col">
+                    <div>
+                        <h3 style="font-size:1.05rem;color:#0f172a;margin-bottom:0.75rem;font-weight:600;">Bid A: DentriScan DENTRI-MAX 3D PRO</h3>
+                        <div style="width:100%;height:65vh;border:1px solid var(--border);border-radius:var(--radius);background:#e2e8f0;overflow:hidden;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+                            <iframe src="equipmentA.pdf" title="Proposal A - DentriScan" style="width:100%;height:100%;border:none;"></iframe>
+                        </div>
+                        <p style="text-align:center;margin-top:0.5rem;font-size:0.85rem;color:var(--text-muted);">
+                            <a href="equipmentA.pdf" target="_blank" style="color:var(--primary);">Open Proposal A PDF in new tab</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h3 style="font-size:1.05rem;color:#0f172a;margin-bottom:0.75rem;font-weight:600;">Bid B: Volux Vantage CBCT 3D Elite</h3>
+                        <div style="width:100%;height:65vh;border:1px solid var(--border);border-radius:var(--radius);background:#e2e8f0;overflow:hidden;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+                            <iframe src="equipmentB.pdf" title="Proposal B - Volux" style="width:100%;height:100%;border:none;"></iframe>
+                        </div>
+                        <p style="text-align:center;margin-top:0.5rem;font-size:0.85rem;color:var(--text-muted);">
+                            <a href="equipmentB.pdf" target="_blank" style="color:var(--primary);">Open Proposal B PDF in new tab</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Insights -->
+            <section style="background:var(--white);padding:2.5rem;border-radius:var(--radius);border:1px solid var(--border);margin-bottom:3rem;">
+                <h2 style="font-size:1.5rem;color:#0f172a;margin-bottom:1.25rem;">Why Evaluating Complex CBCT Bids Matters</h2>
+                <div style="display:grid;gap:1.75rem;">
+                    <div>
+                        <h3 style="color:var(--primary);font-size:1.1rem;margin-bottom:0.35rem;">1. Voxel Resolution & Endodontic Diagnostic Yield</h3>
+                        <p style="color:var(--text-muted);">Compares 68μm UHD vs 75μm HD modes, MTF at 10%, and impact on MB2 canal detection, root fracture visualization, and scatter from gutta-percha and metal crowns.</p>
+                    </div>
+                    <div>
+                        <h3 style="color:var(--primary);font-size:1.1rem;margin-bottom:0.35rem;">2. Dose ALARA & Texas DSHS Compliance Risk</h3>
+                        <p style="color:var(--text-muted);">Scrutinizes DAP ranges, pediatric low-dose protocols, 180° QuickScan vs ULD AI denoise, and whether 8 vs 16 physicist hours covers NCRP 147 shielding for adjacent operatories.</p>
+                    </div>
+                    <div>
+                        <h3 style="color:var(--primary);font-size:1.1rem;margin-bottom:0.35rem;">3. Software AI, Model Scan & Guided Surgery Interoperability</h3>
+                        <p style="color:var(--text-muted);">Evaluates MAR efficacy (92% vs deep-learning inpainting), automated nerve segmentation, bone density mapping, and open STL/PLY export without per-case fees for 3Shape/exocad.</p>
+                    </div>
+                    <div>
+                        <h3 style="color:var(--primary);font-size:1.1rem;margin-bottom:0.35rem;">4. Infrastructure Burden & Service Uptime Economics</h3>
+                        <p style="color:var(--text-muted);">Analyzes floor load (150 vs 200 lbs/sq ft), single vs three-phase power, HVAC heat (2.1kW vs 3.8kW), warranty (2yr vs 3yr), tube rating (30k vs 50k), and 4-hour critical vs NBD SLA for high-volume outpatient continuity.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="cta-container">
+                <h3>Have your own dental CBCT or medical equipment proposals to evaluate?</h3>
+                <p>Upload your vendor bids to instantly generate a comprehensive comparative report tailored to your clinic's case mix, infrastructure, and compliance requirements.</p>
+                <a href="../../index.html" class="cta-btn">Upload & Compare Now</a>
+            </div>
+        </main>
+    </div>
+
+    <div class="industry-nav">
+        <h3>Explore Other Use-Cases and Industries</h3>
+        <div class="button-grid">
+            <a href="../roofing/roofing.html" class="industry-btn">Commercial Roofing</a>
+            <a href="../hvac/hvac.html" class="industry-btn">Commercial HVAC</a>
+            <a href="../plumbing/plumbing.html" class="industry-btn">Commercial Plumbing</a>
+            <a href="../electrical/electrical.html" class="industry-btn">Commercial Electrical</a>
+            <a href="equipment.html" class="industry-btn active">Medical Equipment</a>
+            <a href="../construction/construction.html" class="industry-btn">General Construction</a>
+            <a href="../solar/solar.html" class="industry-btn">Commercial Solar</a>
+            <a href="../software/software.html" class="industry-btn">Software & Tech</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Vcrsoft LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
