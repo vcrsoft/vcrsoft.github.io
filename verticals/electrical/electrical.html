@@ -1,1 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Electrical Proposal Comparison | ProposalCompare</title>
+    <meta name="description" content="Side-by-side analysis of service panel upgrades, transformer specifications, conduit routing, lighting fixture schedules, and labor warranties.">
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        /* Specific styling for CTA container and industry navigation */
+        .cta-container {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2.5rem;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            border-radius: 12px;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+        }
 
+        .cta-container h3 {
+            margin-top: 0;
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-container p {
+            color: #bfdbfe;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            background-color: #ffffff;
+            color: #1e3a8a;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-btn:hover {
+            background-color: #f8fafc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .industry-nav {
+            background: white;
+            border-top: 1px solid var(--border);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .industry-nav h3 {
+            color: #0f172a;
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+        }
+
+        .button-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .industry-btn {
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            border: 1px solid var(--border);
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .industry-btn:hover {
+            background-color: #2563eb;
+            color: white;
+            border-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .industry-btn.active {
+            background-color: #1e3a8a;
+            color: white;
+            border-color: #1e3a8a;
+        }
+
+        /* 3-Proposal Staggered Grid Layout */
+        .proposals-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .proposal-card-full {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 768px) {
+            .proposals-grid {
+                grid-template-columns: 1fr;
+            }
+            .proposal-card-full {
+                grid-column: span 1;
+            }
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QDJ92NQN"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-V2QDJ92NQN');
+    </script>   
+</head>
+<body>
+
+    <header>
+        <a href="../../index.html" class="logo">ProposalCompare</a>
+        <div class="header-center-title">Compare Vendor Proposals</div>
+        <a href="https://propcompare.pythonanywhere.com" class="nav-cta" id="launch-app-btn">Launch App ($99)</a>
+    </header>
+
+    <div class="app-layout">
+        
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="../../index.html" class="sidebar-link">Home</a>
+                <a href="../../report.html" class="sidebar-link">Report</a>
+                <a href="../../vertical.html" class="sidebar-link">Verticals</a>
+                <a href="../hvac/hvac.html" class="sidebar-link sub-link">HVAC</a>
+                <a href="../electrical/electrical.html" class="sidebar-link sub-link active">Electrical</a>
+                <a href="../plumbing/plumbing.html" class="sidebar-link sub-link">Plumbing</a>
+                <a href="../roofing/roofing.html" class="sidebar-link sub-link">Roofing</a>
+                <a href="../construction/construction.html" class="sidebar-link sub-link">Construction</a>
+                <a href="../equipment/equipment.html" class="sidebar-link sub-link">Equipment</a>
+                <a href="../solar/solar.html" class="sidebar-link sub-link">Solar</a>
+                <a href="../software/software.html" class="sidebar-link sub-link">Software/Tech</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="hero" style="margin-top: 1rem;">
+                <h1>Commercial Electrical Proposal Comparison</h1>
+                <p>Side-by-side analysis of service panel upgrades, transformer specifications, conduit routing, lighting fixture schedules, and labor warranties.</p>
+                <div class="legal-note" style="margin-top: 1rem; text-align: left;">
+                    <p><em>Commercial electrical bids frequently exclude utility coordination fees, transformer pad pouring, arc flash study compliance, and temporary generator feeds during service cutovers. Verify exact scope inclusions before signing.</em></p>
+                </div>
+            </section>
+
+            <!-- 1. Output Comparison Report Panel -->
+            <section style="margin-bottom: 3rem;">
+                <h2 style="font-size: 1.3rem; color: #0f172a; margin-bottom: 1rem;">Generated Comparison Output Report</h2>
+                <div style="width: 100%; height: 75vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                    <iframe src="electrical.pdf" title="Commercial Electrical Comparison Report" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+                <p style="text-align: center; margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-muted);">
+                    Having trouble viewing? <a href="electrical.pdf" target="_blank" style="color: var(--primary);">Open the PDF in a new tab</a>.
+                </p>
+            </section>
+
+            <!-- 2. Side-by-Side Input Proposals Panels (3 Proposals Staggered Layout) -->
+            <section style="margin-bottom: 3rem;">
+                <h2 style="font-size: 1.3rem; color: #0f172a; margin-bottom: 0.5rem;">Source Input Proposals (3 Bids Evaluated)</h2>
+                <p style="color: var(--text-muted); margin-bottom: 1.25rem; font-size: 0.95rem;">Examine the raw documents side-by-side for exact scope, pricing breakdowns, and contractual limitations.</p>
+                
+                <div class="proposals-grid">
+                    <!-- Proposal A -->
+                    <div>
+                        <h3 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">Proposal A: VoltTech Electric</h3>
+                        <div style="width: 100%; height: 60vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                            <iframe src="electricalA.pdf" title="Proposal A - VoltTech Electric" style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <p style="text-align: center; margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
+                            <a href="electricalA.pdf" target="_blank" style="color: var(--primary);">Open Proposal A PDF in new tab</a>
+                        </p>
+                    </div>
+
+                    <!-- Proposal B -->
+                    <div>
+                        <h3 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">Proposal B: Apex Power & Lighting</h3>
+                        <div style="width: 100%; height: 60vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                            <iframe src="electricalB.pdf" title="Proposal B - Apex Power & Lighting" style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <p style="text-align: center; margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
+                            <a href="electricalB.pdf" target="_blank" style="color: var(--primary);">Open Proposal B PDF in new tab</a>
+                        </p>
+                    </div>
+
+                    <!-- Proposal C (Full Width on bottom row) -->
+                    <div class="proposal-card-full">
+                        <h3 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">Proposal C: Guardian Commercial Electrical</h3>
+                        <div style="width: 100%; height: 60vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                            <iframe src="electricalC.pdf" title="Proposal C - Guardian Commercial Electrical" style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <p style="text-align: center; margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
+                            <a href="electricalC.pdf" target="_blank" style="color: var(--primary);">Open Proposal C PDF in new tab</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Expanded Key Insights Section (Tailored for Electrical) -->
+            <section style="background: var(--white); padding: 2.5rem; border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: 3rem;">
+                <h2 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 1.25rem;">Why This Structure Changes the Game</h2>
+                
+                <div style="display: grid; gap: 1.75rem;">
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">1. Multi-Bid Normalization (3+ Proposals)</h3>
+                        <p style="color: var(--text-muted);">Comparing three or more complex electrical bids manually often leads to confusion over differing panel ratings (e.g., 1200A vs 1600A services), conduit types (EMT vs Rigid Galvanized), and transformer efficiencies. This tool normalizes multiple vendor proposals into a single coherent structure.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">2. Uncovering Hidden Exclusions & Allowances</h3>
+                        <p style="color: var(--text-muted);">Instantly flags discrepancies in ancillary requirements such as utility coordination fees, concrete transformer pads, arc-flash safety labeling, and temporary generator feeds required during main service cutovers.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">3. Business Continuity & Power Interruption Planning</h3>
+                        <p style="color: var(--text-muted);">Evaluates how each contractor handles scheduled electrical shutdowns. Compares bids that require daytime facility downtime against those offering phased after-hours cutovers and temporary backup generation.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">4. Cross-Examining Contractors with Targeted Questions</h3>
+                        <p style="color: var(--text-muted);">Synthesizes gaps across all three proposals to generate precise, hard-hitting questions you can send to vendors before signing, ensuring all hidden costs and code compliance items are addressed upfront.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <div class="cta-container">
+                <h3>Have your own electrical proposals to evaluate?</h3>
+                <p>Upload your vendor bids to instantly generate a custom side-by-side comparative report tailored to your exact scope and priorities.</p>
+                <a href="../../index.html" class="cta-btn">Upload & Compare Now</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer Explore Other Industries -->
+    <div class="industry-nav">
+        <h3>Explore Other Use-Cases and Industries</h3>
+        <div class="button-grid">
+            <a href="../roofing/roofing.html" class="industry-btn">Commercial Roofing</a>
+            <a href="../hvac/hvac.html" class="industry-btn">Commercial HVAC</a>
+            <a href="../plumbing/plumbing.html" class="industry-btn">Commercial Plumbing</a>
+            <a href="electrical.html" class="industry-btn active">Commercial Electrical</a>
+            <a href="../equipment/equipment.html" class="industry-btn">Commercial Equipment</a>
+            <a href="../construction/construction.html" class="industry-btn">General Construction</a>
+            <a href="../solar/solar.html" class="industry-btn">Commercial Solar</a>
+            <a href="../tech/tech.html" class="industry-btn">Software & Tech</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Vcrsoft LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
