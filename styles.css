@@ -27,10 +27,10 @@ body {
     min-height: 100vh;
 }
 
-/* --- Global Header (Slight, clean contrast tint) --- */
+/* --- Global Header Pane (Styled to match the dark theme contrast) --- */
 header {
-    background: #ffffff;
-    border-bottom: 1px solid #cbd5e1;
+    background: #0f172a; /* Matches the dark sidebar */
+    border-bottom: 1px solid #1e293b;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -38,14 +38,22 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 header .logo {
     font-weight: 700;
     font-size: 1.25rem;
-    color: #0f172a;
+    color: #ffffff;
     text-decoration: none;
+    letter-spacing: -0.01em;
+}
+
+.header-center-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #94a3b8;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .nav-cta {
@@ -73,7 +81,7 @@ header .logo {
 /* --- Persistent Sidebar (Sleek Dark Pane) --- */
 aside.sidebar {
     width: var(--sidebar-width);
-    background: #0f172a; /* Rich, modern charcoal black */
+    background: #0f172a;
     border-right: 1px solid #1e293b;
     padding: 2rem 1rem;
     position: sticky;
@@ -92,7 +100,7 @@ aside.sidebar {
 .sidebar-link {
     display: block;
     padding: 0.75rem 1rem;
-    color: #cbd5e1; /* Soft white/muted gray for readability */
+    color: #cbd5e1;
     text-decoration: none;
     font-weight: 500;
     border-radius: var(--radius);
@@ -394,6 +402,9 @@ footer {
         border-right: none;
         border-bottom: 1px solid #1e293b;
         padding: 1rem;
+    }
+    .header-center-title {
+        display: none; /* Hide center text on tiny mobile screens to save space */
     }
     .main-content {
         padding: 2rem 1.5rem;
