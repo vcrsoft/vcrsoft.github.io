@@ -6,6 +6,100 @@
     <title>Commercial Roofing Proposal Comparison | ProposalCompare</title>
     <meta name="description" content="Side-by-side analysis of membrane specs, insulation R-values, decking replacement allowances, workmanship guarantees, and disposal fees.">
     <link rel="stylesheet" href="../../styles.css">
+    <style>
+        /* Specific styling for CTA container and industry navigation */
+        .cta-container {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2.5rem;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            border-radius: 12px;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+        }
+
+        .cta-container h3 {
+            margin-top: 0;
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-container p {
+            color: #bfdbfe;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            background-color: #ffffff;
+            color: #1e3a8a;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-btn:hover {
+            background-color: #f8fafc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .industry-nav {
+            background: white;
+            border-top: 1px solid var(--border);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .industry-nav h3 {
+            color: #0f172a;
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+        }
+
+        .button-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .industry-btn {
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            border: 1px solid var(--border);
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .industry-btn:hover {
+            background-color: #2563eb;
+            color: white;
+            border-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .industry-btn.active {
+            background-color: #1e3a8a;
+            color: white;
+            border-color: #1e3a8a;
+        }
+    </style>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QDJ92NQN"></script>
@@ -112,14 +206,28 @@
                         <p style="color: var(--text-muted);">Equips you with targeted questions to level the playing field before signing. By analyzing omissions in both source documents—such as Proposal B's missing exact fastener density metrics and Proposal A's lack of explicit core cut test provisions—the tool forces contractors to close loopholes and clarify missing scope upfront.</p>
                     </div>
                 </div>
-
-                <div style="margin-top: 2.5rem; text-align: center; background: #eff6ff; padding: 2rem; border-radius: var(--radius);">
-                    <h3 style="color: #0f172a; margin-bottom: 0.5rem;">Have your own roofing proposals to evaluate?</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 1.25rem;">Upload your PDF bids and get your custom comparison report in minutes for just $99.</p>
-                    <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Compare Your Proposals Now</a>
-                </div>
             </section>
+
+            <!-- Call to Action Section -->
+            <div class="cta-container">
+                <h3>Have your own roofing proposals to evaluate?</h3>
+                <p>Upload your vendor bids to instantly generate a custom side-by-side comparative report tailored to your exact scope and priorities.</p>
+                <a href="../../index.html" class="cta-btn">Upload & Compare Now</a>
+            </div>
         </main>
+    </div>
+
+    <!-- Footer Explore Other Industries -->
+    <div class="industry-nav">
+        <h3>Explore Other Use-Cases and Industries</h3>
+        <div class="button-grid">
+            <a href="roofing.html" class="industry-btn active">Commercial Roofing</a>
+            <a href="../hvac/hvac.html" class="industry-btn">Commercial HVAC</a>
+            <a href="../solar/solar.html" class="industry-btn">Commercial Solar</a>
+            <a href="../plumbing/plumbing.html" class="industry-btn">Plumbing & Mechanical</a>
+            <a href="../electrical/electrical.html" class="industry-btn">Electrical Infrastructure</a>
+            <a href="../saas/saas.html" class="industry-btn">SaaS & Software Vendor Bids</a>
+        </div>
     </div>
 
     <footer>
