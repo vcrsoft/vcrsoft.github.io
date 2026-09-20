@@ -27,10 +27,10 @@ body {
     min-height: 100vh;
 }
 
-/* --- Global Header --- */
+/* --- Global Header (Slight, clean contrast tint) --- */
 header {
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
+    background: #ffffff;
+    border-bottom: 1px solid #cbd5e1;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -38,12 +38,13 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 header .logo {
     font-weight: 700;
     font-size: 1.25rem;
-    color: var(--text-main);
+    color: #0f172a;
     text-decoration: none;
 }
 
@@ -69,11 +70,11 @@ header .logo {
     width: 100%;
 }
 
-/* --- Persistent Sidebar --- */
+/* --- Persistent Sidebar (Sleek Dark Pane) --- */
 aside.sidebar {
     width: var(--sidebar-width);
-    background: var(--white);
-    border-right: 1px solid var(--border);
+    background: #0f172a; /* Rich, modern charcoal black */
+    border-right: 1px solid #1e293b;
     padding: 2rem 1rem;
     position: sticky;
     top: 73px;
@@ -85,13 +86,13 @@ aside.sidebar {
 .sidebar-nav {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 .sidebar-link {
     display: block;
     padding: 0.75rem 1rem;
-    color: var(--text-main);
+    color: #cbd5e1; /* Soft white/muted gray for readability */
     text-decoration: none;
     font-weight: 500;
     border-radius: var(--radius);
@@ -99,25 +100,30 @@ aside.sidebar {
 }
 
 .sidebar-link:hover {
-    background: #f1f5f9;
-    color: var(--primary);
+    background: #1e293b;
+    color: #ffffff;
 }
 
 .sidebar-link.active {
-    background: #eff6ff;
-    color: var(--primary);
+    background: var(--primary);
+    color: #ffffff;
     font-weight: 600;
 }
 
 .sidebar-link.sub-link {
     padding-left: 2rem;
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: #94a3b8;
 }
 
-.sidebar-link.sub-link:hover,
+.sidebar-link.sub-link:hover {
+    background: #1e293b;
+    color: #ffffff;
+}
+
 .sidebar-link.sub-link.active {
-    color: var(--primary);
+    background: var(--primary);
+    color: #ffffff;
 }
 
 /* --- Main Content Area --- */
@@ -386,7 +392,7 @@ footer {
         position: relative;
         top: 0;
         border-right: none;
-        border-bottom: 1px solid var(--border);
+        border-bottom: 1px solid #1e293b;
         padding: 1rem;
     }
     .main-content {
