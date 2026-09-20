@@ -152,14 +152,7 @@
                 </div>
             </section>
 
-            <section style="background:white;padding:2.5rem;border-radius:12px;border:1px solid var(--border);margin-bottom:3rem;">
-                <h2 style="font-size:1.5rem;color:#0f172a;margin-bottom:1.25rem;">Why This Fix Works on GitHub Pages</h2>
-                <div style="display:grid;gap:1rem;color:var(--text-muted);font-size:0.95rem;line-height:1.6">
-                    <p><b>Problem:</b> GitHub Pages sometimes serves PDFs with <code>Content-Disposition: attachment</code> or wrong MIME when files contain large images, causing iframe and even new-tab open to fail or download instead of render.</p>
-                    <p><b>Solution:</b> This page uses <code>fetch(pdfUrl).then(r=>r.blob())</code> → <code>URL.createObjectURL(new Blob([blob], {type:'application/pdf'}))</code>. The browser then renders the <em>blob URL</em> (blob:https://...), not the GitHub URL. GitHub's headers are bypassed entirely.</p>
-                    <p><b>Fallbacks:</b> 1) Direct download (always works), 2) Open Raw (tries GitHub direct), 3) PDF.js viewer which also fetches as ArrayBuffer and renders via Canvas, completely independent of browser PDF plugin.</p>
-                </div>
-            </section>
+           
 
             <div class="cta-container">
                 <h3>Have your own luxury construction or foundation proposals?</h3>
