@@ -119,6 +119,14 @@
         const closeBtn = document.getElementById('close-report-btn');
 
         openBtn.addEventListener('click', () => {
+            // Trigger Google Analytics Event
+            if (typeof gtag === 'function') {
+                gtag('event', 'sample_report_view', {
+                    'event_category': 'Engagement',
+                    'event_label': 'View Sample Report Button'
+                });
+            }
+
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
         });
