@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Proposal Comparison Report | ProposalCompare</title>
+    <meta name="description" content="Review a sample commercial HVAC proposal comparison report. Discover how we turn vendor bids into objective side-by-side analyses, highlight hidden costs, and generate critical questions.">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QDJ92NQN"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-V2QDJ92NQN');
+    </script>   
+</head>
+ 
+<body>
+
+    <header>
+        <a href="index.html" class="logo">ProposalCompare</a>
+        <a href="https://propcompare.pythonanywhere.com" class="nav-cta" id="launch-app-btn">Launch App ($99)</a>
+    </header>
+
+    <!-- Layout Container with Sidebar and Main Content -->
+    <div class="app-layout">
+        
+        <!-- Vertical Sidebar Navigation -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-link">Home</a>
+                <a href="report.html" class="sidebar-link active">Report</a>
+                <a href="vertical.html" class="sidebar-link">Verticals</a>
+            </nav>
+        </aside>
+
+        <!-- Main Report Content Area -->
+        <main class="main-content">
+            <section class="hero" style="margin-top: 2rem; text-align: left;">
+                <h1 style="font-size: 2.25rem; margin-bottom: 0.5rem;">Sample Proposal Comparison Report</h1>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">Explore a live example of how ProposalCompare transforms two conflicting commercial HVAC vendor bids into a transparent, structured decision-making artifact.</p>
+            </section>
+
+            <!-- Embedded Scrollable PDF Section -->
+            <section class="pdf-showcase-section" style="margin-bottom: 3rem;">
+                <div class="pdf-container" style="width: 100%; height: 75vh; border: 1px solid #cbd5e1; border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                    <iframe src="sample-report.pdf" title="Sample Proposal Comparison Report" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+                <p style="text-align: center; margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-muted);">
+                    Having trouble viewing? <a href="sample-report.pdf" target="_blank" style="color: var(--primary);">Open the PDF in a new tab</a>.
+                </p>
+            </section>
+
+            <!-- Value Proposition Breakdown -->
+            <section class="report-insights" style="background: var(--white); padding: 2.5rem; border-radius: var(--radius); border: 1px solid #e2e8f0; margin-bottom: 4rem;">
+                <h2 style="font-size: 1.75rem; color: #0f172a; margin-bottom: 1.5rem;">Why This Report Structure Changes the Game</h2>
+                
+                <div style="display: grid; gap: 2rem;">
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 0.5rem;">1. Apples-to-Apples Feature Breakdown</h3>
+                        <p style="color: var(--text-main); line-height: 1.6;">
+                            Standard proposals use entirely different terminology, line items, and package structures, making them nearly impossible to compare directly. Our engine normalizes vendor bids across equipment tiers, installation schedules, warranties, and ongoing service commitments without relying on arbitrary artificial scoring.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 0.5rem;">2. Exposing Why the Cheaper Bid is Not Always Better</h3>
+                        <p style="color: var(--text-main); line-height: 1.6;">
+                            In the sample report, Proposal A is <strong>$14,400 cheaper</strong> than Proposal B ($68,500 vs. $82,900). However, our analysis immediately uncovers what accounts for that price gap: Proposal B includes variable-speed motors, extended 5-year parts and 2-year labor warranties (compared to 1-year on Proposal A), digital programmable controls, building management integration, 24/7 emergency support, and crucial flexibility to perform work outside normal business hours.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 0.5rem;">3. Highlighting Operational Disruption Risks</h3>
+                        <p style="color: var(--text-main); line-height: 1.6;">
+                            For commercial businesses like restaurants, downtime directly impacts revenue. While Proposal A restricts installation to normal business hours (causing severe dining friction), Proposal B accommodates off-hours scheduling. We surface these operational realities so you weigh productivity loss against upfront equipment savings.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 0.5rem;">4. Hard-Hitting CTA Questions for Vendors</h3>
+                        <p style="color: var(--text-main); line-height: 1.6;">
+                            Instead of guessing what to ask next, the report equips you with targeted, precise questions to put back on your competing contractors. This levels the playing field instantly, forcing vendors to clarify missing efficiency metrics, potential change-order triggers, and hidden exclusions before you sign.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem; text-align: center; background: #eff6ff; padding: 2rem; border-radius: var(--radius);">
+                    <h3 style="color: #0f172a; margin-bottom: 0.75rem;">Ready to evaluate your own vendor proposals?</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Upload your PDF bids and get your custom comparison report in minutes for just $99.</p>
+                    <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Compare Your Proposals Now</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Vcrsoft LLC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Track clicks on "Compare Your Proposals Now"
+        document.querySelector('.btn-primary').addEventListener('click', (e) => {
+            e.preventDefault();
+            const button = e.currentTarget;
+            const destination = button.href;
+        
+            button.textContent = 'Launching app...';
+            button.style.pointerEvents = 'none';
+        
+            gtag('event', 'launch_app_click', {
+                event_category: 'engagement',
+                event_label: 'Compare Your Proposals Now (Report Page)'
+            });
+        
+            setTimeout(() => {
+                window.location.href = destination;
+            }, 5000);
+        });
+
+        document.getElementById('launch-app-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+            const button = e.currentTarget;
+            const destination = button.href;
+        
+            button.textContent = 'Launching app...';
+            button.style.pointerEvents = 'none';
+        
+            gtag('event', 'launch_app_click', {
+                event_category: 'engagement',
+                event_label: 'Launch App ($99)'
+            });
+        
+            setTimeout(() => {
+                window.location.href = destination;
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
