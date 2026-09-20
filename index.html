@@ -49,10 +49,10 @@
                 <h1>Stop Guessing. Compare Vendor Proposals Objectively.</h1>
                 <p>Upload two or more proposals. Discover what's missing, get smart questions to ask your vendors, and review a feature-by-feature breakdown—free of artificial rankings or forced scores.</p>
                 
-                <!-- High-Impact Urgency CTA Buttons -->
+                <!-- High-Impact Urgency CTA Buttons with GA Events -->
                 <div class="cta-group" style="margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
                     <button id="open-report-btn" class="btn-sample-green">📊 View Sample Report</button>
-                    <a href="report.html" class="btn-report-purple">📄 Open Full Report Page &rarr;</a>
+                    <a href="report.html" id="full-report-btn" class="btn-report-purple">📄 Open Full Report Page &rarr;</a>
                 </div>
 
                 <div class="legal-note">
@@ -117,9 +117,10 @@
         const modal = document.getElementById('report-modal');
         const openBtn = document.getElementById('open-report-btn');
         const closeBtn = document.getElementById('close-report-btn');
+        const fullReportBtn = document.getElementById('full-report-btn');
 
+        // Sample Report Button Event
         openBtn.addEventListener('click', () => {
-            // Trigger Google Analytics Event
             if (typeof gtag === 'function') {
                 gtag('event', 'sample_report_view', {
                     'event_category': 'Engagement',
@@ -129,6 +130,16 @@
 
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
+        });
+
+        // Full Report Page Button Event
+        fullReportBtn.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+                gtag('event', 'report_page_view', {
+                    'event_category': 'Engagement',
+                    'event_label': 'Open Full Report Page Button'
+                });
+            }
         });
 
         closeBtn.addEventListener('click', () => {
