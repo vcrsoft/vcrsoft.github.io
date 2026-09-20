@@ -71,7 +71,7 @@
                 </div>
             </section>
 
-            <!-- Verticals Directory Grid (Highlighted on general index view, also acts as quick switcher) -->
+            <!-- Verticals Directory Grid -->
             <section class="verticals-section" style="margin-top: 2rem;">
                 <h2 id="grid-heading">Explore Common Use Cases</h2>
                 <p id="grid-subtext">Choose an industry below to view tailored proposal comparison insights.</p>
@@ -152,17 +152,14 @@
             document.getElementById('features-section').style.display = 'grid';
             document.getElementById('hero-cta-group').style.display = 'flex';
 
-            // Update grid header context for specific view
             document.getElementById('grid-heading').innerText = "Explore Other Use Cases & Industries";
             document.getElementById('grid-subtext').innerText = "Optimized for complex vendor bids across multiple high-stakes industries.";
 
-            // Highlight active vertical link in sidebar
             const activeSidebarLink = document.querySelector(`.sidebar-link[data-vertical="${type}"]`);
             if (activeSidebarLink) {
                 activeSidebarLink.classList.add('active');
             }
         } else {
-            // General Index Hub View
             document.getElementById('sidebar-verticals-heading').classList.add('active');
         }
     </script>
