@@ -1,0 +1,14 @@
+# GitHub Pages config to ensure PDFs are served correctly
+include:
+  - "*.pdf"
+  - "*.html"
+  - "*.css"
+  - "*.js"
+
+# Don't exclude PDFs
+exclude: []
+
+# Ensure correct MIME for PDFs (GitHub Pages default is application/pdf, but explicit include helps)
+plugins: []
+
+# If using /docs folder, keep this
