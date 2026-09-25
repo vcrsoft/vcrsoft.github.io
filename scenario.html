@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenarios & Entry Points | DecisionBrief</title>
+    <meta name="description" content="Browse DecisionBrief scenario entry points — choose-crm, property-management-software, commercial-contractor, restaurant-pos, accounting-firm, business-insurance, outsourcing, business-software, home-renovation, vehicle, general. Same horizontal engine, parameterized as ?scenario=">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .verticals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-top: 2rem; margin-bottom: 3rem; }
+        .vertical-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .vertical-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-color: #cbd5e1; }
+        .vertical-card h3 { font-size: 1.2rem; color: #0f172a; margin-bottom: 0.5rem; }
+        .vertical-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.5; margin-bottom: 1rem; flex-grow: 1; }
+        .vertical-card .meta { font-size: 0.8rem; color: #94a3b8; margin-bottom: 1rem; font-family: monospace; }
+        .card-actions { display:flex; gap:0.6rem; flex-wrap:wrap; }
+        .card-btn { display: inline-block; background-color: #f1f5f9; color: var(--primary); padding: 0.65rem 1.1rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.85rem; text-align: center; transition: background-color 0.2s ease, color 0.2s ease; }
+        .card-btn:hover { background-color: var(--primary); color: white; }
+        .card-btn.primary { background: var(--primary); color: white; }
+        .card-btn.primary:hover { background: var(--primary-dark); }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QDJ92NQN"></script>
+    <script>window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config','G-V2QDJ92NQN');</script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">DecisionBrief</a>
+        <div class="header-center-title">Scenario Entry Points</div>
+        <a href="https://decisionbrief.pythonanywhere.com/app" class="nav-cta" id="launch-app-btn">Launch App ($9)</a>
+    </header>
+
+    <div class="app-layout">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-link">Home</a>
+                <a href="report.html" class="sidebar-link">Sample Brief</a>
+                <a href="scenario.html" class="sidebar-link active">Scenarios</a>
+                <a href="scenario.html?scenario=general" class="sidebar-link sub-link">General</a>
+                <a href="scenario.html?scenario=choose-crm" class="sidebar-link sub-link">Choose CRM</a>
+                <a href="scenario.html?scenario=property-management-software" class="sidebar-link sub-link">Property Mgmt</a>
+                <a href="scenario.html?scenario=commercial-contractor" class="sidebar-link sub-link">Commercial Contractor</a>
+                <a href="scenario.html?scenario=restaurant-pos" class="sidebar-link sub-link">Restaurant POS</a>
+                <a href="scenario.html?scenario=accounting-firm" class="sidebar-link sub-link">Accounting Firm</a>
+                <a href="scenario.html?scenario=business-insurance" class="sidebar-link sub-link">Business Insurance</a>
+                <a href="scenario.html?scenario=outsourcing" class="sidebar-link sub-link">Outsourcing</a>
+                <a href="scenario.html?scenario=business-software" class="sidebar-link sub-link">Business Software</a>
+                <a href="scenario.html?scenario=home-renovation" class="sidebar-link sub-link">Home Renovation</a>
+                <a href="scenario.html?scenario=vehicle" class="sidebar-link sub-link">Vehicle</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="hero" style="margin-top:1rem;">
+                <h1>Scenarios — one engine, many doors</h1>
+                <p>DecisionBrief is horizontal. <code>?scenario=</code> just tunes the interview checklist and language. Same anonymous session, no database, same $9 PDF artifact flow. Pick a door below, or launch <code>/app?scenario=general</code>.</p>
+                <div id="active-scenario-banner" style="display:none; background:#eff6ff; border:1px solid #bfdbfe; padding:1rem 1.25rem; border-radius:var(--radius); margin-top:1rem;">
+                    <strong>Viewing:</strong> <span id="active-scenario-name"></span> — <span id="active-scenario-desc"></span><br>
+                    <a id="active-scenario-launch" href="#" class="btn-primary" style="margin-top:0.75rem; display:inline-block; padding:0.5rem 1rem;">Launch this scenario →</a>
+                </div>
+            </section>
+
+            <div class="verticals-grid" id="scenarios-grid">
+                <!-- cards injected by JS but static fallback below -->
+            </div>
+
+            <section id="sample-embeds" style="margin-bottom:3rem;">
+                <h2 style="font-size:1.3rem; color:#0f172a; margin-bottom:1rem;">Sample artifact — how the brief looks</h2>
+                <p style="color:var(--text-muted); margin-bottom:1.25rem; font-size:0.95rem;">Left: structured Decision Brief PDF ($9 artifact). Right: anonymized interview transcript that produced it. Both scrollable, same design as your live report page will keep.</p>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:1.5rem;">
+                    <div>
+                        <h3 style="font-size:1.05rem; color:#0f172a; margin-bottom:0.75rem; font-weight:600;">Sample Brief PDF (DecisionBrief output)</h3>
+                        <div style="width:100%; height:70vh; border:1px solid var(--border); border-radius:var(--radius); background:#e2e8f0; overflow:hidden; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+                            <iframe src="sample-brief.pdf" title="Sample Decision Brief" style="width:100%; height:100%; border:none;"></iframe>
+                        </div>
+                        <p style="text-align:center; margin-top:0.5rem; font-size:0.85rem; color:var(--text-muted);"><a href="sample-brief.pdf" target="_blank" style="color:var(--primary);">Open PDF in new tab</a></p>
+                    </div>
+                    <div>
+                        <h3 style="font-size:1.05rem; color:#0f172a; margin-bottom:0.75rem; font-weight:600;">Sample Interview Transcript (input)</h3>
+                        <div style="width:100%; height:70vh; border:1px solid var(--border); border-radius:var(--radius); background:#e2e8f0; overflow:hidden; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+                            <iframe src="sample-transcript.pdf" title="Sample Transcript" style="width:100%; height:100%; border:none;"></iframe>
+                        </div>
+                        <p style="text-align:center; margin-top:0.5rem; font-size:0.85rem; color:var(--text-muted);"><a href="sample-transcript.pdf" target="_blank" style="color:var(--primary);">Open transcript in new tab</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Vcrsoft LLC. DecisionBrief — scenario parameter: app?scenario=choose-crm</p>
+    </footer>
+
+<script>
+const SCENARIOS = {
+  "general": { name:"General decision", headline:"A focused conversation for decisions that matter.", desc:"For any important decision. Engine first discovers what the decision actually is." },
+  "choose-crm": { name:"Choosing a CRM", headline:"Thinking about changing your CRM?", desc:"Business type, team size, lead sources, workflows, integrations, budget/seat, who uses it daily, prior CRM experience, dealbreakers." },
+  "property-management-software": { name:"Property management software", headline:"Evaluating property management software?", desc:"Portfolio size/mix, accounting/leasing/maintenance workflow, integrations, team, prior experience, operational pain." },
+  "commercial-contractor": { name:"Commercial contractor", headline:"Choosing a commercial contractor?", desc:"Project type/scope, budget approver, schedule pressure, prior contractor experience, permitting, quality bar, delay tolerance." },
+  "restaurant-pos": { name:"Restaurant POS", headline:"Choosing a restaurant POS?", desc:"Service model, locations, covers/day, hardware, integrations (KDS, delivery, accounting), fees, offline needs, support." },
+  "accounting-firm": { name:"Accounting firm / CPA", headline:"Evaluating an accounting firm or CPA?", desc:"Entity type, books state, monthly transactions, payroll, tax complexity, prior firm pain, communication expectations." },
+  "business-insurance": { name:"Business insurance", headline:"Shopping for business insurance?", desc:"Business type, revenue, employees, current coverage, claims history, risks you actually worry about, broker vs direct." },
+  "outsourcing": { name:"Outsourcing / Agency", headline:"Thinking about outsourcing?", desc:"What to outsource, why now, current in-house cost, quality bar, management overhead, IP/confidentiality, success metrics." },
+  "business-software": { name:"Business software", headline:"Evaluating business software?", desc:"Problem, current workaround, users, must-have workflows, integrations, budget, switching cost, what success looks like." },
+  "home-renovation": { name:"Home renovation", headline:"Planning a home renovation?", desc:"Scope, budget range, timeline, HOA/permits, living through renovation, prior contractor experience, how you judge quality." },
+  "vehicle": { name:"Vehicle purchase", headline:"Thinking about a vehicle?", desc:"Use case, mileage, budget total/monthly, new vs used tolerance, must-have features, ownership length, insurance/fuel." }
+};
+
+function renderGrid(filter){
+  const grid=document.getElementById('scenarios-grid');
+  grid.innerHTML='';
+  Object.entries(SCENARIOS).forEach(([slug, s])=>{
+    if(filter && filter!==slug) return;
+    const card=document.createElement('div');
+    card.className='vertical-card';
+    card.id='card-'+slug;
+    card.innerHTML=`
+      <div>
+        <h3>${s.name}</h3>
+        <p>${s.headline} ${s.desc}</p>
+        <div class="meta">/app?scenario=${slug}</div>
+      </div>
+      <div class="card-actions">
+        <a href="https://decisionbrief.pythonanywhere.com/app?scenario=${slug}" class="card-btn primary">Launch App</a>
+        <a href="scenario.html?scenario=${slug}" class="card-btn">View scenario</a>
+        <a href="report.html?scenario=${slug}" class="card-btn">Sample brief</a>
+      </div>`;
+    grid.appendChild(card);
+  });
+  if(!filter){
+    // if no filter, render all (already)
+  }
+}
+
+const params=new URLSearchParams(window.location.search);
+const active=params.get('scenario');
+if(active && SCENARIOS[active]){
+  document.getElementById('active-scenario-banner').style.display='block';
+  document.getElementById('active-scenario-name').textContent=SCENARIOS[active].name;
+  document.getElementById('active-scenario-desc').textContent=SCENARIOS[active].headline;
+  document.getElementById('active-scenario-launch').href='https://decisionbrief.pythonanywhere.com/app?scenario='+active;
+  renderGrid(active);
+} else {
+  renderGrid(null);
+}
+</script>
+</body>
+</html>
