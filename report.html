@@ -3,123 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Proposal Comparison Report | ProposalCompare</title>
-    <meta name="description" content="Review a sample commercial HVAC proposal comparison report alongside its original input proposals.">
+    <title>Sample Decision Brief Report | DecisionBrief</title>
+    <meta name="description" content="Review a sample DecisionBrief — interview transcript plus structured HTML/PDF output. Anonymous, private, $9 artifact via Stripe, session discarded.">
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QDJ92NQN"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-V2QDJ92NQN');
-    </script>   
+    <script>window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config','G-V2QDJ92NQN');</script>
 </head>
 <body>
-
     <header>
-        <a href="index.html" class="logo">ProposalCompare</a>
-        <a href="https://propcompare.pythonanywhere.com" class="nav-cta">Launch App ($99)</a>
+        <a href="index.html" class="logo">DecisionBrief</a>
+        <div class="header-center-title">Sample Brief</div>
+        <a href="https://decisionbrief.pythonanywhere.com/app" class="nav-cta">Launch App ($9)</a>
     </header>
 
     <div class="app-layout">
-        
         <aside class="sidebar">
             <nav class="sidebar-nav">
                 <a href="index.html" class="sidebar-link">Home</a>
-                <a href="report.html" class="sidebar-link active">Report</a>
-                <a href="vertical.html" class="sidebar-link">Verticals</a>
-                <a href="vertical.html?type=hvac" class="sidebar-link sub-link">HVAC</a>
-                <a href="vertical.html?type=solar" class="sidebar-link sub-link">Solar</a>
-                <a href="vertical.html?type=roofing" class="sidebar-link sub-link">Roofing</a>
-                <a href="vertical.html?type=software" class="sidebar-link sub-link">Software</a>
-                <a href="vertical.html?type=construction" class="sidebar-link sub-link">Construction</a>
-                <a href="vertical.html?type=equipment" class="sidebar-link sub-link">Equipment</a>
+                <a href="report.html" class="sidebar-link active">Sample Brief</a>
+                <a href="scenario.html" class="sidebar-link">Scenarios</a>
+                <a href="scenario.html?scenario=general" class="sidebar-link sub-link">General</a>
+                <a href="scenario.html?scenario=choose-crm" class="sidebar-link sub-link">Choose CRM</a>
+                <a href="scenario.html?scenario=property-management-software" class="sidebar-link sub-link">Property Mgmt</a>
+                <a href="scenario.html?scenario=business-software" class="sidebar-link sub-link">Business Software</a>
+                <a href="scenario.html?scenario=accounting-firm" class="sidebar-link sub-link">Accounting Firm</a>
+                <a href="scenario.html?scenario=commercial-contractor" class="sidebar-link sub-link">Commercial Contractor</a>
             </nav>
         </aside>
 
         <main class="main-content">
-            <section class="hero" style="margin-top: 1rem;">
-                <h1>Sample Proposal Comparison Report</h1>
-                <p>Explore a live example of how ProposalCompare transforms competing commercial HVAC bids into an objective, structured decision-making artifact.</p>
+            <section class="hero" style="margin-top:1rem;">
+                <h1 id="report-title">Sample Decision Brief</h1>
+                <p id="report-desc">Below is a live example of how DecisionBrief turns a 4–8 minute anonymous interview into a McKinsey-lite structured artifact. Left/top is the $9 PDF output. Bottom/right is the raw conversation that produced it. No account, no database — this sample is static.</p>
             </section>
 
-            <!-- 1. Output Sample Report Panel (Untouched) -->
-            <section style="margin-bottom: 3rem;">
-                <h2 style="font-size: 1.3rem; color: #0f172a; margin-bottom: 1rem;">Generated Comparison Output Report</h2>
-                <div style="width: 100%; height: 75vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                    <iframe src="sample-report.pdf" title="Sample Proposal Comparison Report" style="width: 100%; height: 100%; border: none;"></iframe>
+            <!-- 1. Output Report PDF -->
+            <section style="margin-bottom:3rem;">
+                <h2 style="font-size:1.3rem; color:#0f172a; margin-bottom:1rem;">Generated Decision Brief — HTML preview is free, PDF is $9</h2>
+                <div style="width:100%; height:80vh; border:1px solid var(--border); border-radius:var(--radius); background:#e2e8f0; overflow:hidden; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+                    <iframe src="sample-brief.pdf" title="Sample Decision Brief PDF" style="width:100%; height:100%; border:none;"></iframe>
                 </div>
-                <p style="text-align: center; margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-muted);">
-                    Having trouble viewing? <a href="sample-report.pdf" target="_blank" style="color: var(--primary);">Open the PDF in a new tab</a>.
-                </p>
+                <p style="text-align:center; margin-top:0.75rem; font-size:0.9rem; color:var(--text-muted);">Having trouble? <a href="sample-brief.pdf" target="_blank" style="color:var(--primary);">Open the PDF in a new tab</a> • Live version: <a href="https://decisionbrief.pythonanywhere.com/app" style="color:var(--primary);">decisionbrief.pythonanywhere.com</a></p>
             </section>
 
-            <!-- 2. Side-by-Side Input Proposals Panels -->
-            <section style="margin-bottom: 3rem;">
-                <h2 style="font-size: 1.3rem; color: #0f172a; margin-bottom: 0.5rem;">Source Input Proposals</h2>
-                <p style="color: var(--text-muted); margin-bottom: 1.25rem; font-size: 0.95rem;">Review the raw vendor documents evaluated to generate the comparison report above.</p>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-                    <!-- Proposal A -->
-                    <div>
-                        <h3 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">Proposal A: ABC Mechanical Services ($68,500)</h3>
-                        <div style="width: 100%; height: 60vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                            <iframe src="proposalA.pdf" title="Proposal A - ABC Mechanical Services" style="width: 100%; height: 100%; border: none;"></iframe>
-                        </div>
-                        <p style="text-align: center; margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
-                            <a href="proposalA.pdf" target="_blank" style="color: var(--primary);">Open Proposal A PDF in new tab</a>
-                        </p>
-                    </div>
-
-                    <!-- Proposal B -->
-                    <div>
-                        <h3 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">Proposal B: XYZ Climate Solutions ($82,900)</h3>
-                        <div style="width: 100%; height: 60vh; border: 1px solid var(--border); border-radius: var(--radius); background: #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                            <iframe src="proposalB.pdf" title="Proposal B - XYZ Climate Solutions" style="width: 100%; height: 100%; border: none;"></iframe>
-                        </div>
-                        <p style="text-align: center; margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
-                            <a href="proposalB.pdf" target="_blank" style="color: var(--primary);">Open Proposal B PDF in new tab</a>
-                        </p>
-                    </div>
+            <!-- 2. Transcript PDF -->
+            <section style="margin-bottom:3rem;">
+                <h2 style="font-size:1.3rem; color:#0f172a; margin-bottom:0.5rem;">Source Interview Transcript</h2>
+                <p style="color:var(--text-muted); margin-bottom:1.25rem; font-size:0.95rem;">Anonymous chat that produced the brief above. In the live app this is server memory only and discarded after session end. No training, no retention.</p>
+                <div style="width:100%; height:70vh; border:1px solid var(--border); border-radius:var(--radius); background:#e2e8f0; overflow:hidden; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+                    <iframe src="sample-transcript.pdf" title="Sample Transcript" style="width:100%; height:100%; border:none;"></iframe>
                 </div>
+                <p style="text-align:center; margin-top:0.5rem; font-size:0.85rem; color:var(--text-muted);"><a href="sample-transcript.pdf" target="_blank" style="color:var(--primary);">Open transcript PDF</a></p>
             </section>
 
-            <!-- 3. Expanded Key Insights Section -->
-            <section style="background: var(--white); padding: 2.5rem; border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: 3rem;">
-                <h2 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 1.25rem;">Why This Structure Changes the Game</h2>
-                
-                <div style="display: grid; gap: 1.75rem;">
+            <!-- 3. Why this structure -->
+            <section style="background:var(--white); padding:2.5rem; border-radius:var(--radius); border:1px solid var(--border); margin-bottom:3rem;">
+                <h2 style="font-size:1.5rem; color:#0f172a; margin-bottom:1.25rem;">Why this structure changes the game</h2>
+                <div style="display:grid; gap:1.75rem;">
                     <div>
-                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">1. Apples-to-Apples Feature Breakdown</h3>
-                        <p style="color: var(--text-muted);">Normalizes conflicting vendor terminologies across equipment tiers, warranties, and maintenance commitments without arbitrary scoring. For instance, it directly pairs Proposal A's standard ACME RTU-125 units (capped at 11.2 EER) against Proposal B's high-efficiency Carrier units equipped with variable-speed indoor blower motors, helping you evaluate engineering specs side-by-side.</p>
+                        <h3 style="color:var(--primary); font-size:1.1rem; margin-bottom:0.35rem;">1. Crystallizes the real decision</h3>
+                        <p style="color:var(--text-muted);">Most tools start with vendor comparison. DecisionBrief starts earlier: what triggered this, what does success look like, what are you actually deciding between — including do-nothing. That executive summary alone saves hours of misdirected research.</p>
                     </div>
                     <div>
-                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">2. Exposing Hidden Price Differences & Scope Gaps</h3>
-                        <p style="color: var(--text-muted);">Unpacks the exact $14,400 price delta between Proposal A ($68,500) and Proposal B ($82,900). Rather than leaving you to guess why XYZ Climate Solutions costs more, the report highlights tangible additions: duct modifications, digital programmable thermostats, building management system integration, and extended 5-year parts / 2-year labor warranties versus Proposal A's baseline 1-year terms.</p>
+                        <h3 style="color:var(--primary); font-size:1.1rem; margin-bottom:0.35rem;">2. Surfaces tradeoffs & hidden constraints</h3>
+                        <p style="color:var(--text-muted);">Budget < $100/mo, no contracts, 24/7 chat+voice, 99% accuracy bar — in the sample, tradeoffs become explicit: higher cost may improve accuracy but break budget, CRM adds complexity but helps data, short trial delays deployment.</p>
                     </div>
                     <div>
-                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">3. Operational Disruption & Scheduling Impact</h3>
-                        <p style="color: var(--text-muted);">Translates fine print into business realities. Proposal A restricts work to standard business hours over 2 days, which risks shutting down a restaurant during peak service hours and hurting revenue. Proposal B accounts for this operational risk by factoring in the flexibility to schedule work outside operating hours.</p>
+                        <h3 style="color:var(--primary); font-size:1.1rem; margin-bottom:0.35rem;">3. Risks, unknowns, decision criteria</h3>
+                        <p style="color:var(--text-muted);">Unlike generic AI, the brief separates risks (hallucinations, privacy, integration), unknowns (exact cost, accuracy metrics, trial terms), and concrete criteria you will use to judge options. You walk into vendor calls with a checklist, not vibes.</p>
                     </div>
                     <div>
-                        <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 0.35rem;">4. Hard-Hitting Questions for Vendors</h3>
-                        <p style="color: var(--text-muted);">Equips you with targeted questions to level the playing field before signing. By analyzing omissions in both source documents—such as Proposal B's missing exact EER efficiency ratings and Proposal A's lack of duct integration clarity—the tool forces contractors to close loopholes and clarify missing scope upfront.</p>
+                        <h3 style="color:var(--primary); font-size:1.1rem; margin-bottom:0.35rem;">4. Actionable next steps, not just summary</h3>
+                        <p style="color:var(--text-muted);">1) Identify 3–5 candidates that fit budget, 2) Request 1–2 month trial, 3) Assess spreadsheet integration, 4) Compare trial vs criteria, 5) Implement + monitor. A recommendation with a test path, not a forced purchase.</p>
                     </div>
                 </div>
 
-                <div style="margin-top: 2.5rem; text-align: center; background: #eff6ff; padding: 2rem; border-radius: var(--radius);">
-                    <h3 style="color: #0f172a; margin-bottom: 0.5rem;">Ready to evaluate your own vendor proposals?</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 1.25rem;">Upload your PDF bids and get your custom comparison report in minutes for just $99.</p>
-                    <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Compare Your Proposals Now</a>
+                <div style="margin-top:2.5rem; text-align:center; background:#eff6ff; padding:2rem; border-radius:var(--radius);">
+                    <h3 style="color:#0f172a; margin-bottom:0.5rem;">Ready to crystallize your own decision?</h3>
+                    <p style="color:var(--text-muted); margin-bottom:1.25rem;">4–8 min anonymous interview. Free HTML brief. $9 if you want the PDF. No login, no database, session discarded.</p>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=general" class="btn-primary">Start Interview Now</a>
+                    <div style="margin-top:1rem; display:flex; gap:0.5rem; justify-content:center; flex-wrap:wrap;">
+                        <a href="https://decisionbrief.pythonanywhere.com/app?scenario=choose-crm" class="vertical-pill">Choose CRM</a>
+                        <a href="https://decisionbrief.pythonanywhere.com/app?scenario=property-management-software" class="vertical-pill">Property Mgmt</a>
+                        <a href="https://decisionbrief.pythonanywhere.com/app?scenario=restaurant-pos" class="vertical-pill">Restaurant POS</a>
+                    </div>
                 </div>
             </section>
         </main>
     </div>
 
     <footer>
-        <p>&copy; 2026 Vcrsoft LLC. All rights reserved.</p>
+        <p>&copy; 2026 Vcrsoft LLC. DecisionBrief — Anonymous, private. $9 PDF via Stripe, webhook-verified.</p>
     </footer>
+
+<script>
+const params=new URLSearchParams(window.location.search);
+const sc=params.get('scenario');
+if(sc){
+  const map={ 'choose-crm':'Choosing a CRM', 'property-management-software':'Property Management Software', 'commercial-contractor':'Commercial Contractor', 'restaurant-pos':'Restaurant POS', 'accounting-firm':'Accounting Firm', 'business-insurance':'Business Insurance', 'outsourcing':'Outsourcing', 'business-software':'Business Software', 'home-renovation':'Home Renovation', 'vehicle':'Vehicle', 'general':'General Decision' };
+  if(map[sc]){ document.getElementById('report-title').textContent='Sample Decision Brief — '+map[sc]; document.getElementById('report-desc').textContent='Example shown is property-management-software, but your live brief will be tuned for '+map[sc]+'. Launch app with ?scenario='+sc+' to see the tailored checklist.'; }
+}
+</script>
 </body>
 </html>
