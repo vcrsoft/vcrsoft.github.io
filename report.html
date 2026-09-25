@@ -22,24 +22,29 @@
                 <a href="index.html" class="sidebar-link">Home</a>
                 <a href="report.html" class="sidebar-link active">Sample Brief</a>
                 <a href="scenario.html" class="sidebar-link">Scenarios</a>
-                <a href="scenario.html?scenario=general" class="sidebar-link sub-link">General</a>
-                <a href="scenario.html?scenario=choose-crm" class="sidebar-link sub-link">Choose CRM</a>
-                <a href="scenario.html?scenario=property-management-software" class="sidebar-link sub-link">Property Mgmt</a>
-                <a href="scenario.html?scenario=business-software" class="sidebar-link sub-link">Business Software</a>
-                <a href="scenario.html?scenario=accounting-firm" class="sidebar-link sub-link">Accounting Firm</a>
-                <a href="scenario.html?scenario=commercial-contractor" class="sidebar-link sub-link">Commercial Contractor</a>
+                <a href="scenarios/general/general.html" class="sidebar-link sub-link">General decision</a>
+                <a href="scenarios/choose-crm/choose-crm.html" class="sidebar-link sub-link">Choosing a CRM</a>
+                <a href="scenarios/property-management-software/property-management-software.html" class="sidebar-link sub-link">Property management software</a>
+                <a href="scenarios/commercial-contractor/commercial-contractor.html" class="sidebar-link sub-link">Commercial contractor</a>
+                <a href="scenarios/restaurant-pos/restaurant-pos.html" class="sidebar-link sub-link">Restaurant POS</a>
+                <a href="scenarios/accounting-firm/accounting-firm.html" class="sidebar-link sub-link">Accounting firm / CPA</a>
+                <a href="scenarios/business-insurance/business-insurance.html" class="sidebar-link sub-link">Business insurance</a>
+                <a href="scenarios/outsourcing/outsourcing.html" class="sidebar-link sub-link">Outsource or keep in-house</a>
+                <a href="scenarios/business-software/business-software.html" class="sidebar-link sub-link">Business software</a>
+                <a href="scenarios/home-renovation/home-renovation.html" class="sidebar-link sub-link">Home renovation</a>
+                <a href="scenarios/vehicle/vehicle.html" class="sidebar-link sub-link">Vehicle decision</a>
             </nav>
         </aside>
 
         <main class="main-content">
             <section class="hero" style="margin-top:1rem;">
                 <h1 id="report-title">Sample Decision Brief</h1>
-                <p id="report-desc">Below is a live example of how DecisionBrief turns a 4–8 minute anonymous interview into a McKinsey-lite structured artifact. Left/top is the $9 PDF output. Bottom/right is the raw conversation that produced it. No account, no database — this sample is static.</p>
+                <p id="report-desc">Below is an example of how DecisionBrief turns a 4–8 minute anonymous interview into a McKinsey-tiny structured artifact. At the top is the $9 PDF output. At the bottom is a transcript of the conversation that produced it. No account or login, no database, no storage.</p>
             </section>
 
             <!-- 1. Output Report PDF -->
             <section style="margin-bottom:3rem;">
-                <h2 style="font-size:1.3rem; color:#0f172a; margin-bottom:1rem;">Generated Decision Brief — HTML / PDF is $9</h2>
+                <h2 style="font-size:1.3rem; color:#0f172a; margin-bottom:1rem;">Generated Decision Brief — HTML preview is free, PDF is $9</h2>
                 <div style="width:100%; height:80vh; border:1px solid var(--border); border-radius:var(--radius); background:#e2e8f0; overflow:hidden; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
                     <iframe src="sample-brief.pdf" title="Sample Decision Brief PDF" style="width:100%; height:100%; border:none;"></iframe>
                 </div>
@@ -49,7 +54,6 @@
             <!-- 2. Transcript PDF -->
             <section style="margin-bottom:3rem;">
                 <h2 style="font-size:1.3rem; color:#0f172a; margin-bottom:0.5rem;">Source Interview Transcript</h2>
-                <p style="color:var(--text-muted); margin-bottom:1.25rem; font-size:0.95rem;">Anonymous chat that produced the brief above. In the live app this is server memory only and discarded after session end. No training, no retention.</p>
                 <div style="width:100%; height:70vh; border:1px solid var(--border); border-radius:var(--radius); background:#e2e8f0; overflow:hidden; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
                     <iframe src="sample-transcript.pdf" title="Sample Transcript" style="width:100%; height:100%; border:none;"></iframe>
                 </div>
@@ -80,12 +84,20 @@
 
                 <div style="margin-top:2.5rem; text-align:center; background:#eff6ff; padding:2rem; border-radius:var(--radius);">
                     <h3 style="color:#0f172a; margin-bottom:0.5rem;">Ready to crystallize your own decision?</h3>
-                    <p style="color:var(--text-muted); margin-bottom:1.25rem;">4–8 min anonymous interview. $9 if you want the HTML / PDF. No login, no database, session discarded.</p>
+                    <p style="color:var(--text-muted); margin-bottom:1.25rem;">4–8 min anonymous interview. $9 for structure HTML + PDF. No login, no database, session discarded.</p>
                     <a href="https://decisionbrief.pythonanywhere.com/app?scenario=general" class="btn-primary">Start Interview Now</a>
                     <div style="margin-top:1rem; display:flex; gap:0.5rem; justify-content:center; flex-wrap:wrap;">
-                        <a href="https://decisionbrief.pythonanywhere.com/app?scenario=choose-crm" class="vertical-pill">Choose CRM</a>
-                        <a href="https://decisionbrief.pythonanywhere.com/app?scenario=property-management-software" class="vertical-pill">Property Mgmt</a>
-                        <a href="https://decisionbrief.pythonanywhere.com/app?scenario=restaurant-pos" class="vertical-pill">Restaurant POS</a>
+                        <a href="scenarios/choose-crm/choose-crm.html" class="vertical-pill">Choose CRM</a>
+                        <a href="scenarios/property-management-software/property-management-software.html" class="vertical-pill">Property Management Software</a>
+                        <a href="scenarios/commercial-contractor/commercial-contractor.html" class="vertical-pill">Commercial Contractor</a>
+                        <a href="scenarios/restaurant-pos/restaurant-pos.html" class="vertical-pill">Restaurant POS</a>
+                        <a href="scenarios/accounting-firm/accounting-firm.html" class="vertical-pill">Accounting Firm</a>
+                        <a href="scenarios/business-insurance/business-insurance.html" class="vertical-pill">Business Insurance</a>
+                        <a href="scenarios/outsourcing/outsourcing.html" class="vertical-pill">Outsourcing</a>
+                        <a href="scenarios/business-software/business-software.html" class="vertical-pill">Business Software</a>
+                        <a href="scenarios/home-renovation/home-renovation.html" class="vertical-pill">Home Renovation</a>
+                        <a href="scenarios/vehicle/vehicle.html" class="vertical-pill">Vehicle</a>
+                        <a href="scenarios/general/general.html" class="vertical-pill">General Decision</a>
                     </div>
                 </div>
             </section>
@@ -93,16 +105,9 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Vcrsoft LLC. DecisionBrief — Anonymous, private. $9 PDF via Stripe, webhook-verified.</p>
+        <p>&copy; 2026 Vcrsoft LLC. DecisionBrief.</p>
     </footer>
 
-<script>
-const params=new URLSearchParams(window.location.search);
-const sc=params.get('scenario');
-if(sc){
-  const map={ 'choose-crm':'Choosing a CRM', 'property-management-software':'Property Management Software', 'commercial-contractor':'Commercial Contractor', 'restaurant-pos':'Restaurant POS', 'accounting-firm':'Accounting Firm', 'business-insurance':'Business Insurance', 'outsourcing':'Outsourcing', 'business-software':'Business Software', 'home-renovation':'Home Renovation', 'vehicle':'Vehicle', 'general':'General Decision' };
-  if(map[sc]){ document.getElementById('report-title').textContent='Sample Decision Brief — '+map[sc]; document.getElementById('report-desc').textContent='Example shown is property-management-software, but your live brief will be tuned for '+map[sc]+'. Launch app with ?scenario='+sc+' to see the tailored checklist.'; }
-}
-</script>
+
 </body>
 </html>
