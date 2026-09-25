@@ -9,7 +9,7 @@ DecisionBrief (also called Decision Brief) by VCRSoft helps founders, operators,
 - No proposals to upload. Start via scenario entry point: `https://decisionbrief.pythonanywhere.com/app?scenario=choose-crm`
 - Chatbot-driven interview (1 question per turn, 6-10 turns) covers trigger, current approach, volume, prior experience, must-haves, constraints, risks, desired outcome
 - Generates structured Decision Brief: executive summary, decision, decision maker, situation, desired outcome, prior experience, priorities, constraints, options (including do-nothing), tradeoffs, risks, unknowns, decision criteria, next steps, recommendation
-- HTML preview is free. PDF artifact is $9 one-time via Stripe checkout, webhook-verified
+- HTML and PDF artifact is $9 one-time via Stripe checkout, webhook-verified
 - Anonymous and private by design: no login, no account, no database, server memory only, auto-discarded after TTL. No training on your inputs.
 - Horizontal engine with many scenarios: general, choose-crm, property-management-software, commercial-contractor, restaurant-pos, accounting-firm, business-insurance, outsourcing, business-software, home-renovation, vehicle. Parameterized as `?scenario=`.
 
