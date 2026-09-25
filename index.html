@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProposalCompare | Compare Business & Vendor Proposals Objectively</title>
-    <meta name="description" content="Upload two or more business or vendor proposals. Get instant AI breakdown of relative merits, missing elements, and critical questions to ask—without artificial scoring.">
+    <title>DecisionBrief | McKinsey-lite for Early Decisions</title>
+    <meta name="description" content="A chatbot-driven interview that crystallizes early decisions into a structured Decision Brief — HTML + downloadable PDF for $9. Anonymous, private, no login, session discarded. Horizontal engine with scenario entry points.">
     <link rel="stylesheet" href="styles.css">
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QDJ92NQN"></script>
     <script>
@@ -14,107 +13,130 @@
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-V2QDJ92NQN');
-    </script>   
+    </script>
 </head>
- 
 <body>
-
     <header>
-        <a href="index.html" class="logo">ProposalCompare</a>
-        <div class="header-center-title">Compare Vendor Proposals</div>
-        <a href="https://propcompare.pythonanywhere.com" class="nav-cta" id="launch-app-btn">Launch App ($99)</a>
+        <a href="index.html" class="logo">DecisionBrief</a>
+        <div class="header-center-title">Structured Decision Briefs</div>
+        <a href="https://decisionbrief.pythonanywhere.com/app" class="nav-cta" id="launch-app-btn">Launch App ($9)</a>
     </header>
 
-    <!-- Layout Container with Sidebar and Main Content -->
     <div class="app-layout">
-        
-        <!-- Persistent Sidebar Navigation -->
         <aside class="sidebar">
             <nav class="sidebar-nav">
                 <a href="index.html" class="sidebar-link active">Home</a>
-                <a href="report.html" class="sidebar-link">Report</a>
-                <a href="vertical.html" class="sidebar-link">Verticals</a>
-                <a href="verticals/hvac/hvac.html" class="sidebar-link sub-link">HVAC</a>
-                <a href="verticals/roofing/roofing.html" class="sidebar-link sub-link">Roofing</a>
-                <a href="verticals/plumbing/plumbing.html" class="sidebar-link sub-link">Plumbing</a>
-                <a href="verticals/electrical/electrical.html" class="sidebar-link sub-link">Electrical</a>
-                <a href="verticals/construction/construction.html" class="sidebar-link sub-link">Construction</a>
-                <a href="verticals/equipment/equipment.html" class="sidebar-link sub-link">Equipment</a>
-                <a href="verticals/solar/solar.html" class="sidebar-link sub-link">Solar</a>
-                <a href="verticals/software/software.html" class="sidebar-link sub-link">Software/Tech</a>
+                <a href="report.html" class="sidebar-link">Sample Brief</a>
+                <a href="scenario.html" class="sidebar-link">Scenarios</a>
+                <a href="scenario.html?scenario=choose-crm" class="sidebar-link sub-link">Choose CRM</a>
+                <a href="scenario.html?scenario=property-management-software" class="sidebar-link sub-link">Property Mgmt Software</a>
+                <a href="scenario.html?scenario=commercial-contractor" class="sidebar-link sub-link">Commercial Contractor</a>
+                <a href="scenario.html?scenario=restaurant-pos" class="sidebar-link sub-link">Restaurant POS</a>
+                <a href="scenario.html?scenario=accounting-firm" class="sidebar-link sub-link">Accounting Firm</a>
+                <a href="scenario.html?scenario=business-insurance" class="sidebar-link sub-link">Business Insurance</a>
+                <a href="scenario.html?scenario=business-software" class="sidebar-link sub-link">Business Software</a>
+                <a href="scenario.html?scenario=general" class="sidebar-link sub-link">General</a>
             </nav>
         </aside>
 
-        <!-- Main Content Area -->
         <main class="main-content">
             <section class="hero">
-                <h1>Stop Guessing. Compare Vendor Proposals Objectively.</h1>
-                <p>Upload two or more proposals. Discover what's missing, get smart questions to ask your vendors, and review a feature-by-feature breakdown—free of artificial rankings or forced scores.</p>
+                <h1>McKinsey-tiny for early decisions. Interview → Structured Brief.</h1>
+                <p>DecisionBrief is a horizontal decision engine. A 4–8 minute chatbot interview crystallizes your situation into a clear, structured HTML page and a downloadable PDF. No proposals to upload. No account. Anonymous and private.</p>
                 
-                <!-- High-Impact Urgency CTA Buttons with GA Events -->
                 <div class="cta-group" style="margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
-                    <button id="open-report-btn" class="btn-sample-green">📊 View Sample Report</button>
-                    <a href="report.html" id="full-report-btn" class="btn-report-purple">📄 Open Full Report Page &rarr;</a>
+                    <button id="open-report-btn" class="btn-sample-green">📊 View Sample Brief</button>
+                    <a href="report.html" id="full-report-btn" class="btn-report-purple">📄 Open Sample Brief Page →</a>
                 </div>
 
                 <div class="legal-note">
-                  <p>The report is $99 per comparison, with no subscription or ongoing commitment.</p>
-                  <p>Uploaded proposals and other session information are deleted promptly after your comparison is completed.</p>
-                  <p>We do not retain, sell, or use your documents for any purpose other than preparing your requested comparison report.</p>
+                    <p><strong>$9 one-time per brief.</strong> No subscription. No login, no account, no database. Session is discarded after you leave.</p>
+                    <p>Anonymous, private interview. Stripe checkout for the PDF. HTML preview is free. We do not retain or train on your inputs.</p>
+                    <p>Start via a scenario: <code>decisionbrief.pythonanywhere.com/app?scenario=choose-crm</code></p>
                 </div>
                 
                 <div class="cta-group">
-                    <a href="https://propcompare.pythonanywhere.com" class="btn-primary">Compare Proposals Now</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=general" class="btn-primary">Start General Interview</a>
+                    <a href="scenario.html" style="margin-left:0.5rem; color:var(--text-muted); font-weight:600; text-decoration:none;">Browse scenarios →</a>
                 </div>
             </section>
 
             <section class="features">
                 <div class="feature-card">
-                    <h3>🔍 Find Missing Details</h3>
-                    <p>Spot hidden gaps, excluded maintenance items, or vague scope descriptions that standard review processes miss.</p>
+                    <h3>💬 Interview, not form</h3>
+                    <p>Guided chatbot asks what actually matters — trigger, current approach, constraints, prior experience, risks, success — until it has enough to crystallize.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>❓ Smart Vendor Questions</h3>
-                    <p>Instantly generate precise, hard-hitting questions to put back on vendors to level the playing field.</p>
+                    <h3>📄 Structured Brief</h3>
+                    <p>Executive summary, decision, decision maker, situation, desired outcome, priorities, constraints, options, tradeoffs, risks, unknowns, criteria, next steps, recommendation. Clean HTML + PDF.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>⚖️ Real Feature Breakdown</h3>
-                    <p>Apples-to-apples comparison of specs and terms. No artificial numbers or misleading scoring systems.</p>
+                    <h3>🔒 Anonymous by design</h3>
+                    <p>No login, no account, no database. Session cookie only, server memory only, auto-discarded. Your conversation is yours.</p>
+                </div>
+            </section>
+
+            <section class="features" style="margin-top:-1rem;">
+                <div class="feature-card">
+                    <h3>⚡ Horizontal engine</h3>
+                    <p>One engine, many entry points. Scenario parameter tunes questions: <code>?scenario=choose-crm</code>, <code>property-management-software</code>, <code>restaurant-pos</code>, etc. Not a separate app per vertical.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💳 $9 artifact</h3>
+                    <p>Free interview + HTML preview. Pay $9 via Stripe only when you want the downloadable PDF artifact. Same Stripe flow verified via webhook.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🧠 McKinsey-lite</h3>
+                    <p>Helps before you buy/build/hire. Forces clarity on what you actually want, what breaks today, and what good looks like — before vendor pitches.</p>
                 </div>
             </section>
 
             <section class="verticals-section">
-                <h2>Explore Common Use Cases</h2>
-                <p>Optimized for complex vendor bids across multiple high-stakes industries.</p>
+                <h2>Scenario entry points</h2>
+                <p>Same engine, parameterized context. Pick a starting point — or start general. Each launches <code>/app?scenario=...</code></p>
                 <div class="verticals-grid">
-                    <a href="verticals/hvac/hvac.html" class="vertical-pill">Commercial HVAC</a>
-                    <a href="verticals/solar/solar.html" class="vertical-pill">Commercial Solar</a>
-                    <a href="verticals/roofing/roofing.html" class="vertical-pill">Commercial Roofing</a>
-                    <a href="verticals/plumbing/plumbing.html" class="vertical-pill">Commercial Plumbing</a>
-                    <a href="verticals/electrical/electrical.html" class="vertical-pill">Commercial Electrical</a>
-                    <a href="verticals/construction/construction.html" class="vertical-pill">General Construction</a>
-                    <a href="verticals/equipment/equipment.html" class="vertical-pill">Commercial Equipment</a>
-                     <a href="verticals/software/software.html" class="vertical-pill">Software & Tech</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=choose-crm" class="vertical-pill">Choose CRM</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=property-management-software" class="vertical-pill">Property Management Software</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=commercial-contractor" class="vertical-pill">Commercial Contractor</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=restaurant-pos" class="vertical-pill">Restaurant POS</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=accounting-firm" class="vertical-pill">Accounting Firm</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=business-insurance" class="vertical-pill">Business Insurance</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=outsourcing" class="vertical-pill">Outsourcing</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=business-software" class="vertical-pill">Business Software</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=home-renovation" class="vertical-pill">Home Renovation</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=vehicle" class="vertical-pill">Vehicle</a>
+                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=general" class="vertical-pill">General Decision</a>
                 </div>
+                <p style="margin-top:1rem; font-size:0.85rem;">Deep links preserve your current domain: <code>scenario.html?scenario=choose-crm</code> → shows description + sample brief embed.</p>
+            </section>
+
+            <section style="background:var(--white); padding:2rem; border-radius:var(--radius); border:1px solid var(--border);">
+                <h3 style="margin-bottom:0.5rem;">How it works</h3>
+                <ol style="color:var(--text-muted); line-height:1.7; padding-left:1.25rem;">
+                    <li>Open <code>https://decisionbrief.pythonanywhere.com/app?scenario=...</code> — no signup.</li>
+                    <li>Chat 4–8 mins. The engine tracks a checklist for that scenario (budget, current system, workflows, integrations, dealbreakers, etc.).</li>
+                    <li>Get a structured HTML brief instantly. Review executive summary, options, tradeoffs, risks, criteria, next steps.</li>
+                    <li>Pay $9 via Stripe if you want the PDF artifact. Webhook-verified, then PDF generated from the same conversation.</li>
+                    <li>Close tab → session discarded. Nothing stored.</li>
+                </ol>
             </section>
         </main>
     </div>
 
-    <!-- Sample Report Modal Popup -->
     <div id="report-modal" class="modal-overlay">
         <div class="modal-container">
             <div class="modal-header">
-                <h3>Sample Proposal Comparison Report (Restaurant HVAC)</h3>
+                <h3>Sample Decision Brief — AI-Enabled Tenant & Prospect Interaction Automation ($9 artifact)</h3>
                 <button id="close-report-btn" class="modal-close">&times;</button>
             </div>
             <div class="modal-body">
-                <iframe src="sample-report.pdf" title="Sample Proposal Comparison Report"></iframe>
+                <iframe src="sample-brief.pdf" title="Sample Decision Brief"></iframe>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Vcrsoft LLC. All rights reserved.</p>
+        <p>&copy; 2026 Vcrsoft LLC. DecisionBrief — Anonymous, private, session-discarded. All rights reserved.</p>
     </footer>
 
     <script>
@@ -122,42 +144,15 @@
         const openBtn = document.getElementById('open-report-btn');
         const closeBtn = document.getElementById('close-report-btn');
         const fullReportBtn = document.getElementById('full-report-btn');
-
-        // Sample Report Button Event
         openBtn.addEventListener('click', () => {
-            if (typeof gtag === 'function') {
-                gtag('event', 'sample_report_view', {
-                    'event_category': 'Engagement',
-                    'event_label': 'View Sample Report Button'
-                });
-            }
-
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
+            if (typeof gtag === 'function') { gtag('event', 'sample_brief_view', { 'event_category': 'Engagement', 'event_label': 'View Sample Brief Button' }); }
+            modal.classList.add('active'); document.body.style.overflow='hidden';
         });
-
-        // Full Report Page Button Event
         fullReportBtn.addEventListener('click', () => {
-            if (typeof gtag === 'function') {
-                gtag('event', 'report_page_view', {
-                    'event_category': 'Engagement',
-                    'event_label': 'Open Full Report Page Button'
-                });
-            }
+            if (typeof gtag === 'function') { gtag('event', 'report_page_view', { 'event_category': 'Engagement', 'event_label': 'Open Sample Brief Page' }); }
         });
-
-        closeBtn.addEventListener('click', () => {
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        });
-
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
+        closeBtn.addEventListener('click', () => { modal.classList.remove('active'); document.body.style.overflow='auto'; });
+        modal.addEventListener('click', (e) => { if(e.target===modal){ modal.classList.remove('active'); document.body.style.overflow='auto'; }});
     </script>
-
 </body>
 </html>
