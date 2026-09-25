@@ -3,17 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DecisionBrief | McKinsey-lite for Early Decisions</title>
-    <meta name="description" content="A chatbot-driven interview that crystallizes early decisions into a structured Decision Brief — HTML + downloadable PDF for $9. Anonymous, private, no login, session discarded. Horizontal engine with scenario entry points.">
+    <title>DecisionBrief | McKinsey-tiny for Early Decisions</title>
+    <meta name="description" content="A chatbot-driven interview that crystallizes early decisions into a structured Decision Brief. After chat, pay $9, and get HTML artifact on screen  + Save as PDF. Anonymous, private, no login, session discarded. Horizontal engine with pre-tuned scenarios.">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QDJ92NQN"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-V2QDJ92NQN');
-    </script>
+    <script>window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config','G-V2QDJ92NQN');</script>
 </head>
 <body>
     <header>
@@ -28,36 +22,38 @@
                 <a href="index.html" class="sidebar-link active">Home</a>
                 <a href="report.html" class="sidebar-link">Sample Brief</a>
                 <a href="scenario.html" class="sidebar-link">Scenarios</a>
-                <a href="scenario.html?scenario=choose-crm" class="sidebar-link sub-link">Choose CRM</a>
-                <a href="scenario.html?scenario=property-management-software" class="sidebar-link sub-link">Property Mgmt Software</a>
-                <a href="scenario.html?scenario=commercial-contractor" class="sidebar-link sub-link">Commercial Contractor</a>
-                <a href="scenario.html?scenario=restaurant-pos" class="sidebar-link sub-link">Restaurant POS</a>
-                <a href="scenario.html?scenario=accounting-firm" class="sidebar-link sub-link">Accounting Firm</a>
-                <a href="scenario.html?scenario=business-insurance" class="sidebar-link sub-link">Business Insurance</a>
-                <a href="scenario.html?scenario=business-software" class="sidebar-link sub-link">Business Software</a>
-                <a href="scenario.html?scenario=general" class="sidebar-link sub-link">General</a>
+                <a href="scenarios/general/general.html" class="sidebar-link sub-link">General decision</a>
+                <a href="scenarios/choose-crm/choose-crm.html" class="sidebar-link sub-link">Choosing a CRM</a>
+                <a href="scenarios/property-management-software/property-management-software.html" class="sidebar-link sub-link">Property management software</a>
+                <a href="scenarios/commercial-contractor/commercial-contractor.html" class="sidebar-link sub-link">Commercial contractor</a>
+                <a href="scenarios/restaurant-pos/restaurant-pos.html" class="sidebar-link sub-link">Restaurant POS</a>
+                <a href="scenarios/accounting-firm/accounting-firm.html" class="sidebar-link sub-link">Accounting firm / CPA</a>
+                <a href="scenarios/business-insurance/business-insurance.html" class="sidebar-link sub-link">Business insurance</a>
+                <a href="scenarios/outsourcing/outsourcing.html" class="sidebar-link sub-link">Outsource or keep in-house</a>
+                <a href="scenarios/business-software/business-software.html" class="sidebar-link sub-link">Business software</a>
+                <a href="scenarios/home-renovation/home-renovation.html" class="sidebar-link sub-link">Home renovation</a>
+                <a href="scenarios/vehicle/vehicle.html" class="sidebar-link sub-link">Vehicle decision</a>
+
             </nav>
         </aside>
 
         <main class="main-content">
             <section class="hero">
                 <h1>McKinsey-tiny for early decisions. Interview → Structured Brief.</h1>
-                <p>DecisionBrief is a horizontal decision engine. A 4–8 minute chatbot interview crystallizes your situation into a clear, structured HTML page and a downloadable PDF. No account. Anonymous and private.</p>
+                <p>DecisionBrief is a horizontal decision engine with a few pre-tuned scenarios for some common use-cases. A 4–8 minute chatbot interview crystallizes your situation into a clear artifact. After $9 payment, the artifact is shown as HTML on screen with Save as PDF option. Anonymous and private.</p>
                 
-                <div class="cta-group" style="margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                <div class="cta-group" style="margin-bottom:1.5rem; flex-wrap:wrap; gap:1rem;">
                     <button id="open-report-btn" class="btn-sample-green">📊 View Sample Brief</button>
                     <a href="report.html" id="full-report-btn" class="btn-report-purple">📄 Open Sample Brief Page →</a>
                 </div>
 
                 <div class="legal-note">
-                    <p><strong>$9 one-time per brief.</strong> No subscription. No login, no account, no database. Session is discarded after you leave.</p>
-                    <p>Anonymous, private interview. Stripe checkout for the HTML and PDF brief. We do not retain or train on your inputs.</p>
-                    <p>Start a general decision process or pick one of the pre-tuned scenarios.</p>
+                    <p><strong>$9 for the artifact.</strong>Interview finishes → payment → HTML artifact on screen + Save as PDF. Same brief in two formats. No login, no account, no database, nothing stored or saved. Session discarded after you leave.</p>
                 </div>
                 
                 <div class="cta-group">
                     <a href="https://decisionbrief.pythonanywhere.com/app?scenario=general" class="btn-primary">Start General Interview</a>
-                    <a href="scenario.html" style="margin-left:0.5rem; color:var(--text-muted); font-weight:600; text-decoration:none;">Browse scenarios →</a>
+                    <a href="scenario.html" style="margin-left:0.5rem; color:var(--text-muted); font-weight:600; text-decoration:none;">Browse static scenarios →</a>
                 </div>
             </section>
 
@@ -67,58 +63,49 @@
                     <p>Guided chatbot asks what actually matters — trigger, current approach, constraints, prior experience, risks, success — until it has enough to crystallize.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>📄 Structured Brief</h3>
-                    <p>Executive summary, decision, decision maker, situation, desired outcome, priorities, constraints, options, tradeoffs, risks, unknowns, criteria, next steps, recommendation. Clean HTML + PDF.</p>
+                    <h3>📄 Structured brief</h3>
+                    <p>Executive summary, decision, situation, desired outcome, priorities, constraints, options (incl. do-nothing), tradeoffs, risks, unknowns, criteria, next steps, recommendation.</p>
                 </div>
                 <div class="feature-card">
                     <h3>🔒 Anonymous by design</h3>
-                    <p>No login, no account, no database. Session cookie only, server memory only, auto-discarded. Your conversation is yours.</p>
+                    <p>No login, no account, no database. Chat lives in server memory only and is auto-discarded. No tracking, no training.</p>
                 </div>
             </section>
 
             <section class="features" style="margin-top:-1rem;">
                 <div class="feature-card">
-                    <h3>⚡ Horizontal engine</h3>
-                    <p>One engine, many entry points. Scenario parameter tunes questions: <code>?scenario=choose-crm</code>, <code>property-management-software</code>, <code>restaurant-pos</code>, etc. Not a separate app per vertical.</p>
+                    <h3>⚡ General decision engine</h3>
+                    <p>Pre-tuned scenario use-cases. Guardrails to focus conversations. No hallucinations or rabbit-hole traps.</p>
                 </div>
                 <div class="feature-card">
                     <h3>💳 $9 artifact</h3>
-                    <p>Free interview. Pay $9 via Stripe only when you want the downloadable HTML and PDF brief. Same Stripe flow verified via webhook.</p>
+                    <p>After chat, Stripe checkout. Artifact rendered as HTML with Save as PDF button. Both formats are the $9 artifact.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🧠 McKinsey-lite</h3>
+                    <h3>🧠 McKinsey-tiny</h3>
                     <p>Helps before you buy/build/hire. Forces clarity on what you actually want, what breaks today, and what good looks like — before vendor pitches.</p>
                 </div>
             </section>
 
             <section class="verticals-section">
-                <h2>Scenario entry points</h2>
-                <p>Same engine, parameterized context. Pick a starting point — or start general. Each launches <code>/app?scenario=...</code></p>
+                <h2>Scenario use-cases</h2>
+                <p>Pre-tuned contexts with scenario-specific guidelines and checklists</p>
                 <div class="verticals-grid">
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=choose-crm" class="vertical-pill">Choose CRM</a>
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=property-management-software" class="vertical-pill">Property Management Software</a>
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=commercial-contractor" class="vertical-pill">Commercial Contractor</a>
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=restaurant-pos" class="vertical-pill">Restaurant POS</a>
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=accounting-firm" class="vertical-pill">Accounting Firm</a>
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=business-insurance" class="vertical-pill">Business Insurance</a>
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=outsourcing" class="vertical-pill">Outsourcing</a>
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=business-software" class="vertical-pill">Business Software</a>
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=home-renovation" class="vertical-pill">Home Renovation</a>
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=vehicle" class="vertical-pill">Vehicle</a>
-                    <a href="https://decisionbrief.pythonanywhere.com/app?scenario=general" class="vertical-pill">General Decision</a>
+                    <a href="scenarios/choose-crm/choose-crm.html" class="vertical-pill">Choose CRM</a>
+                    <a href="scenarios/property-management-software/property-management-software.html" class="vertical-pill">Property Management Software</a>
+                    <a href="scenarios/commercial-contractor/commercial-contractor.html" class="vertical-pill">Commercial Contractor</a>
+                    <a href="scenarios/restaurant-pos/restaurant-pos.html" class="vertical-pill">Restaurant POS</a>
+                    <a href="scenarios/accounting-firm/accounting-firm.html" class="vertical-pill">Accounting Firm</a>
+                    <a href="scenarios/business-insurance/business-insurance.html" class="vertical-pill">Business Insurance</a>
+                    <a href="scenarios/outsourcing/outsourcing.html" class="vertical-pill">Outsourcing</a>
+                    <a href="scenarios/business-software/business-software.html" class="vertical-pill">Business Software</a>
+                    <a href="scenarios/home-renovation/home-renovation.html" class="vertical-pill">Home Renovation</a>
+                    <a href="scenarios/vehicle/vehicle.html" class="vertical-pill">Vehicle</a>
+                    <a href="scenarios/general/general.html" class="vertical-pill">General Decision</a>
                 </div>
-                <p style="margin-top:1rem; font-size:0.85rem;">Deep links preserve your current domain: <code>scenario.html?scenario=choose-crm</code> → shows description + sample brief embed.</p>
             </section>
 
-            <section style="background:var(--white); padding:2rem; border-radius:var(--radius); border:1px solid var(--border);">
-                <h3 style="margin-bottom:0.5rem;">How it works</h3>
-                <ol style="color:var(--text-muted); line-height:1.7; padding-left:1.25rem;">
-                    <li>Open <code>https://decisionbrief.pythonanywhere.com/app?scenario=...</code> — no signup.</li>
-                    <li>Chat 4–8 mins. The engine tracks a checklist for that scenario (budget, current system, workflows, integrations, dealbreakers, etc.).</li>
-                    <li>Pay $9 via Stripe if you want the HTML and PDF brief generated from the conversation transcript.</li>
-                    <li>Close tab → session discarded. Nothing stored.</li>
-                </ol>
-            </section>
+
         </main>
     </div>
 
@@ -129,29 +116,24 @@
                 <button id="close-report-btn" class="modal-close">&times;</button>
             </div>
             <div class="modal-body">
-                <iframe src="sample-brief.pdf" title="Sample Decision Brief"></iframe>
+                <iframe src="scenarios/property-management-software/sample-brief.pdf" title="Sample Decision Brief"></iframe>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Vcrsoft LLC. DecisionBrief — Anonymous, private, session-discarded. All rights reserved.</p>
+        <p>&copy; 2026 Vcrsoft LLC. DecisionBrief — $9 artifact (HTML on screen + PDF), no free preview. Static pages: scenarios/&lt;slug&gt;/&lt;slug&gt;.html</p>
     </footer>
 
     <script>
-        const modal = document.getElementById('report-modal');
-        const openBtn = document.getElementById('open-report-btn');
-        const closeBtn = document.getElementById('close-report-btn');
-        const fullReportBtn = document.getElementById('full-report-btn');
-        openBtn.addEventListener('click', () => {
-            if (typeof gtag === 'function') { gtag('event', 'sample_brief_view', { 'event_category': 'Engagement', 'event_label': 'View Sample Brief Button' }); }
-            modal.classList.add('active'); document.body.style.overflow='hidden';
-        });
-        fullReportBtn.addEventListener('click', () => {
-            if (typeof gtag === 'function') { gtag('event', 'report_page_view', { 'event_category': 'Engagement', 'event_label': 'Open Sample Brief Page' }); }
-        });
-        closeBtn.addEventListener('click', () => { modal.classList.remove('active'); document.body.style.overflow='auto'; });
-        modal.addEventListener('click', (e) => { if(e.target===modal){ modal.classList.remove('active'); document.body.style.overflow='auto'; }});
+        const modal=document.getElementById('report-modal');
+        const openBtn=document.getElementById('open-report-btn');
+        const closeBtn=document.getElementById('close-report-btn');
+        const fullReportBtn=document.getElementById('full-report-btn');
+        openBtn.addEventListener('click',()=>{ if(typeof gtag==='function'){gtag('event','sample_brief_view',{'event_category':'Engagement','event_label':'View Sample Brief Button'});} modal.classList.add('active'); document.body.style.overflow='hidden';});
+        fullReportBtn.addEventListener('click',()=>{ if(typeof gtag==='function'){gtag('event','report_page_view',{'event_category':'Engagement','event_label':'Open Sample Brief Page'});}});
+        closeBtn.addEventListener('click',()=>{modal.classList.remove('active'); document.body.style.overflow='auto';});
+        modal.addEventListener('click',(e)=>{if(e.target===modal){modal.classList.remove('active'); document.body.style.overflow='auto';}});
     </script>
 </body>
 </html>
