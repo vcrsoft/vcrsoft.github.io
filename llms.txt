@@ -1,0 +1,30 @@
+# DecisionBrief by VCRSoft
+
+> DecisionBrief is a McKinsey-tiny decision tool. A 4-8 minute anonymous chatbot interview crystallizes early decisions into a structured HTML brief + downloadable PDF artifact for $9. No login, no account, no database, session discarded.
+
+## Core Pages
+
+- [VCRSoft Home](https://vcrsoft.com/): Main site and overview for DecisionBrief.
+- [DecisionBrief App](https://decisionbrief.pythonanywhere.com/): Live chatbot application for conducting decision interviews.
+- [Sample Decision Brief](https://vcrsoft.com/report.html): Sample report page featuring embedded PDF artifacts and structured breakdown.
+- [Scenarios Directory](https://vcrsoft.com/scenario.html): Browse all available decision scenarios and entry points.
+- [About DecisionBrief](https://vcrsoft.com/about.html): Detailed background on privacy, pricing, methodology, and the creator.
+
+## Decision Scenarios
+
+- [General Decision](https://decisionbrief.pythonanywhere.com/app?scenario=general): Flexible entry point for any general business or personal decision.
+- [Choose CRM](https://decisionbrief.pythonanywhere.com/app?scenario=choose-crm): Pre-purchase interview and structured checklist for selecting a customer relationship management system.
+- [Property Management Software](https://decisionbrief.pythonanywhere.com/app?scenario=property-management-software): Evaluation checklist for property management platforms.
+- [Commercial Contractor](https://decisionbrief.pythonanywhere.com/app?scenario=commercial-contractor): Decision guide and requirements capture for choosing a commercial contractor.
+- [Restaurant POS](https://decisionbrief.pythonanywhere.com/app?scenario=restaurant-pos): Point of sale software selection interview.
+- [Accounting Firm](https://decisionbrief.pythonanywhere.com/app?scenario=accounting-firm): Evaluation criteria for hiring an accounting firm or CPA.
+- [Business Insurance](https://decisionbrief.pythonanywhere.com/app?scenario=business-insurance): Decision support for business insurance policies and coverage.
+- [Outsourcing](https://decisionbrief.pythonanywhere.com/app?scenario=outsourcing): Analysis framework to decide whether to outsource or keep functions in-house.
+- [Business Software](https://decisionbrief.pythonanywhere.com/app?scenario=business-software): General software selection interview and requirements crystallizer.
+- [Home Renovation](https://decisionbrief.pythonanywhere.com/app?scenario=home-renovation): Scope and vendor evaluation for home renovation projects.
+- [Vehicle Purchase](https://decisionbrief.pythonanywhere.com/app?scenario=vehicle): Pre-purchase decision interview for buying a vehicle.
+
+## Optional
+
+- [Robots.txt](https://vcrsoft.com/robots.txt): Crawler rules and explicit AI training permissions.
+- [Sitemap](https://vcrsoft.com/sitemap.xml): Complete XML sitemap of all site pages.
