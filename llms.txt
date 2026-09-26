@@ -1,6 +1,6 @@
 # vcrsoft.com / DecisionBrief
 
-> DecisionBrief is a McKinsey-lite / McKinsey-tiny decision tool. A 4-8 minute anonymous chatbot interview crystallizes early decisions into a structured HTML brief + downloadable PDF artifact for $9. No login, no account, no database, session discarded.
+> DecisionBrief is a McKinsey-tiny decision tool. A 4-8 minute anonymous chatbot interview crystallizes early decisions into a structured HTML brief + downloadable PDF artifact for $9. No login, no account, no database, session discarded.
 
 ## What it is
 
