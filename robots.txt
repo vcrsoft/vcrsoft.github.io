@@ -1,4 +1,4 @@
-# robots.txt for decisionbrief.pythonanywhere.com
+# robots.txt for vcrsoft.com
 # vcrsoft -- AI consulting service (interview) to help business grow using AI
 # $49 paid upfront before interview starts, no refunds for any reason
 
