@@ -192,38 +192,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Ar
         </div>
       </div>
       <div style="display:flex; flex-direction:column; gap:12px; position:relative; z-index:1">
-        <a class="cta cta-large" href="https://vcrsoft.pythonanywhere.com/app?scenario=physical-therapy-clinic">Get your $49 PT growth report →</a>
+        <a class="cta cta-large" href="https://vcrsoft.pythonanywhere.com/app?scenario=healthcare">Get your $49 PT growth report →</a>
         <div style="font-size:12px; color:#a1a1aa; line-height:1.4">
-          Already convinced by the PDFs? This button takes you to the app (scenario = <code>physical-therapy-clinic</code>). Same flow that generated Harmony's report.
+          This button takes you to the AI consultant app.
           <br><br>
           <a href="https://vcrsoft.com/" style="color:#d4d4d8">vcrsoft.com</a> • HIPAA-aware prompts • Built for 1-10 clinician practices
         </div>
       </div>
     </div>
 
-    <div class="vcr-content" style="margin-top:22px">
-      <div class="grid-2">
-        <div class="card">
-          <b style="font-size:14px">What you get for $49 (same as above)</b>
-          <ul style="font-size:13.5px; margin:10px 0 0; padding-left:18px; color:var(--muted)">
-            <li><span style="color:var(--text)"><b>AI-powered patient intake chatbot</b></span> — converts web/phone inquiries → scheduled evals, validates insurance via API, pushes pre-populated intake to Acuity/WebPT</li>
-            <li><span style="color:var(--text)"><b>Predictive no-show & capacity optimizer</b></span> — flags likely no-shows, auto-triggers TextNow SMS + voicemail, releases slots for same-day cash-pay fast-track</li>
-            <li><span style="color:var(--text)"><b>Fast-track upsell automation</b></span> — surfaces eligibility (out-of-network / quick turnaround) and pitches $360 4-session package during eval note entry</li>
-          </ul>
-        </div>
-        <div class="card">
-          <b style="font-size:14px">How this scales to 100 pages</b>
-          <div class="muted" style="font-size:13px; margin-top:8px; line-height:1.5">
-            This page uses the shared stylesheet at <code>/assets/css/vcrsoft-verticals.css</code>. Structure:
-            <br>• <code>body.vertical-healthcare</code> sets accent
-            <br>• <code>.pdf-card</code> + <code>iframe[src$=.pdf]</code> = scrollable embeds
-            <br>• Each subvertical lives at <code>/healthcare/{slug}.html</code> with its own <code>transcript.pdf</code> + <code>report.pdf</code> in same folder
-            <br>• 10 per vertical: PT, dental, chiropractic, mental health, etc. — same CSS, different <code>--vertical</code> token.
-            <br><br>Repo: <code>vcrsoft.github.io/assets/css/vcrsoft-verticals.css</code> → deployed to <code>vcrsoft.com/assets/css/...</code>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="footer">
       <div class="muted">vcrsoft · AI for business · $49 interview + structured report · <a href="https://vcrsoft.com/" style="color:var(--muted)">vcrsoft.com</a> · <a href="/no-refunds.html" style="color:var(--muted)">Refund Policy: All sales final - No refunds</a><br>Template source: <code>/healthcare.html</code> → this page: <code>/healthcare/physical-therapy-clinic.html</code> · Files expected in same dir: <code>transcript.pdf</code>, <code>report.pdf</code></div>
