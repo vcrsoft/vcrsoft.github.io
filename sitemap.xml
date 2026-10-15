@@ -89,4 +89,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
+
+    <!-- Sub-Vertical pages - 10 or so per vertical if possible -->
+    <url>
+        <loc>https://vcrsoft.com/healthcare/physical-therapy-clinic/physical-therapy-clinic.html</loc>
+        <lastmod>2026-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
