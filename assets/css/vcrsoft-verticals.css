@@ -57,7 +57,7 @@ a{text-underline-offset:3px}
 .topbar-note{font-family:var(--font-mono);font-size:12px;color:#b8c9d8}
 .layout{display:flex;gap:28px;align-items:flex-start;max-width:1280px;margin:0 auto;padding:20px 24px}
 .sitenav{flex:0 0 250px;position:sticky;top:16px;background:#e8f0f7;border:2px solid #9db8cc;border-radius:var(--radius);padding:12px 14px;font-size:14px}
-.sitenav .nav-home,.sitenav .nav-framework{display:block;text-decoration:none;color:var(--text);padding:3px 2px;font-weight:700}
+.sitenav .nav-home{display:block;text-decoration:none;color:var(--text);padding:3px 2px;font-weight:700}
 .sitenav .nav-home:hover,.sitenav .nav-framework:hover{text-decoration:underline}
 .sitenav .nav-group{margin-top:12px}
 .sitenav .nav-group summary{cursor:pointer;font-weight:700;padding:3px 2px;color:var(--vc,var(--text))}
@@ -144,6 +144,9 @@ a{text-underline-offset:3px}
   .rail{flex:none;position:static;width:100%}
   .phase-grid,.vert-grid{grid-template-columns:1fr}
 }
+.sitenav .nav-subgroup{margin-top:8px}
+.sitenav .nav-subgroup summary{cursor:pointer;font-weight:600;padding:3px 2px;color:var(--text)}
+.sitenav .nav-subgroup summary.current{text-decoration:underline}
 /* CTA boxes on the framework page: whole box is a link to its subpage */
 .step-cta{display:block;text-decoration:none;color:inherit}
 .step-cta:hover{box-shadow:var(--shadow)}
