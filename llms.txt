@@ -40,6 +40,9 @@ priorities.
   (100 business types planned, 10 per industry; only physical therapy is
   published so far).
 - About: https://vcrsoft.com/about.html
+- Interview app crawler files: https://vcrsoft.pythonanywhere.com/llms.txt
+  and https://vcrsoft.pythonanywhere.com/sitemap.xml (the app itself, where
+  the interview runs).
 
 ## Simulated demonstrations — important
 

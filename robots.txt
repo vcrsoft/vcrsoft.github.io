@@ -1,5 +1,5 @@
 # robots.txt for vcrsoft.com
-# vcrsoft -- AI consulting service (interview) to help business grow using AI
+# vcrsoft -- AI-native growth consulting for small and midsize businesses
 # $49 paid upfront before interview starts, no refunds for any reason
 
 User-agent: *
@@ -41,9 +41,10 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-# Keep payment verification internals out of index
-User-agent: *
-Disallow: /webhook
-Disallow: /payment-status
+# The interview app is a separate host with its own crawler files, including
+# the payment/checkout disallows that used to be listed here (those paths
+# live on the app, not on vcrsoft.com):
+# https://vcrsoft.pythonanywhere.com/robots.txt
+# https://vcrsoft.pythonanywhere.com/sitemap.xml
 
 Sitemap: https://vcrsoft.com/sitemap.xml
