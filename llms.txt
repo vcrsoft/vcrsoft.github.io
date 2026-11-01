@@ -7,7 +7,7 @@
 ## What it is
 
 - Start at https://vcrsoft.pythonanywhere.com/ (choose your industry), pay $49,
-  then have a focused conversation about how your business wins customers,
+  then have a focused conversation (about 60 minutes) about how your business wins customers,
   delivers work, and grows.
 - You get a structured report: a diagnosis, prioritized opportunities, a
   sequence, a 30-day plan, and measures of success. You review a draft and
@@ -40,9 +40,6 @@ priorities.
   (100 business types planned, 10 per industry; only physical therapy is
   published so far).
 - About: https://vcrsoft.com/about.html
-- Interview app crawler files: https://vcrsoft.pythonanywhere.com/llms.txt
-  and https://vcrsoft.pythonanywhere.com/sitemap.xml (the app itself, where
-  the interview runs).
 
 ## Simulated demonstrations — important
 
