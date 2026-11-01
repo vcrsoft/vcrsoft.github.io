@@ -144,3 +144,28 @@ a{text-underline-offset:3px}
   .rail{flex:none;position:static;width:100%}
   .phase-grid,.vert-grid{grid-template-columns:1fr}
 }
+/* CTA boxes on the framework page: whole box is a link to its subpage */
+.step-cta{display:block;text-decoration:none;color:inherit}
+.step-cta:hover{box-shadow:var(--shadow)}
+.step-cta:hover .step-more{text-decoration:underline}
+.step-more{font-weight:700;margin-top:8px;font-size:14px}
+.step-1 .step-more{color:#0f766e}
+.step-2 .step-more{color:#1d4ed8}
+.step-3 .step-more{color:#7c3aed}
+.step-4 .step-more{color:#15803d}
+.step-5 .step-more{color:#be123c}
+.phase-cta{display:block;text-decoration:none;color:inherit}
+.phase-cta:hover{box-shadow:var(--shadow)}
+.phase-cta:hover .phase-more{text-decoration:underline}
+.phase-more{font-weight:700;margin-top:8px;font-size:14px}
+.phase-1 .phase-more{color:#3730a3}
+.phase-2 .phase-more{color:#0e7490}
+.phase-3 .phase-more{color:#c2410c}
+.phase-4 .phase-more{color:#4d7c0f}
+.phase-5 .phase-more{color:#a21caf}
+.phase-6 .phase-more{color:#b45309}
+.vert-card-cta{display:block;text-decoration:none;color:inherit}
+.vert-card-cta h3{color:var(--vc,var(--text))}
+.vert-card-cta:hover{box-shadow:var(--shadow)}
+.vert-card-cta:hover .vert-more{text-decoration:underline}
+.vert-more{font-weight:700;font-size:14px}
