@@ -46,5 +46,4 @@ User-agent: *
 Disallow: /webhook
 Disallow: /payment-status
 
-Sitemap: https://vcrsoft.pythonanywhere.com/sitemap.xml
 Sitemap: https://vcrsoft.com/sitemap.xml
