@@ -22,7 +22,7 @@ Every consultation follows five steps (see https://vcrsoft.com/framework.html):
 4. Prioritize opportunities (value, feasibility, cost, risk, time to benefit)
 5. Deliver an actionable strategy (sequence, 30-day plan, measures of success)
 
-The conversation explores six areas: business baseline; goals and constraints;
+Separately, the conversation moves through six business phases (see https://vcrsoft.com/phases.html): business baseline; goals and constraints;
 growth engine; economics and operations; diagnosis depth; validation and
 priorities.
 
@@ -31,8 +31,8 @@ priorities.
 - Home: https://vcrsoft.com/
 - Framework: https://vcrsoft.com/framework.html
 - Step detail pages: https://vcrsoft.com/framework/step-1-understand-the-business.html
-  (steps 1-5) and phase detail pages: https://vcrsoft.com/framework/phase-1-business-baseline.html
-  (phases 1-6), all under https://vcrsoft.com/framework/.
+  (steps 1-5) and phase detail pages: https://vcrsoft.com/phases/phase-1-business-baseline.html
+  (phases 1-6), steps under https://vcrsoft.com/framework/, phases under https://vcrsoft.com/phases/.
 - Industry pages: https://vcrsoft.com/<industry>.html for healthcare,
   accounting, legal, construction, professional-services, retail, restaurants,
   home-services, property, manufacturing.
