@@ -78,7 +78,7 @@ a{text-underline-offset:3px}
 .steps{display:flex;flex-direction:column;margin:20px 0}
 .step{border:2px solid;border-radius:12px;padding:14px 16px;position:relative}
 .step + .step{margin-top:48px}
-.step + .step::before{content:"\2193";position:absolute;left:50%;top:-36px;transform:translateX(-50%);font-size:24px;line-height:1;font-weight:700}
+.step + .step::before{content:"\2193";position:absolute;left:50%;top:-38px;transform:translateX(-50%);font-size:28px;line-height:1;font-weight:700}
 .step-num{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
 .step-1{background:#e6f4f1;border-color:#99cfc4}
 .step-1 .step-num,.step-1 h3{color:#0f766e}
