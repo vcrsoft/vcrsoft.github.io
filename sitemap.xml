@@ -13,6 +13,72 @@
         <priority>0.9</priority>
     </url>
     <url>
+        <loc>https://vcrsoft.com/framework/step-1-understand-the-business.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vcrsoft.com/framework/step-2-diagnose-the-growth-problem.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vcrsoft.com/framework/step-3-identify-ai-enabled-solutions.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vcrsoft.com/framework/step-4-prioritize-opportunities.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vcrsoft.com/framework/step-5-deliver-an-actionable-strategy.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vcrsoft.com/framework/phase-1-business-baseline.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vcrsoft.com/framework/phase-2-goals-and-constraints.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vcrsoft.com/framework/phase-3-growth-engine.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vcrsoft.com/framework/phase-4-economics-and-operations.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vcrsoft.com/framework/phase-5-diagnosis-depth.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vcrsoft.com/framework/phase-6-validation-and-priorities.html</loc>
+        <lastmod>2026-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://vcrsoft.com/healthcare.html</loc>
         <lastmod>2026-11-01</lastmod>
         <changefreq>monthly</changefreq>

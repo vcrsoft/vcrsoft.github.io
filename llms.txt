@@ -30,6 +30,9 @@ priorities.
 
 - Home: https://vcrsoft.com/
 - Framework: https://vcrsoft.com/framework.html
+- Step detail pages: https://vcrsoft.com/framework/step-1-understand-the-business.html
+  (steps 1-5) and phase detail pages: https://vcrsoft.com/framework/phase-1-business-baseline.html
+  (phases 1-6), all under https://vcrsoft.com/framework/.
 - Industry pages: https://vcrsoft.com/<industry>.html for healthcare,
   accounting, legal, construction, professional-services, retail, restaurants,
   home-services, property, manufacturing.
