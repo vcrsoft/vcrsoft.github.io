@@ -158,6 +158,15 @@ a{text-underline-offset:3px}
 .step-4 .step-more{color:#15803d}
 .step-5 .step-more{color:#be123c}
 .phase-cta{display:block;text-decoration:none;color:inherit}
+
+/* Differentiation page: editorial list, deliberately separate from framework cards */
+.differentiation-list{list-style:none;margin:28px 0 10px;padding:0 counter-reset:distinction}
+.differentiation-list li{counter-increment:distinction;display:grid;grid-template-columns:54px minmax(0,1fr);column-gap:18px;padding:22px 0;border-top:1px solid #a8a29e}
+.differentiation-list li:last-child{border-bottom:1px solid #a8a29e}
+.differentiation-list li::before{content:counter(distinction,decimal-leading-zero);grid-row:1 / span 2;color:#9a3412;font-family:var(--font-mono);font-size:13px;font-weight:700;padding-top:3px}
+.differentiation-list h3{grid-column:2;margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:23px;line-height:1.2;font-weight:600;color:#292524}
+.differentiation-list p{grid-column:2;margin:0;color:#44403c;font-size:15px;line-height:1.65}
+@media (max-width:600px){.differentiation-list li{grid-template-columns:38px minmax(0,1fr);column-gap:12px}.differentiation-list h3{font-size:20px}}
 .phase-cta:hover{box-shadow:var(--shadow)}
 .phase-cta:hover .phase-more{text-decoration:underline}
 .phase-more{font-weight:700;margin-top:8px;font-size:14px}
