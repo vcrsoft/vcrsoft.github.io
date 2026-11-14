@@ -1,49 +1,69 @@
 # robots.txt for vcrsoft.com
-# vcrsoft -- AI-native growth consulting for small and midsize businesses
-# $49 paid upfront before interview starts, no refunds for any reason
+# AI-native growth consulting for small and midsize businesses
+# $49 paid upfront · All sales final · No refunds
 
 User-agent: *
 Allow: /
 
-# AI Search & Training Crawlers - Explicit Allow
+# Explicit allow for major AI search / user / training crawlers
 User-agent: GPTBot
 Allow: /
+
 User-agent: OAI-SearchBot
 Allow: /
+
 User-agent: ChatGPT-User
 Allow: /
+
 User-agent: ClaudeBot
 Allow: /
+
 User-agent: anthropic-ai
 Allow: /
+
 User-agent: Claude-Web
 Allow: /
+
 User-agent: Claude-SearchBot
 Allow: /
+
 User-agent: Google-Extended
 Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 User-agent: FacebookBot
 Allow: /
+
 User-agent: meta-externalagent
 Allow: /
+
 User-agent: meta-externalagents
 Allow: /
+
 User-agent: PerplexityBot
 Allow: /
+
 User-agent: Perplexity-User
 Allow: /
+
 User-agent: Applebot-Extended
 Allow: /
+
 User-agent: CCBot
 Allow: /
+
 User-agent: cohere-ai
 Allow: /
+
 User-agent: Bytespider
 Allow: /
 
-# The interview app is a separate host with its own crawler files, including
-# the payment/checkout disallows that used to be listed here (those paths
-# live on the app, not on vcrsoft.com):
+# The live interview + payment flow lives on a separate host:
 # https://vcrsoft.pythonanywhere.com/robots.txt
 # https://vcrsoft.pythonanywhere.com/sitemap.xml
 
