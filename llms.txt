@@ -44,7 +44,7 @@ Industry hubs:
 Business-type pages follow the pattern:
 https://vcrsoft.com/<industry>/<business-type>/<business-type>.html
 
-Only a small number of business-type pages are fully published with simulated examples so far. The rest are planned. The finished simulated demonstration is physical therapy:
+Only a small number of business-type pages are fully published with simulated examples so far. The rest are planned. One example finished simulated demonstration is physical therapy:
 https://vcrsoft.com/healthcare/physical-therapy-clinic/physical-therapy-clinic.html
 
 ## Important note on demonstrations
